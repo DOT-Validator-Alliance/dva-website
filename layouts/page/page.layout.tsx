@@ -28,6 +28,7 @@ const LayoutContainer = styled.div`
 	min-height: 100vh;
 
 	main {
+		margin: 10rem 0;
 		flex-grow: 1;
 	}
 `

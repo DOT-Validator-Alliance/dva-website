@@ -4,6 +4,9 @@ import Head from "next/head"
 // Layout
 import PageLayout from "../layouts/page/page.layout"
 
+// Sections
+import HeroSection from "../components/hero-section/hero-section.component"
+
 // Types
 import { ReactElement } from "react"
 
@@ -18,7 +21,7 @@ const Home = () => {
 				/>
 			</Head>
 
-			<h1>Hello World</h1>
+			<HeroSection />
 		</>
 	)
 }

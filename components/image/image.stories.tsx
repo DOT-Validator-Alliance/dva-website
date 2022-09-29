@@ -1,6 +1,6 @@
 import { Story, Meta } from "@storybook/react"
 import Image from "./image.component"
-import { LazyLoadImageProps } from "react-lazy-load-image-component/index"
+import { LazyLoadImageProps } from "react-lazy-load-image-component"
 
 const meta: Meta = {
 	title: "Components/Image",
@@ -9,7 +9,7 @@ const meta: Meta = {
 
 export default meta
 
-const Template: Story<LazyLoadImageProps> = (args) => <Image {...args} />
+const Template: Story<LazyLoadImageProps> = (args) => <Image {...args} alt="" />
 
 export const Default = Template.bind({})
 

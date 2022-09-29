@@ -12,6 +12,12 @@ export const light = {
 		primary: "#fff",
 		secondary: "#898989",
 	},
+	header: {
+		backgroundColor: "#000",
+		navItemColor: "#898989",
+		activeNavItemColor: "#fff",
+		borderColor: "#323232",
+	},
 	breakpoints: {
 		sm: "640px",
 		md: "768px",

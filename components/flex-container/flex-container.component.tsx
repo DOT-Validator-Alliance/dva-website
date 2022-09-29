@@ -13,8 +13,9 @@ export interface IProps {
 	right?: string
 	bottom?: string
 	wrap?: string
-	children?: React.ReactNode
+	children?: React.ReactNode | React.ReactNode[]
 	width?: string
+	height?: string
 }
 
 const FlexContainer: React.FC<IProps> = ({ children, ...props }) => {
@@ -32,6 +33,7 @@ const Container = styled.div<IProps>`
 	--gap: ${({ gap }) => (gap ? gap : "1rem")};
 	gap: var(--gap);
 	width: ${({ width }) => (width ? width : "initial")};
+	height: ${({ height }) => (height ? height : "initial")};
 	margin-top: ${({ top }) => (top ? top : "initial")};
 	margin-right: ${({ right }) => (right ? right : "initial")};
 	margin-left: ${({ left }) => (left ? left : "initial")};
