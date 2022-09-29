@@ -92,7 +92,11 @@ const HeroSection: React.FC = () => {
 			</Col>
 			<Col>
 				<HeroFigure>
-					<Image src="/assets/hero-section/hero-ilu.png" alt="hero ilu" />
+					<Image
+						src="/assets/hero-section/hero-ilu.png"
+						alt="hero ilu"
+						width={"100%"}
+					/>
 				</HeroFigure>
 			</Col>
 		</SectionContainer>
@@ -103,11 +107,20 @@ export default HeroSection
 
 const SectionContainer = styled.section`
 	display: grid;
-	grid-template-columns: 1fr 1fr;
 	grid-gap: 2rem;
-	padding: 5rem 3rem;
+	grid-template-columns: 1fr;
+	padding: 5rem 2rem;
 	max-width: 120rem;
-	margin: 0 auto;
+	margin: 4rem auto 0;
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		grid-template-columns: 1fr 1fr;
+		padding: 0 3rem;
+
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			padding: 0 7rem;
+		}
+	}
 `
 
 const Col = styled.div`
@@ -116,6 +129,14 @@ const Col = styled.div`
 	&:nth-child(2) {
 		/* border: 1px solid green; */
 		justify-self: center;
+		grid-row: 1 / 3;
+
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+			grid-row: unset;
+
+			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			}
+		}
 	}
 `
 
@@ -137,11 +158,7 @@ const Border = styled.div`
 	margin: 1rem 0;
 	height: 0.2rem;
 	width: 80%;
-	background: linear-gradient(
-		90deg,
-		rgba(231, 31, 122, 1) 0%,
-		rgba(217, 217, 217, 0) 100%
-	);
+	background: ${({ theme }) => theme.heroSection.borderColor};
 `
 
 const HeroFigure = styled.figure``

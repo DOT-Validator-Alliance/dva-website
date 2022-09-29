@@ -17,6 +17,11 @@ export const light = {
 		navItemColor: "#898989",
 		activeNavItemColor: "#fff",
 		borderColor: "#323232",
+		hamColor: "#D9D9D9",
+		activeHamColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(154, 38, 141, 0) 100%)`,
+	},
+	heroSection: {
+		borderColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(217, 217, 217, 0) 100%)`,
 	},
 	breakpoints: {
 		sm: "640px",
