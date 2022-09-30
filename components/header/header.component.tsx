@@ -54,57 +54,59 @@ const Header: React.FC = () => {
 	return (
 		<>
 			<HeaderContainer>
-				<FlexContainer
-					alignItems="center"
-					justifyContent="space-between"
-					height="100%"
-				>
-					<LogoFigure>
-						<Image
-							src="/assets/aliancelogo.png"
-							alt="Validator Alliance Logo"
-							width={"100%"}
-						/>
-					</LogoFigure>
+				<Container>
+					<FlexContainer
+						alignItems="center"
+						justifyContent="space-between"
+						height="100%"
+					>
+						<LogoFigure>
+							<Image
+								src="/assets/aliancelogo.png"
+								alt="Validator Alliance Logo"
+								width={"100%"}
+							/>
+						</LogoFigure>
 
-					<Nav>
-						<NavList>
-							{navItems.map((item, index) => (
-								<NavItem key={index}>
-									<Link href={item.slug}>
-										<a>
-											{item.label}{" "}
-											<span>
-												<Image
-													src="/assets/icons/right-arrow.svg"
-													alt="Right Arrow"
-												/>
-											</span>
-										</a>
-									</Link>
-								</NavItem>
-							))}
-						</NavList>
-					</Nav>
+						<Nav>
+							<NavList>
+								{navItems.map((item, index) => (
+									<NavItem key={index}>
+										<Link href={item.slug}>
+											<LabelA>
+												<LabelSpan>{item.label}</LabelSpan>
+												<IconSpan>
+													<Image
+														src="/assets/icons/right-arrow.svg"
+														alt="Right Arrow"
+													/>
+												</IconSpan>
+											</LabelA>
+										</Link>
+									</NavItem>
+								))}
+							</NavList>
+						</Nav>
 
-					<SocialsContainer>
-						<SocialsList>
-							{socialItems.map((item, index) => (
-								<SocialsItem key={index}>
-									<SocialsLink href={item.slug}>
-										<Image
-											src={item.icon.src}
-											alt={item.icon.alt}
-											// width={item.icon.width}
-											width={"100%"}
-										/>
-									</SocialsLink>
-								</SocialsItem>
-							))}
-						</SocialsList>
-						<HamMenuButton isOpen={isMenuOpen} onClick={() => toggleMenu()} />
-					</SocialsContainer>
-				</FlexContainer>
+						<SocialsContainer>
+							<SocialsList>
+								{socialItems.map((item, index) => (
+									<SocialsItem key={index}>
+										<SocialsLink href={item.slug}>
+											<Image
+												src={item.icon.src}
+												alt={item.icon.alt}
+												// width={item.icon.width}
+												width={"100%"}
+											/>
+										</SocialsLink>
+									</SocialsItem>
+								))}
+							</SocialsList>
+							<HamMenuButton isOpen={isMenuOpen} onClick={() => toggleMenu()} />
+						</SocialsContainer>
+					</FlexContainer>
+				</Container>
 			</HeaderContainer>
 			<AnimatePresence mode="wait">
 				{isMenuOpen && (
@@ -168,6 +170,13 @@ const HeaderContainer = styled.header`
 	}
 `
 
+const Container = styled.div`
+	width: 100%;
+	height: 100%;
+	max-width: 130rem;
+	margin: 0 auto;
+`
+
 const LogoFigure = styled.figure`
 	width: 10rem;
 
@@ -187,43 +196,59 @@ const NavList = styled.ul`
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		display: flex;
-		gap: 2rem;
+		gap: 3.5rem;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		}
 	}
 `
 
-const NavItem = styled.li`
-	a {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		font-weight: 400;
+const LabelSpan = styled.span`
+	position: relative;
+	transition: all 0.3s ease-out;
+`
 
-		color: ${({ theme }) => theme.header.navItemColor};
+const IconSpan = styled.span`
+	position: absolute;
+	right: -1rem;
+	top: 50%;
+	transform: translateY(-50%);
 
-		transition: all 0.3s ease-out;
-		span {
-			/* visibility: hidden; */
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			opacity: 0;
-			transition: all 0.3s ease-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+`
+
+const LabelA = styled.a`
+	position: relative;
+
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 400;
+
+	color: ${({ theme }) => theme.header.navItemColor};
+
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		color: ${({ theme }) => theme.header.activeNavItemColor};
+		font-weight: 600;
+
+		${IconSpan} {
+			opacity: 1;
 		}
 
-		&:hover {
-			color: ${({ theme }) => theme.header.activeNavItemColor};
-			font-weight: 600;
-
-			span {
-				opacity: 1;
-				/* visibility: visible; */
-			}
+		${LabelSpan} {
+			margin-left: -1rem;
+			margin-right: 1rem;
 		}
 	}
 `
+
+const NavItem = styled.li``
 
 const SocialsContainer = styled.div`
 	display: flex;

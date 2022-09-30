@@ -57,22 +57,63 @@ const HeroSection: React.FC = () => {
 		<SectionContainer>
 			<Row>
 				<Col>
-					<Title>
+					<Title
+						initial={{ opacity: 0, y: 100 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{
+							duration: 1,
+							// cubic-bezier(.5,0,.56,.99)
+							ease: [0.5, 0, 0.56, 0.99],
+						}}
+					>
 						<span>DOT Validator</span>
 						<span>Alliance</span>
 					</Title>
-					<Border />
-					<Description>
+					<Border
+						initial={{ opacity: 0, width: 0 }}
+						animate={{ opacity: 1, width: "auto" }}
+						transition={{
+							delay: 1,
+							duration: 1,
+							ease: [0.5, 0, 0.56, 0.99],
+						}}
+					/>
+					<Description
+						initial={{ opacity: 0, y: 100 }}
+						animate={{ opacity: 1, y: 0 }}
+						transition={{
+							delay: 2,
+							duration: 0.5,
+							ease: [0.5, 0, 0.56, 0.99],
+						}}
+					>
 						We are a group of community leaders who decided to dedicate their
 						professional lives to the Polkadot and its diverse ecosystem.
 					</Description>
 
-					<ButtonsContainer>
+					<ButtonsContainer
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{
+							delay: 2.5,
+							duration: 0.5,
+							ease: [0.5, 0, 0.56, 0.99],
+						}}
+					>
 						<Button>Support us</Button>
 						<Button outline>Read our Manifesto</Button>
 					</ButtonsContainer>
 
-					<FoundersContainer>
+					<FoundersContainer
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{
+							delay: 3,
+							duration: 0.5,
+							// ease
+							ease: [0.5, 0, 0.56, 0.99],
+						}}
+					>
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
 							{founders.map((founder, index) => (
@@ -87,13 +128,22 @@ const HeroSection: React.FC = () => {
 						</FlexContainer>
 					</FoundersContainer>
 				</Col>
-				<Col>
+				<Col
+					initial={{ opacity: 0, scale: 0.5 }}
+					animate={{ opacity: 1, scale: 1 }}
+					transition={{
+						delay: 3.7,
+						duration: 2,
+						ease: [0.5, 0, 0.56, 0.99],
+					}}
+				>
 					<HeroFigure
 						// initial={{ y: 0 }}
 						animate={{ y: [0, -15, 0], scale: [1, 0.97, 1] }}
 						transition={{
-							duration: 4,
+							duration: 3.7,
 							repeat: Infinity,
+							// ease: [0.64, 0.33, 0.64, 0.86],
 						}}
 					>
 						<Image
@@ -107,7 +157,15 @@ const HeroSection: React.FC = () => {
 					</HeroFigure>
 				</Col>
 
-				<LeftBlurFigure>
+				<LeftBlurFigure
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						duration: 1,
+						delay: 0.5,
+						ease: [0.5, 0, 0.56, 0.99],
+					}}
+				>
 					<Image
 						src="/assets/blops/home_pink.png"
 						alt="bottom blur"
@@ -117,7 +175,15 @@ const HeroSection: React.FC = () => {
 						style={{ objectFit: "contain" }}
 					/>
 				</LeftBlurFigure>
-				<RightBlurFigure>
+				<RightBlurFigure
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						duration: 1,
+						delay: 0.5,
+						ease: [0.5, 0, 0.56, 0.99],
+					}}
+				>
 					<Image
 						src="/assets/blops/home_purple.png"
 						alt="right blur"
@@ -134,7 +200,7 @@ const HeroSection: React.FC = () => {
 
 export default HeroSection
 
-const LeftBlurFigure = styled.figure`
+const LeftBlurFigure = styled(motion.figure)`
 	position: absolute;
 	border-radius: 50%;
 	width: 75rem;
@@ -152,7 +218,7 @@ const LeftBlurFigure = styled.figure`
 	}
 `
 
-const RightBlurFigure = styled.figure`
+const RightBlurFigure = styled(motion.figure)`
 	position: absolute;
 	border-radius: 50%;
 	width: 120rem;
@@ -207,7 +273,7 @@ const Row = styled.div`
 	}
 `
 
-const Col = styled.div`
+const Col = styled(motion.div)`
 	/* border: 1px solid red; */
 
 	&:nth-child(1) {
@@ -240,7 +306,7 @@ const Col = styled.div`
 	}
 `
 
-const Title = styled.h1`
+const Title = styled(motion.h1)`
 	font-size: 5rem;
 	line-height: 1.2;
 	color: ${({ theme }) => theme.fonts.primary};
@@ -249,12 +315,12 @@ const Title = styled.h1`
 		display: block;
 	}
 `
-const Description = styled.p`
+const Description = styled(motion.p)`
 	max-width: 43.8rem;
 	color: ${({ theme }) => theme.fonts.secondary};
 `
 
-const ButtonsContainer = styled.div`
+const ButtonsContainer = styled(motion.div)`
 	display: grid;
 	grid-template-columns: 1fr;
 	margin-top: 2rem;
@@ -267,7 +333,7 @@ const ButtonsContainer = styled.div`
 	}
 `
 
-const Border = styled.div`
+const Border = styled(motion.div)`
 	margin: 1rem 0;
 	height: 0.2rem;
 	width: 80%;
@@ -281,7 +347,7 @@ const HeroFigure = styled(motion.figure)`
 	/* height: 100%; */
 `
 
-const FoundersContainer = styled.div`
+const FoundersContainer = styled(motion.div)`
 	/* margin-bottom: 1rem; */
 
 	p {
