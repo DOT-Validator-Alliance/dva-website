@@ -7,7 +7,14 @@ import Image from "../image/image.component"
 import FlexContainer from "../flex-container/flex-container.component"
 import Button from "../button/button.component"
 
+// Hooks
+import { useMediaQuery } from "usehooks-ts"
+import { useTheme } from "styled-components"
+
 const HeroSection: React.FC = () => {
+	const theme = useTheme()
+	const isMd = useMediaQuery(`(min-width: ${theme.breakpoints.md})`)
+
 	const founders = [
 		{
 			image: {
@@ -76,7 +83,7 @@ const HeroSection: React.FC = () => {
 						transition={{
 							delay: 2,
 							duration: 1,
-							ease: [0.5, 0, 0.56, 0.99],
+							// ease: [0.5, 0, 0.56, 0.99],
 						}}
 					/>
 					<Description
@@ -140,11 +147,12 @@ const HeroSection: React.FC = () => {
 				>
 					<HeroFigure
 						// initial={{ y: 0 }}
-						animate={{ y: [0, -15, 0], scale: [1, 0.97, 1] }}
+						animate={isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined}
 						transition={{
 							duration: 4,
 							repeat: Infinity,
 							delay: 5.1,
+
 							// ease: [0.64, 0.33, 0.64, 0.86],
 						}}
 					>
