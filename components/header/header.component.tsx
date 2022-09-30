@@ -108,8 +108,23 @@ const Header: React.FC = () => {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 					>
-						<BottomBlurFigure />
-						<RightBlurFigure />
+						{/* <BottomBlurFigure />
+						<RightBlurFigure /> */}
+
+						<BottomBlurFigure>
+							{/* <Image
+								src="/assets/header/blur-left-bottom.png"
+								alt="bottom blur"
+								effect="blur"
+							/> */}
+						</BottomBlurFigure>
+						<RightBlurFigure>
+							{/* <Image
+								src="/assets/header/blur-right.png"
+								alt="right blur"
+								effect="blur"
+							/> */}
+						</RightBlurFigure>
 						<MobileList>
 							{navItems.map((item, index) => (
 								<MobileItem key={index}>
@@ -264,23 +279,33 @@ const MobileItem = styled.li`
 
 const BottomBlurFigure = styled.figure`
 	position: absolute;
+	/* bottom: -1rem;
+	left: 0rem; */
 	bottom: -5rem;
 	left: -12rem;
 	width: 30rem;
 	height: 30rem;
 	background-color: ${({ theme }) => theme.colors.secondary};
 	border-radius: 50%;
-	filter: blur(14rem);
+	filter: blur(5rem);
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+		filter: blur(14rem);
+	}
 `
 
 const RightBlurFigure = styled.figure`
 	position: absolute;
+	/* right: 0rem; */
 	top: 30%;
 	right: -15rem;
-
 	width: 30rem;
 	height: 30rem;
 	background-color: ${({ theme }) => theme.colors.primary};
 	border-radius: 50%;
-	filter: blur(16rem);
+	filter: blur(7rem);
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+		filter: blur(16rem);
+	}
 `
