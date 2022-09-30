@@ -75,7 +75,7 @@ const HeroSection: React.FC = () => {
 					<Button outline>Read our Manifesto</Button>
 				</FlexContainer>
 
-				<FoundersContainer>
+				{/* <FoundersContainer>
 					<p>Founded by:</p>
 					<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
 						{founders.map((founder, index) => (
@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
 							/>
 						))}
 					</FlexContainer>
-				</FoundersContainer>
+				</FoundersContainer> */}
 			</Col>
 			<Col>
 				<HeroFigure>
@@ -96,6 +96,8 @@ const HeroSection: React.FC = () => {
 						src="/assets/hero-section/hero-ilu.png"
 						alt="hero ilu"
 						width={"100%"}
+						height={"100%"}
+						style={{ objectFit: "contain" }}
 					/>
 				</HeroFigure>
 			</Col>
@@ -162,7 +164,10 @@ const Border = styled.div`
 	background: ${({ theme }) => theme.heroSection.borderColor};
 `
 
-const HeroFigure = styled.figure``
+const HeroFigure = styled.figure`
+	max-width: 60rem;
+	max-height: 100rem;
+`
 
 const FoundersContainer = styled.div`
 	p {
