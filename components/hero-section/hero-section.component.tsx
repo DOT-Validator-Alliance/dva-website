@@ -78,12 +78,20 @@ const HeroSection: React.FC = () => {
 						<span>Alliance</span>
 					</Title>
 					<Border
-						initial={{ opacity: 0, width: 0 }}
-						animate={{ opacity: 1, width: "auto" }}
+						initial={{
+							opacity: 0,
+							// width: 0
+							x: 100,
+						}}
+						animate={{
+							opacity: 1,
+							// width: "auto"
+							x: 0,
+						}}
 						transition={{
-							delay: 2,
+							delay: 1.8,
 							duration: 1,
-							// ease: [0.5, 0, 0.56, 0.99],
+							ease: [0.5, 0, 0.56, 0.99],
 						}}
 					/>
 					<Description
@@ -147,7 +155,9 @@ const HeroSection: React.FC = () => {
 				>
 					<HeroFigure
 						// initial={{ y: 0 }}
-						animate={isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined}
+						whileInView={
+							isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined
+						}
 						transition={{
 							duration: 4,
 							repeat: Infinity,
