@@ -14,8 +14,10 @@ const PageLayout: React.FC<IProps> = ({ children }) => {
 	return (
 		<LayoutContainer>
 			<Header />
-			<main>{children}</main>
-			<Footer />
+			<main>
+				{children}
+				{/* <Footer /> */}
+			</main>
 		</LayoutContainer>
 	)
 }
@@ -28,7 +30,8 @@ const LayoutContainer = styled.div`
 	min-height: 100vh;
 
 	main {
-		margin: 10rem 0;
+		margin: 10rem 0 0;
 		flex-grow: 1;
+		overflow-x: hidden;
 	}
 `

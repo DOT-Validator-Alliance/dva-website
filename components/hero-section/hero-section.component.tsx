@@ -169,6 +169,7 @@ const RightBlurFigure = styled.figure`
 
 const SectionContainer = styled.section`
 	margin-top: 0rem;
+	/* overflow-x: hidden; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		margin-top: 4rem;
@@ -201,9 +202,11 @@ const Col = styled.div`
 
 	&:nth-child(1) {
 		margin-top: 2rem;
+		justify-self: center;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 			margin-top: 6rem;
+			justify-self: unset;
 
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}

@@ -7,4 +7,6 @@ const Footer: React.FC = () => {
 
 export default Footer
 
-const FooterContainer = styled.footer``
+const FooterContainer = styled.footer`
+	border: 1px solid red;
+`
