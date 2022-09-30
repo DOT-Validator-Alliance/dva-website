@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
 	const socialItems = [
 		{
-			slug: "https://t.me/DotValidators&quot",
+			slug: "https://t.me/DotValidators",
 			icon: {
 				src: "/assets/icons/telegram-icon.svg",
 				alt: "Telegram Logo",
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
 			},
 		},
 		{
-			slug: "https://discord.com/invite/Kwfbe6YRAd%22",
+			slug: "https://discord.com/invite/Kwfbe6YRAd",
 			icon: {
 				src: "/assets/icons/discord-icon.svg",
 				alt: "Discord Logo",
