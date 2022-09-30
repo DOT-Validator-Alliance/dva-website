@@ -62,6 +62,7 @@ const HeroSection: React.FC = () => {
 						animate={{ opacity: 1, y: 0 }}
 						transition={{
 							duration: 1,
+							delay: 1,
 							// cubic-bezier(.5,0,.56,.99)
 							ease: [0.5, 0, 0.56, 0.99],
 						}}
@@ -73,7 +74,7 @@ const HeroSection: React.FC = () => {
 						initial={{ opacity: 0, width: 0 }}
 						animate={{ opacity: 1, width: "auto" }}
 						transition={{
-							delay: 1,
+							delay: 2,
 							duration: 1,
 							ease: [0.5, 0, 0.56, 0.99],
 						}}
@@ -82,8 +83,8 @@ const HeroSection: React.FC = () => {
 						initial={{ opacity: 0, y: 100 }}
 						animate={{ opacity: 1, y: 0 }}
 						transition={{
-							delay: 2,
-							duration: 0.5,
+							delay: 3,
+							duration: 0.7,
 							ease: [0.5, 0, 0.56, 0.99],
 						}}
 					>
@@ -95,8 +96,8 @@ const HeroSection: React.FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{
-							delay: 2.5,
-							duration: 0.5,
+							delay: 3.7,
+							duration: 0.7,
 							ease: [0.5, 0, 0.56, 0.99],
 						}}
 					>
@@ -108,8 +109,8 @@ const HeroSection: React.FC = () => {
 						initial={{ opacity: 0 }}
 						animate={{ opacity: 1 }}
 						transition={{
-							delay: 3,
-							duration: 0.5,
+							delay: 4.4,
+							duration: 0.7,
 							// ease
 							ease: [0.5, 0, 0.56, 0.99],
 						}}
@@ -132,9 +133,9 @@ const HeroSection: React.FC = () => {
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1 }}
 					transition={{
-						delay: 3.7,
+						// delay: 3.7,
 						duration: 2,
-						ease: [0.5, 0, 0.56, 0.99],
+						// ease: [0.5, 0, 0.56, 0.99],
 					}}
 				>
 					<HeroFigure
