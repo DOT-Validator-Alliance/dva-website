@@ -63,6 +63,7 @@ const Header: React.FC = () => {
 						<Image
 							src="/assets/aliancelogo.png"
 							alt="Validator Alliance Logo"
+							width={"100%"}
 						/>
 					</LogoFigure>
 
@@ -91,7 +92,8 @@ const Header: React.FC = () => {
 										<Image
 											src={item.icon.src}
 											alt={item.icon.alt}
-											width={item.icon.width}
+											// width={item.icon.width}
+											width={"100%"}
 										/>
 									</SocialsLink>
 								</SocialsItem>
@@ -163,7 +165,17 @@ const HeaderContainer = styled.header`
 	}
 `
 
-const LogoFigure = styled.figure``
+const LogoFigure = styled.figure`
+	width: 10rem;
+
+	@media all and (min-width: 350px) {
+		width: 12rem;
+
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+			width: initial;
+		}
+	}
+`
 
 const Nav = styled.nav``
 
@@ -208,8 +220,12 @@ const NavItem = styled.li`
 
 const SocialsContainer = styled.div`
 	display: flex;
-	gap: 3rem;
+	gap: 1.5rem;
 	align-items: center;
+
+	@media all and (min-width: 350px) {
+		gap: 3rem;
+	}
 `
 
 const SocialsList = styled.ul`
@@ -224,7 +240,7 @@ const SocialsLink = styled.a`
 	align-items: center;
 	justify-content: center;
 	border: 1px solid ${({ theme }) => theme.header.navItemColor};
-	padding: 1rem;
+	padding: 1.3rem;
 	border-radius: 50%;
 	width: 4.7rem;
 	height: 4.7rem;
@@ -283,14 +299,17 @@ const BottomBlurFigure = styled.figure`
 	left: 0rem; */
 	bottom: -5rem;
 	left: -12rem;
-	width: 30rem;
-	height: 30rem;
 	background-color: ${({ theme }) => theme.colors.secondary};
 	border-radius: 50%;
-	filter: blur(5rem);
+	width: 25rem;
+	height: 25rem;
+	/* 
+	filter: blur(10rem); */
 
+	filter: blur(14rem);
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-		filter: blur(14rem);
+		width: 30rem;
+		height: 30rem;
 	}
 `
 
@@ -299,13 +318,16 @@ const RightBlurFigure = styled.figure`
 	/* right: 0rem; */
 	top: 30%;
 	right: -15rem;
-	width: 30rem;
-	height: 30rem;
 	background-color: ${({ theme }) => theme.colors.primary};
 	border-radius: 50%;
-	filter: blur(7rem);
+	width: 25rem;
+	height: 25rem;
+	/*
+	filter: blur(12rem); */
 
+	filter: blur(16rem);
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-		filter: blur(16rem);
+		width: 30rem;
+		height: 30rem;
 	}
 `

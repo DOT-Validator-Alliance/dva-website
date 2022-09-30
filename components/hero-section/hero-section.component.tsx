@@ -112,6 +112,7 @@ const SectionContainer = styled.section`
 	padding: 5rem 2rem;
 	max-width: 120rem;
 	margin: 4rem auto 0;
+	/* border: 1px solid blue; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		grid-template-columns: 1fr 1fr;
