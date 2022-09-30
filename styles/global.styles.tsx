@@ -16,6 +16,8 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     background-color: #000;
     color: #fff;
+	overflow-x: hidden;
+
   }
 
   h1, h2, h3, h4, h5, h6 {

@@ -18,35 +18,38 @@ export interface IProps extends HTMLMotionProps<"button"> {
 const Button: React.FC<IProps> = (props) => {
 	return (
 		<ButtonContainer
-			whileHover={{
-				scale: props.disabled || !props.outline ? 1 : 1.02,
-			}}
-			whileTap={{
-				scale: props.disabled || !props.outline ? 1 : 0.98,
-			}}
+			// whileHover={{
+			// 	scale: props.disabled || !props.outline ? 1 : 1.02,
+			// }}
+			// whileTap={{
+			// 	scale: props.disabled || !props.outline ? 1 : 0.98,
+			// }}
 			{...props}
 		>
-			<LabelSpan>
-				{props.children}
-				{!props.outline && (
-					<IconSpan>
-						<Image src="/assets/icons/right-arrow.svg" alt="Right Arrow" />
-					</IconSpan>
-				)}
-			</LabelSpan>
+			<LabelSpanContainer>
+				<LabelSpan>{props.children}</LabelSpan>
+				<IconSpan>
+					<Image src="/assets/icons/right-arrow.svg" alt="Right Arrow" />
+				</IconSpan>
+			</LabelSpanContainer>
 		</ButtonContainer>
 	)
 }
 
 export default Button
 
+const LabelSpanContainer = styled.span`
+	position: relative;
+`
+
 const LabelSpan = styled.span`
 	position: relative;
+	transition: all 0.3s ease-out;
 `
 
 const IconSpan = styled.span`
 	position: absolute;
-	right: -2rem;
+	right: -1rem;
 	top: 50%;
 	transform: translateY(-50%);
 
@@ -102,6 +105,11 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 
 		${IconSpan} {
 			opacity: 1;
+		}
+
+		${LabelSpan} {
+			margin-left: -1rem;
+			margin-right: 1rem;
 		}
 	}
 	&:disabled {
