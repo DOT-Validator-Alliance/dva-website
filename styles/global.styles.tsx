@@ -12,10 +12,14 @@ export const GlobalStyles = createGlobalStyle`
   body {
     line-height: 1.5;
     font-size: 1.6rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.5;
     background-color: #000;
     color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
   }
   
   

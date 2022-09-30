@@ -1,6 +1,9 @@
 // Utils
 import { motion, HTMLMotionProps } from "framer-motion"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
+
+// Compoennts
+import Image from "../image/image.component"
 
 export interface IProps extends HTMLMotionProps<"button"> {
 	top?: string
@@ -23,12 +26,36 @@ const Button: React.FC<IProps> = (props) => {
 			}}
 			{...props}
 		>
-			{props.children}
+			<LabelSpan>
+				{props.children}
+				{!props.outline && (
+					<IconSpan>
+						<Image src="/assets/icons/right-arrow.svg" alt="Right Arrow" />
+					</IconSpan>
+				)}
+			</LabelSpan>
 		</ButtonContainer>
 	)
 }
 
 export default Button
+
+const LabelSpan = styled.span`
+	position: relative;
+`
+
+const IconSpan = styled.span`
+	position: absolute;
+	right: -2rem;
+	top: 50%;
+	transform: translateY(-50%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 0.3s ease-out;
+`
 
 export const ButtonContainer = styled(motion.button)<IProps>`
 	position: relative;
@@ -65,12 +92,17 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 	font-family: inherit;
 	font-size: 1.6rem;
 	outline: none;
-	min-width: 5rem;
+	min-width: 20rem;
+
 	&:focus {
 		outline: none;
 	}
 	&:hover {
 		--x: 100%;
+
+		${IconSpan} {
+			opacity: 1;
+		}
 	}
 	&:disabled {
 		cursor: default;

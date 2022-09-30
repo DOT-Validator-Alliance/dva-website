@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
 	const socialItems = [
 		{
-			slug: "#",
+			slug: "https://t.me/DotValidators&quot",
 			icon: {
 				src: "/assets/icons/telegram-icon.svg",
 				alt: "Telegram Logo",
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
 			},
 		},
 		{
-			slug: "#",
+			slug: "https://discord.com/invite/Kwfbe6YRAd%22",
 			icon: {
 				src: "/assets/icons/discord-icon.svg",
 				alt: "Discord Logo",
@@ -75,7 +75,10 @@ const Header: React.FC = () => {
 										<a>
 											{item.label}{" "}
 											<span>
-												<AiOutlineRight />
+												<Image
+													src="/assets/icons/right-arrow.svg"
+													alt="Right Arrow"
+												/>
 											</span>
 										</a>
 									</Link>
@@ -203,11 +206,14 @@ const NavItem = styled.li`
 
 		color: ${({ theme }) => theme.header.navItemColor};
 
+		transition: all 0.3s ease-out;
 		span {
-			visibility: hidden;
+			/* visibility: hidden; */
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			opacity: 0;
+			transition: all 0.3s ease-out;
 		}
 
 		&:hover {
@@ -215,7 +221,8 @@ const NavItem = styled.li`
 			font-weight: 600;
 
 			span {
-				visibility: visible;
+				opacity: 1;
+				/* visibility: visible; */
 			}
 		}
 	}
@@ -247,6 +254,7 @@ const SocialsLink = styled.a`
 	border-radius: 50%;
 	width: 4.7rem;
 	height: 4.7rem;
+	transition: all 0.3s ease-out;
 
 	&:hover {
 		border: 1px solid ${({ theme }) => theme.header.activeNavItemColor};
@@ -288,6 +296,7 @@ const MobileItem = styled.li`
 		font-size: 3rem;
 		font-weight: 400;
 		color: ${({ theme }) => theme.header.navItemColor};
+		transition: all 0.3s ease-out;
 
 		&:hover {
 			color: ${({ theme }) => theme.header.activeNavItemColor};
