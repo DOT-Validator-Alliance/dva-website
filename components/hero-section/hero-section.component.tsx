@@ -142,8 +142,9 @@ const HeroSection: React.FC = () => {
 						// initial={{ y: 0 }}
 						animate={{ y: [0, -15, 0], scale: [1, 0.97, 1] }}
 						transition={{
-							duration: 3.7,
+							duration: 4,
 							repeat: Infinity,
+							delay: 5.1,
 							// ease: [0.64, 0.33, 0.64, 0.86],
 						}}
 					>
