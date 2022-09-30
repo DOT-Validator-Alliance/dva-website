@@ -6,9 +6,13 @@ import PageLayout from "../layouts/page/page.layout"
 
 // Sections
 import HeroSection from "../components/hero-section/hero-section.component"
+import ValidatorSection from "../components/validator-section/validator-section.component"
 
 // Types
 import { ReactElement } from "react"
+
+// Data
+import kusamaData from "../validators/kusama.json"
 
 const Home = () => {
 	return (
@@ -22,6 +26,7 @@ const Home = () => {
 			</Head>
 
 			<HeroSection />
+			<ValidatorSection data={kusamaData} enableAnimation={true} />
 		</>
 	)
 }

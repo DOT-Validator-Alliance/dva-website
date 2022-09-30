@@ -1,0 +1,51 @@
+{
+	"title": "Kusama",
+	"description": "Kusama is a scalable multi-chain network for radical innovation and early stage Polkadot deployments. Expect Chaos. No promises.",
+	"image": {
+		"src": "/assets/validators/kusama.png",
+		"alt": "kusama logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our KSM validators:",
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "REPE -",
+			"address": "FaBN1AxtJu21x2cUqvdF5VcVUAfzfqyvJPvwgsdwo3pkdr9"
+		},
+		{
+			"name": "Polkadotters -",
+			"address": "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA"
+		},
+		{
+			"name": "PromoTeam Validator -",
+			"address": "Dm4uKxZJZHJbpZpfnYPiHnbgyHWKMU1s5h6X7kqjfYv1Xkk"
+		},
+		{
+			"name": "Stakenode_Powernode -",
+			"address": "CuiwESD49ggEAQ9131Gt948xw11PiWQNXkuR2R2Jt7rYSck"
+		},
+		{
+			"name": "bLd Nodes -",
+			"address": "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL"
+		},
+		{
+			"name": "STAKENODE POWERNODE -",
+			"address": "CuiwESD49ggEAQ9131Gt948xw11PiWQNXkuR2R2Jt7rYSck"
+		},
+		{
+			"name": "Iceberg Nodes -",
+			"address": "Eices1KaGTYqiazfjJpwyjnz5UzqTxULeYqnmeJNz49gs19"
+		},
+		{
+			"name": "Crifferent -",
+			"address": "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL"
+		}
+	]
+}
