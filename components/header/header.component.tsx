@@ -163,10 +163,7 @@ const HeaderContainer = styled.header`
 	z-index: 100;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		padding: 0 3rem;
-
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-			padding: 0 7rem;
 		}
 	}
 `
