@@ -303,7 +303,7 @@ const BottomBlurFigure = styled.figure`
 	border-radius: 50%;
 	width: 25rem;
 	height: 25rem;
-	filter: blur(12rem);
+	filter: blur(10rem);
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		width: 30rem;
 		height: 30rem;
@@ -320,12 +320,11 @@ const RightBlurFigure = styled.figure`
 	border-radius: 50%;
 	width: 25rem;
 	height: 25rem;
-	/*
-	filter: blur(12rem); */
 
-	filter: blur(13rem);
+	filter: blur(11rem);
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		width: 30rem;
 		height: 30rem;
+		filter: blur(16rem);
 	}
 `
