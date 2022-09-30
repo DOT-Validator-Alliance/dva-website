@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
 
 				<LeftBlurFigure>
 					<Image
-						src="/assets/blops/pink.png"
+						src="/assets/blops/home_pink.png"
 						alt="bottom blur"
 						effect="blur"
 						width={"100%"}
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
 				</LeftBlurFigure>
 				<RightBlurFigure>
 					<Image
-						src="/assets/blops/purple.png"
+						src="/assets/blops/home_purple.png"
 						alt="right blur"
 						effect="blur"
 						width={"100%"}
