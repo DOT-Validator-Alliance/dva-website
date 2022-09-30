@@ -148,7 +148,7 @@ const HeroSection: React.FC = () => {
 						}}
 					>
 						<Image
-							src="/assets/hero-section/hero-ilu.png"
+							src="/assets/hero-section/hero-ilu-v2.png"
 							alt="hero ilu"
 							width={"100%"}
 							height={"100%"}
