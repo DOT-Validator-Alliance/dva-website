@@ -39,10 +39,10 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					/>
 				</BlurFigure>
 				<IluFigure
-					// initial={{ y: 0 }}
+					initial={{ opacity: 0 }}
 					whileInView={
 						enableAnimation
-							? { y: [0, -15, 0], scale: [1, 0.97, 1] }
+							? { opacity: [1, 1, 1], y: [0, -15, 0], scale: [1, 0.97, 1] }
 							: undefined
 					}
 					transition={{
@@ -57,7 +57,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 						width={"100%"}
 						height={"100%"}
 						effect="blur"
-						style={{ objectFit: "contain", objectPosition: "center" }}
+						style={{ objectFit: "contain" }}
 					/>
 				</IluFigure>
 			</Col>
@@ -189,7 +189,7 @@ const ValidatorSectionContainer = styled.section`
 	grid-template-columns: 1fr;
 	padding: 0 2rem;
 	max-width: 125rem;
-	margin: 10rem auto 0;
+	margin: 15rem auto 0;
 	/* border: 1px solid blue; */
 	/* justify-items: center; */
 
@@ -224,9 +224,9 @@ const Col = styled.div`
 
 	&:nth-child(1) {
 		position: relative;
-		justify-self: center;
-		align-self: center;
-		grid-row: 1 / 3;
+		/* justify-self: center; */
+		/* align-self: center; */
+		/* grid-row: 1 / 3; */
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			/* margin-left: 4rem; */
@@ -261,11 +261,11 @@ const BlurFigure = styled(motion.figure)`
 `
 
 const IluFigure = styled(motion.figure)`
-	max-width: 30rem;
+	max-width: 40rem;
 	margin: 0 auto;
 	width: 100%;
 	max-height: 100rem;
-	/* height: 100%; */
+	height: 100%;
 `
 
 const Title = styled(motion.h2)`
