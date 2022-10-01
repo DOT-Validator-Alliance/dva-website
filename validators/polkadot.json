@@ -1,0 +1,36 @@
+{
+	"id": 2,
+	"title": "Polkadot",
+	"description": "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "polkadot logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Polkadot validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters -",
+			"address": "16A4n4UQqgxw5ndeehPjUAobDNmuX2bBoPXVKj4xTe16ktRN"
+		},
+		{
+			"name": "REPE -",
+			"address": "15AvEyVsAjcmWFnTNmzvF1gkvd1x1P6uFp3u8wLa6wxX3294"
+		},
+		{
+			"name": "Stakenode -",
+			"address": "15awHgV1np9jxyWC7pnMWAEgg8z2toLuCcJfWjtmA1cWHWQr"
+		}
+	]
+}

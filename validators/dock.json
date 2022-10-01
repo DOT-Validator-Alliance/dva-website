@@ -1,0 +1,32 @@
+{
+	"id": 6,
+	"title": "Dock",
+	"description": "Dock.io is a new professional social media network. But it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork, Glassdoor and others who control the recruiting industry. And give back the power to users and companies.",
+	"image": {
+		"src": "/assets/validators/dock.png",
+		"alt": "dock logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Dock validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters -",
+			"address": "FaBN1AxtJu21x2cUqvdF5VcVUAfzfqyvJPvwgsdwo3pkdr9"
+		},
+		{
+			"name": "athrocknetwork -",
+			"address": "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA"
+		}
+	]
+}

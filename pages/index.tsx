@@ -10,11 +10,34 @@ import ValidatorSection from "../components/validator-section/validator-section.
 
 // Types
 import { ReactElement } from "react"
+import { IValidator } from "../types/validator.types"
+import { GetStaticProps } from "next"
 
-// Data
-import kusamaData from "../validators/kusama.json"
+export const getStaticProps: GetStaticProps = async () => {
+	const requireAll = (r: any) => r.keys().map(r)
+	const validators: IValidator[] = requireAll(
+		require.context("../validators", false, /\.json$/)
+	)
 
-const Home = () => {
+	const uniqueValidators = validators.filter(
+		(validator, index, self) =>
+			index === self.findIndex((t) => t.id === validator.id)
+	)
+
+	const sortedValidators = uniqueValidators.sort((a, b) => a.id - b.id)
+
+	return {
+		props: {
+			validators: sortedValidators,
+		},
+	}
+}
+
+interface IProps {
+	validators: IValidator[]
+}
+
+const Home = ({ validators }: IProps) => {
 	return (
 		<>
 			<Head>
@@ -26,7 +49,10 @@ const Home = () => {
 			</Head>
 
 			<HeroSection />
-			<ValidatorSection data={kusamaData} enableAnimation={true} />
+
+			{validators.map((validator, idx) => (
+				<ValidatorSection key={idx} data={validator} enableAnimation={true} />
+			))}
 		</>
 	)
 }

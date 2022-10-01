@@ -1,0 +1,36 @@
+{
+	"id": 4,
+	"title": "HydraDX",
+	"description": "HydraDX is a cross-chain liquidity protocol built on Substrate. It is a base layer for financial use cases, currently - immediate exchanging assets.",
+	"image": {
+		"src": "/assets/validators/hydra.png",
+		"alt": "hydra logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our HydraDX validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "POLKADOTTERS | VALIDATORALLIANCE -",
+			"address": "7KTekrYqsZ8PDfNmur2bSRfKq3xwEyVGsq4xmjuP28pyWpKQ"
+		},
+		{
+			"name": "REPE «VALIDATOR ALLIANCE» -",
+			"address": "7K296SU5tGTCkpYntSonyohsvvCZr2wmaKzCf9Ed6rAv6ij1"
+		},
+		{
+			"name": "STAKENODE /01 -",
+			"address": "7J4gcZRQSRkKMKsHZfN6JQXXGVrhQu3QHZBb3anqmVn94cT5"
+		}
+	]
+}

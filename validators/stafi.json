@@ -1,0 +1,36 @@
+{
+	"id": 3,
+	"title": "Stafi",
+	"description": "Stafi (short for Staking Finance) is a DeFi protocol that aims to unlock liquidity of staked assets.",
+	"image": {
+		"src": "/assets/validators/stafi.png",
+		"alt": "stafi logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Stafi validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "PromoTeam",
+			"address": "31dAkYPQWqLooi8STtH4u91ybv3DBtyT4Tdn8VZbkGYtPFfQ"
+		},
+		{
+			"name": "pathrocknetwork",
+			"address": "32yfaVgxp2bArkKotgiVrdqhbP17Lwc6KkmtgSZRazjuwpae"
+		},
+		{
+			"name": "oceanblock-ov",
+			"address": "35pwfNAzJKnnSxjbdoN8DdNPvXE2ChXiHL4Z4N5oDFdhMPoU"
+		}
+	]
+}

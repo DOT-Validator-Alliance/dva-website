@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import Image from "../image/image.component"
 import FlexContainer from "../flex-container/flex-container.component"
 import Button from "../button/button.component"
+import Border from "../border/border.component"
 
 // Hooks
 import { useMediaQuery } from "usehooks-ts"
@@ -261,6 +262,7 @@ const RightBlurFigure = styled(motion.figure)`
 
 const SectionContainer = styled.section`
 	margin-top: 0rem;
+	margin-bottom: 10rem;
 	/* overflow-x: hidden; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -306,6 +308,7 @@ const Col = styled(motion.div)`
 				@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 					margin-top: 6rem;
 					justify-self: unset;
+					margin-left: unset;
 				}
 			}
 		}
@@ -351,13 +354,6 @@ const ButtonsContainer = styled(motion.div)`
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		grid-template-columns: 1fr 1fr;
 	}
-`
-
-const Border = styled(motion.div)`
-	margin: 1rem 0;
-	height: 0.2rem;
-	width: 80%;
-	background: ${({ theme }) => theme.heroSection.borderColor};
 `
 
 const HeroFigure = styled(motion.figure)`

@@ -4,6 +4,7 @@ export const light = {
 	colors: {
 		primary: "#9A268D",
 		secondary: "#E71F7A",
+		borderColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(217, 217, 217, 0) 100%)`,
 	},
 	background: {
 		bodyBackgroundColor: "#000",
@@ -18,10 +19,16 @@ export const light = {
 		activeNavItemColor: "#fff",
 		borderColor: "#323232",
 		hamColor: "#D9D9D9",
-		activeHamColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(154, 38, 141, 0) 100%)`,
+		activeHamColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(154, 38, 141, 1) 100%)`,
 	},
-	heroSection: {
-		borderColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(217, 217, 217, 0) 100%)`,
+	heroSection: {},
+	validatorSection: {
+		labelColor: "#CACACA",
+		listItemBackgroundColor:
+			"linear-gradient(90deg, rgba(116, 116, 116, 0.19) 13.66%, rgba(255, 255, 255, 0) 90.84%)",
+		listItemTitleColor: "#CACACA",
+		listItemAddressColor: "#898989",
+		linkColor: `linear-gradient(90deg, #E71F7A 0%, #9A268D 108.06%)`,
 	},
 	breakpoints: {
 		sm: "640px",

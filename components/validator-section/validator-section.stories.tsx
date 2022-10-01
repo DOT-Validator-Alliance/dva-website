@@ -17,6 +17,8 @@ export default meta
 const Template: Story<IProps> = (args) => <ValidatorSection {...args} />
 
 export const Default = Template.bind({})
+
 Default.args = {
 	data: kusamaData,
+	enableAnimation: true,
 }

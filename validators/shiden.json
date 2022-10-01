@@ -1,0 +1,36 @@
+{
+	"id": 7,
+	"title": "Shiden",
+	"description": "Shiden Network is a multi-chain decentralized application layer on Kusama Network",
+	"image": {
+		"src": "/assets/validators/shiden.png",
+		"alt": "shiden logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Shiden validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters -",
+			"address": "Z7c8uESo3BPPChURHLCwSQ2ZpX4ftpKTHYdrVL7RE47JLus"
+		},
+		{
+			"name": "Stakenode -",
+			"address": "bUVmJR3gu1hi9qa41pzFWWfFP4QVUYPyntNKjhort4BPovK"
+		},
+		{
+			"name": "Pathrock -",
+			"address": "W8bwUPJssNzhq7yqgj2qX2As9Bx5K9Laa9zJHsrAPhkCYon"
+		}
+	]
+}

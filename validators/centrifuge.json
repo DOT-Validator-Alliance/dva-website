@@ -1,0 +1,36 @@
+{
+	"id": 8,
+	"title": "Centrifuge",
+	"description": "Centrifuge bridges assets like invoices, real estate, and royalties to DeFi.",
+	"image": {
+		"src": "/assets/validators/centrifuge.png",
+		"alt": "centrifuge logo"
+	},
+	"blop": {
+		"src": "/assets/blops/home_purple.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Centrifuge validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"validators": [
+		{
+			"name": "Crifferent -",
+			"address": "FaBN1AxtJu21x2cUqvdF5VcVUAfzfqyvJPvwgsdwo3pkdr9"
+		},
+		{
+			"name": "Polkadotters -",
+			"address": "4eX49f1wi4HvE2ErVnbweNeCbrxBNaLTJSihvgGSmjVE2W9e"
+		},
+		{
+			"name": "PromoTeam -",
+			"address": "4gpwkGywqrMjWPSmJ2477yYN4A1V9h73xXUEaQ6sGRdMGriH"
+		}
+	]
+}
