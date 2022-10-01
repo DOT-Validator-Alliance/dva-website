@@ -30,6 +30,10 @@ export const light = {
 		listItemAddressColor: "#898989",
 		linkColor: `linear-gradient(90deg, #E71F7A 0%, #9A268D 108.06%)`,
 	},
+	joinOurCommunitySection: {
+		backgroundColor:
+			"linear-gradient(90.38deg, #9A268D 13.66%, #E71F7A 90.84%)",
+	},
 	breakpoints: {
 		sm: "640px",
 		md: "768px",
