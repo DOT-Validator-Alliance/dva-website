@@ -8,6 +8,7 @@ import PageLayout from "../layouts/page/page.layout"
 import HeroSection from "../components/hero-section/hero-section.component"
 import ValidatorSection from "../components/validator-section/validator-section.component"
 import JoinOurCommunitySection from "../components/join-our-community-section/join-our-community-section.component"
+import AboutSection from "../components/about-section/about-section.component"
 
 // Types
 import { ReactElement } from "react"
@@ -56,6 +57,7 @@ const Home = ({ validators }: IProps) => {
 			))}
 
 			<JoinOurCommunitySection />
+			<AboutSection />
 		</>
 	)
 }

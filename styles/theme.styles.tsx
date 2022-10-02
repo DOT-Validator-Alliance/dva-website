@@ -35,6 +35,11 @@ export const light = {
 			"linear-gradient(90.38deg, #9A268D 13.66%, #E71F7A 90.84%)",
 		descriptionColor: "#CACACA",
 	},
+	aboutSection: {
+		itemBackgroundColor:
+			"linear-gradient(89.37deg, rgba(116, 116, 116, 0.19) 13.81%, rgba(255, 255, 255, 0) 115.34%)",
+		itemColor: "#CACACA",
+	},
 	breakpoints: {
 		sm: "640px",
 		md: "768px",

@@ -87,7 +87,7 @@ const Container = styled.div`
 const JoinOurCommunitySectionContainer = styled(motion.section)`
 	position: relative;
 	max-width: 125rem;
-	margin: 15rem auto 15rem;
+	margin: 15rem auto 0;
 	background: ${({ theme }) => theme.joinOurCommunitySection.backgroundColor};
 	display: grid;
 
