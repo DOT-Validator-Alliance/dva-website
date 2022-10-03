@@ -1,6 +1,6 @@
 // Utils
 import styled from "styled-components"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 // Components
 import Image from "../image/image.component"
@@ -11,6 +11,82 @@ import Border from "../border/border.component"
 // Hooks
 import { useMediaQuery } from "usehooks-ts"
 import { useTheme } from "styled-components"
+
+const variants: Variants = {
+	hidden: {
+		opacity: 0,
+		// y: 100,
+	},
+	visible: {
+		opacity: 1,
+		// y: 0,
+		transition: {
+			duration: 1,
+			// delay: 0.5,
+			staggerChildren: 0.7,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const ItemVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		y: 100,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const ItemVariants2: Variants = {
+	hidden: {
+		opacity: 0,
+		y: 100,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.7,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const BlopVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			delay: 0.5,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const BorderVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
 
 const HeroSection: React.FC = () => {
 	const theme = useTheme()
@@ -63,74 +139,24 @@ const HeroSection: React.FC = () => {
 
 	return (
 		<SectionContainer>
-			<Row>
+			<Row variants={variants} initial="hidden" animate="visible" exit="hidden">
 				<Col>
-					<Title
-						initial={{ opacity: 0, y: 100 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{
-							duration: 1,
-							delay: 1,
-							// cubic-bezier(.5,0,.56,.99)
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-					>
+					<Title variants={ItemVariants}>
 						<span>DOT Validator</span>
 						<span>Alliance</span>
 					</Title>
-					<Border
-						initial={{
-							opacity: 0,
-							// width: 0
-							x: 100,
-						}}
-						animate={{
-							opacity: 1,
-							// width: "auto"
-							x: 0,
-						}}
-						transition={{
-							delay: 1.8,
-							duration: 1,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-					/>
-					<Description
-						initial={{ opacity: 0, y: 100 }}
-						animate={{ opacity: 1, y: 0 }}
-						transition={{
-							delay: 3,
-							duration: 0.7,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-					>
+					<Border variants={BorderVariants} />
+					<Description variants={ItemVariants}>
 						We are a group of community leaders who decided to dedicate their
 						professional lives to the Polkadot and its diverse ecosystem.
 					</Description>
 
-					<ButtonsContainer
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{
-							delay: 3.7,
-							duration: 0.7,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-					>
+					<ButtonsContainer variants={ItemVariants2}>
 						<Button>Support us</Button>
 						<Button outline>Read our Manifesto</Button>
 					</ButtonsContainer>
 
-					<FoundersContainer
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{
-							delay: 4.4,
-							duration: 0.7,
-							// ease
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-					>
+					<FoundersContainer variants={ItemVariants2}>
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
 							{founders.map((founder, index) => (
@@ -145,15 +171,7 @@ const HeroSection: React.FC = () => {
 						</FlexContainer>
 					</FoundersContainer>
 				</Col>
-				<Col
-					initial={{ opacity: 0, scale: 0.5 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{
-						// delay: 3.7,
-						duration: 2,
-						// ease: [0.5, 0, 0.56, 0.99],
-					}}
-				>
+				<Col variants={BlopVariants}>
 					<HeroFigure
 						// initial={{ y: 0 }}
 						whileInView={
@@ -162,8 +180,7 @@ const HeroSection: React.FC = () => {
 						transition={{
 							duration: 4,
 							repeat: Infinity,
-							delay: 5.1,
-
+							delay: 5,
 							// ease: [0.64, 0.33, 0.64, 0.86],
 						}}
 					>
@@ -178,15 +195,7 @@ const HeroSection: React.FC = () => {
 					</HeroFigure>
 				</Col>
 
-				<LeftBlurFigure
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						duration: 1,
-						delay: 0.5,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-				>
+				<LeftBlurFigure variants={BlopVariants}>
 					<Image
 						src="/assets/blops/home_pink.png"
 						alt="bottom blur"
@@ -196,15 +205,7 @@ const HeroSection: React.FC = () => {
 						style={{ objectFit: "contain" }}
 					/>
 				</LeftBlurFigure>
-				<RightBlurFigure
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{
-						duration: 1,
-						delay: 0.5,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-				>
+				<RightBlurFigure variants={BlopVariants}>
 					<Image
 						src="/assets/blops/home_purple.png"
 						alt="right blur"
@@ -274,7 +275,7 @@ const SectionContainer = styled.section`
 	}
 `
 
-const Row = styled.div`
+const Row = styled(motion.div)`
 	position: relative;
 	display: grid;
 	grid-gap: 2rem;

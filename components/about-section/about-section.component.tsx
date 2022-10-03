@@ -1,10 +1,125 @@
 // Utils
 import styled from "styled-components"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 // Components
 import Image from "../image/image.component"
 import Border from "../border/border.component"
+
+const variants: Variants = {
+	hidden: {
+		opacity: 0,
+		// y: 100,
+	},
+	visible: {
+		opacity: 1,
+		// y: 0,
+		transition: {
+			// duration: 1,
+			// delay: 0.5,
+			staggerChildren: 0.4,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const ItemVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		y: -100,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const DescriptionVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+// const ListVariants: Variants = {
+// 	hidden: {
+// 		opacity: 0,
+// 		x: 100,
+// 	},
+// 	visible: {
+// 		opacity: 1,
+// 		x: 0,
+// 		transition: {
+// 			duration: 0.7,
+// 			ease: [0.5, 0, 0.56, 0.99],
+// 			transition: {
+// 				staggerChildren: 1,
+// 				ease: [0.5, 0, 0.56, 0.99],
+// 			},
+// 		},
+// 	},
+// }
+
+const ListItemVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		y: 100,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.7,
+			ease: [0.5, 0, 0.56, 0.99],
+			transition: (i: number) => ({
+				delay: 1 + i * 0.2,
+				duration: 0.7,
+				ease: [0.5, 0, 0.56, 0.99],
+			}),
+		},
+	},
+}
+
+const BlopVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			delay: 0.5,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const BorderVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
 
 const AboutSection: React.FC = () => {
 	const items = [
@@ -90,16 +205,14 @@ const AboutSection: React.FC = () => {
 	]
 
 	return (
-		<AboutSectionContainer>
-			<LeftTopBlurFigure
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{
-					duration: 1,
-					delay: 0.5,
-					ease: [0.5, 0, 0.56, 0.99],
-				}}
-			>
+		<AboutSectionContainer
+			variants={variants}
+			initial="hidden"
+			whileInView="visible"
+			exit="hidden"
+			viewport={{ once: true }}
+		>
+			<LeftTopBlurFigure variants={BlopVariants}>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -109,15 +222,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftTopBlurFigure>
-			<LeftBottomBlurFigure
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{
-					duration: 1,
-					delay: 0.5,
-					ease: [0.5, 0, 0.56, 0.99],
-				}}
-			>
+			<LeftBottomBlurFigure variants={BlopVariants}>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -127,15 +232,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftBottomBlurFigure>
-			<RightBlurFigure
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{
-					duration: 1,
-					delay: 0.5,
-					ease: [0.5, 0, 0.56, 0.99],
-				}}
-			>
+			<RightBlurFigure variants={BlopVariants}>
 				<Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -145,15 +242,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</RightBlurFigure>
-			<CenterBlurFigure
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1 }}
-				transition={{
-					duration: 1,
-					delay: 0.5,
-					ease: [0.5, 0, 0.56, 0.99],
-				}}
-			>
+			<CenterBlurFigure variants={BlopVariants}>
 				{/* <Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -166,47 +255,9 @@ const AboutSection: React.FC = () => {
 
 			<Container>
 				<HeadContainer>
-					<Title
-						initial={{ opacity: 0, y: -100 }}
-						whileInView={{ opacity: 1, y: 0 }}
-						transition={{
-							duration: 1,
-							// delay: 1,
-							// cubic-bezier(.5,0,.56,.99)
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-						viewport={{ once: true }}
-					>
-						About us
-					</Title>
-					<Border
-						initial={{
-							opacity: 0,
-							// width: 0
-							x: 100,
-						}}
-						whileInView={{
-							opacity: 1,
-							// width: "auto"
-							x: 0,
-						}}
-						transition={{
-							// delay: 1,
-							duration: 1,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-						viewport={{ once: true }}
-					/>
-					<Description
-						initial={{ opacity: 0, x: 100 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{
-							// delay: 1.5,
-							duration: 0.7,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-						viewport={{ once: true }}
-					>
+					<Title variants={ItemVariants}>About us</Title>
+					<Border variants={BorderVariants} />
+					<Description variants={DescriptionVariants}>
 						We aim to unite the biggest and most prominent Polkadot communities
 						in order to support their healthy growth and the decentralization of
 						the network.
@@ -216,15 +267,9 @@ const AboutSection: React.FC = () => {
 					{items.map((item, index) => (
 						<Item
 							key={index}
-							empty={!!item?.empty}
-							initial={{ opacity: 0, y: 50 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							transition={{
-								duration: 1,
-								delay: 0.2 + index * 0.1,
-								ease: [0.5, 0, 0.56, 0.99],
-							}}
-							viewport={{ once: true }}
+							custom={index}
+							variants={ListItemVariants}
+							empty={!!item.empty}
 						>
 							<ItemHead>
 								<ImageFigure>
@@ -338,7 +383,7 @@ const CenterBlurFigure = styled(motion.figure)`
 	}
 `
 
-const AboutSectionContainer = styled.section`
+const AboutSectionContainer = styled(motion.section)`
 	position: relative;
 	padding: 0 2rem;
 `

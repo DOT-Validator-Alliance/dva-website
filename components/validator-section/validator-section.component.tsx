@@ -1,6 +1,6 @@
 // Utils
 import styled from "styled-components"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 // Components
 import Image from "../image/image.component"
@@ -8,27 +8,166 @@ import Image from "../image/image.component"
 import Link from "next/link"
 import Border from "../border/border.component"
 
+// Hooks
+import { useEffectOnce } from "usehooks-ts"
+import { useState } from "react"
+
 // Types
-import { IValidator } from "../../types/validator.types"
+import { IValidator, IValidatorItem } from "../../types/validator.types"
 export interface IProps {
 	data: IValidator
 	enableAnimation: boolean
 }
 
+const variants: Variants = {
+	hidden: {
+		opacity: 0,
+		// y: 100,
+	},
+	visible: {
+		opacity: 1,
+		// y: 0,
+		transition: {
+			// duration: 1,
+			// delay: 0.5,
+			staggerChildren: 0.4,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const ItemVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		y: -100,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const DescriptionVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+// const ListVariants: Variants = {
+// 	hidden: {
+// 		opacity: 0,
+// 		x: 100,
+// 	},
+// 	visible: {
+// 		opacity: 1,
+// 		x: 0,
+// 		transition: {
+// 			duration: 0.7,
+// 			ease: [0.5, 0, 0.56, 0.99],
+// 			transition: {
+// 				staggerChildren: 1,
+// 				ease: [0.5, 0, 0.56, 0.99],
+// 			},
+// 		},
+// 	},
+// }
+
+const ListItemVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 0.7,
+			ease: [0.5, 0, 0.56, 0.99],
+			transition: (i: number) => ({
+				delay: 1 + i * 0.2,
+				duration: 0.7,
+				ease: [0.5, 0, 0.56, 0.99],
+			}),
+		},
+	},
+}
+
+const BlopVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			delay: 0.5,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const BorderVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		x: 100,
+	},
+	visible: {
+		opacity: 1,
+		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
+	const random = (arr: IValidatorItem[], n: number) => {
+		let result = new Array(n),
+			len = arr.length,
+			taken = new Array(len)
+		if (n > len)
+			throw new RangeError("getRandom: more elements taken than available")
+		while (n--) {
+			let x = Math.floor(Math.random() * len)
+			result[n] = arr[x in taken ? taken[x] : x]
+			taken[x] = --len in taken ? taken[len] : len
+		}
+		return result
+	}
+
+	const [arr, setArr] = useState<IValidatorItem[]>([])
+
+	useEffectOnce(() => {
+		const randomValidators =
+			data.validators.length < 3 ? data.validators : random(data.validators, 3)
+
+		setArr(randomValidators)
+	})
+
 	return (
-		<ValidatorSectionContainer>
+		<ValidatorSectionContainer
+			variants={variants}
+			initial="hidden"
+			whileInView="visible"
+			exit="hidden"
+			viewport={{ once: true }}
+		>
 			<Col>
-				<BlurFigure
-					initial={{ opacity: 0 }}
-					whileInView={{ opacity: 1 }}
-					transition={{
-						duration: 1,
-						delay: 0.5,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-					viewport={{ once: true }}
-				>
+				<BlurFigure variants={BlopVariants}>
 					<Image
 						src={data.blop.src}
 						alt={data.blop.alt}
@@ -38,19 +177,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 						style={{ objectFit: "contain" }}
 					/>
 				</BlurFigure>
-				<IluFigure
-					initial={{ opacity: 0 }}
-					whileInView={
-						enableAnimation
-							? { opacity: [1, 1, 1], y: [0, -15, 0], scale: [1, 0.97, 1] }
-							: undefined
-					}
-					transition={{
-						duration: 4,
-						repeat: Infinity,
-						// ease: [0.64, 0.33, 0.64, 0.86],
-					}}
-				>
+				<IluFigure variants={BlopVariants}>
 					<Image
 						src={data.image.src}
 						alt={data.image.alt}
@@ -62,85 +189,19 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				</IluFigure>
 			</Col>
 			<Col>
-				<Title
-					initial={{ opacity: 0, y: -100 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{
-						duration: 1,
-						// delay: 1,
-						// cubic-bezier(.5,0,.56,.99)
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-					viewport={{ once: true }}
-				>
-					{data.title}
-				</Title>
-				<Border
-					initial={{
-						opacity: 0,
-						// width: 0
-						x: 100,
-					}}
-					whileInView={{
-						opacity: 1,
-						// width: "auto"
-						x: 0,
-					}}
-					transition={{
-						// delay: 1,
-						duration: 1,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-					viewport={{ once: true }}
-				/>
-				<Description
-					initial={{ opacity: 0, x: 100 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{
-						// delay: 1.5,
-						duration: 0.7,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-					viewport={{ once: true }}
-				>
+				<Title variants={ItemVariants}>{data.title}</Title>
+				<Border variants={BorderVariants} />
+				<Description variants={DescriptionVariants}>
 					{data.description}
 				</Description>
 
-				<ValidatorsContainer
-					initial={{ opacity: 0 }}
-					whileInView={{ opacity: 1 }}
-					transition={{
-						// delay: 2.2,
-						duration: 0.7,
-						ease: [0.5, 0, 0.56, 0.99],
-					}}
-					viewport={{ once: true }}
-				>
-					<ValidatorsLabel
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						transition={{
-							// delay: 2.2,
-							duration: 0.7,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-						viewport={{ once: true }}
-					>
+				<ValidatorsContainer>
+					<ValidatorsLabel variants={DescriptionVariants}>
 						{data.listLabel}
 					</ValidatorsLabel>
 					<ValidatorsList>
-						{data.validators.slice(0, 3).map((validator, index) => (
-							<Validator
-								key={index}
-								initial={{ opacity: 0, x: 100 }}
-								whileInView={{ opacity: 1, x: 0 }}
-								transition={{
-									delay: 1 + index * 0.2,
-									duration: 0.7,
-									ease: [0.5, 0, 0.56, 0.99],
-								}}
-								viewport={{ once: true }}
-							>
+						{arr.map((validator, index) => (
+							<Validator custom={index} key={index} variants={ListItemVariants}>
 								<h3>{validator.name}</h3>
 								<p>{validator.address}</p>
 							</Validator>
@@ -157,14 +218,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 						whileTap={{
 							scale: 0.98,
 						}}
-						initial={{ opacity: 0, x: 100 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{
-							// delay: 3.4,
-							duration: 0.7,
-							ease: [0.5, 0, 0.56, 0.99],
-						}}
-						viewport={{ once: true }}
+						variants={DescriptionVariants}
 					>
 						{data.link.label}
 						<IconSpan>
@@ -182,7 +236,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 
 export default ValidatorSection
 
-const ValidatorSectionContainer = styled.section`
+const ValidatorSectionContainer = styled(motion.section)`
 	position: relative;
 	display: grid;
 	grid-gap: 2rem;

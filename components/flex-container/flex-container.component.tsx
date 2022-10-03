@@ -1,9 +1,8 @@
-import React from "react"
-
 // utils
+import { motion, MotionProps } from "framer-motion"
 import styled from "styled-components"
 
-export interface IProps {
+export interface IProps extends MotionProps {
 	gap?: string
 	justifyContent?: string
 	flexDirection?: string
@@ -22,7 +21,7 @@ const FlexContainer: React.FC<IProps> = ({ children, ...props }) => {
 	return <Container {...props}>{children}</Container>
 }
 
-const Container = styled.div<IProps>`
+const Container = styled(motion.div)<IProps>`
 	display: flex;
 	flex-wrap: ${({ wrap }) => (wrap ? wrap : "wrap")};
 	justify-content: ${({ justifyContent }) =>
