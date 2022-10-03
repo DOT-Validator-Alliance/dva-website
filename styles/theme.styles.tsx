@@ -24,6 +24,7 @@ export const light = {
 		borderColor: "#323232",
 		hamColor: "#D9D9D9",
 		activeHamColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(154, 38, 141, 1) 100%)`,
+		activeHamColorReverse: `linear-gradient(90deg, rgba(154, 38, 141, 1) 0%, rgba(231, 31, 122, 1) 100%)`,
 	},
 	heroSection: {},
 	validatorSection: {

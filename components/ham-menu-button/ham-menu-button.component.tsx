@@ -8,64 +8,154 @@ export interface IProps {
 
 const HamMenuButton: React.FC<IProps> = ({ isOpen, onClick }) => {
 	return (
-		<ToggleButton onClick={onClick} isOpen={isOpen}>
-			<div />
-			<div />
-			<div />
-		</ToggleButton>
+		<div
+		// class="menu btn1"
+		>
+			<ToggleButton
+				onClick={onClick}
+				className={isOpen ? "open" : ""}
+				isOpen={isOpen}
+			>
+				<Left
+				// class="icon-left"
+				></Left>
+				<Right
+				// class="icon-right"
+				></Right>
+			</ToggleButton>
+		</div>
 	)
 }
 
 export default HamMenuButton
 
-export const ToggleButton = styled.button<IProps>`
-	display: block;
-	cursor: pointer;
-	transition: all 0.5s ease-out;
-	background-color: transparent;
-	border: none;
-	width: 3.5rem;
-	height: 2.5rem;
-	position: relative;
+const Left = styled.div`
+	transition-duration: 0.5s;
+	position: absolute;
+	height: 0.4rem;
+	width: 2rem;
+	/* right: 2rem; */
+	top: 2rem;
+	background-color: ${({ theme }) => theme.header.hamColor};
 
-	&:focus {
-		outline: none;
+	&:before {
+		transition-duration: 0.5s;
+		position: absolute;
+		width: 2rem;
+		height: 0.4rem;
+		background-color: ${({ theme }) => theme.header.hamColor};
+
+		content: "";
+		top: -1.5rem;
+		right: 0;
 	}
 
-	div {
+	&:after {
+		transition-duration: 0.5s;
 		position: absolute;
-		width: 3.5rem;
-		height: 2.5px;
-		background-color: ${({ theme, isOpen }) =>
-			!isOpen ? theme.fonts.secondary : theme.colors.primary};
-		transition: all 0.3s ease-in-out;
-		${(props) =>
-			props.isOpen
-				? css`
-						&:nth-child(1) {
-							top: 1rem;
-							transform: rotate(45deg);
-						}
-						&:nth-child(2) {
-							opacity: 0;
-						}
-						&:nth-child(3) {
-							bottom: 1.3rem;
-							transform: rotate(-45deg);
-						}
-				  `
-				: css`
-						&:nth-child(1) {
-							top: 0;
-						}
-						&:nth-child(2) {
-							top: 50%;
-							transform: translateY(-50%);
-						}
-						&:nth-child(3) {
-							bottom: 0;
-						}
-				  `}
+		width: 2rem;
+		height: 0.4rem;
+		background-color: ${({ theme }) => theme.header.hamColor};
+		content: "";
+		top: 1.5rem;
+		right: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+`
+
+const Right = styled.div`
+	transition-duration: 0.5s;
+	position: absolute;
+	height: 0.4rem;
+	width: 2rem;
+	left: 2rem;
+	top: 2rem;
+	background-color: ${({ theme }) => theme.header.hamColor};
+
+	&:before {
+		transition-duration: 0.5s;
+		position: absolute;
+		width: 2rem;
+		height: 0.4rem;
+		background-color: ${({ theme }) => theme.header.hamColor};
+		content: "";
+		top: -1.5rem;
+		right: 0;
+	}
+
+	&:after {
+		transition-duration: 0.5s;
+		position: absolute;
+		width: 2rem;
+		height: 0.4rem;
+		background-color: ${({ theme }) => theme.header.hamColor};
+		content: "";
+		top: 1.5rem;
+		right: 0;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+`
+
+export const ToggleButton = styled.button<IProps>`
+	display: block;
+	position: relative;
+	width: 4rem;
+	height: 4rem;
+	/* top: 10rem; */
+	/* left: 0; */
+	transition-duration: 0.5s;
+	/* @include btn(0px, 100px); */
+	background-color: transparent;
+	margin-bottom: 0.4rem;
+
+	&.open {
+		${Left} {
+			transition-duration: 0.5s;
+			background: transparent;
+			/* background: ${({ theme }) => theme.header.activeHamColor};
+			background-color: transparent; */
+
+			&:before {
+				transform: rotateZ(45deg) scaleX(1.4) translate(4px, 4px);
+				background: ${({ theme }) => theme.header.activeHamColorReverse};
+				background-color: transparent;
+			}
+
+			&:after {
+				transform: rotateZ(-45deg) scaleX(1.4) translate(4px, -4px);
+				background: ${({ theme }) => theme.header.activeHamColorReverse};
+				background-color: transparent;
+			}
+		}
+
+		${Right} {
+			transition-duration: 0.5s;
+			background: transparent;
+			/* background: ${({ theme }) => theme.header.activeHamColor};
+			background-color: transparent; */
+
+			&:before {
+				transform: rotateZ(-45deg) scaleX(1.4) translate(-4px, 4px);
+				background: ${({ theme }) => theme.header.activeHamColor};
+				background-color: transparent;
+			}
+
+			&:after {
+				transform: rotateZ(45deg) scaleX(1.4) translate(-4px, -4px);
+				background: ${({ theme }) => theme.header.activeHamColor};
+				background-color: transparent;
+			}
+		}
+	}
+
+	&:hover {
+		cursor: pointer;
 	}
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
