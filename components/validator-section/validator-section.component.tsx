@@ -189,12 +189,13 @@ const ValidatorSectionContainer = styled.section`
 	grid-template-columns: 1fr;
 	padding: 0 2rem;
 	max-width: 125rem;
-	margin: 15rem auto 0;
+	margin: 20rem auto 0;
 	/* border: 1px solid blue; */
 	/* justify-items: center; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		padding: 0 2rem;
+		margin: 25rem auto 0;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: minmax(44.5rem, 1fr) 1fr;

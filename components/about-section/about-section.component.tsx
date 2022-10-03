@@ -346,6 +346,13 @@ const AboutSectionContainer = styled.section`
 const Container = styled.section`
 	max-width: 125rem;
 	margin: 15rem auto 0;
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		margin: 20rem auto 0;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 `
 
 const HeadContainer = styled.div`

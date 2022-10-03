@@ -27,11 +27,19 @@ export default PageLayout
 const LayoutContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	/* min-height: 100vh; */
+	/* height: auto; */
 
 	main {
 		margin: 10rem 0 0;
 		flex-grow: 1;
 		overflow-x: hidden;
+		height: auto;
+		overflow-x: clip;
+		/* overflow-y: scroll; */
+
+		/* section {
+			height: auto;
+		} */
 	}
 `

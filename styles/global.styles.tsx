@@ -8,6 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
   }
   body {
     line-height: 1.5;
@@ -16,9 +18,10 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     background-color: #000;
     color: #fff;
-	overflow-x: hidden;
-
+	  overflow-x: hidden;
+    height: auto;
   }
+
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;

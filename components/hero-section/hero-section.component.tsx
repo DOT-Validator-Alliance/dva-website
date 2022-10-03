@@ -263,6 +263,7 @@ const RightBlurFigure = styled(motion.figure)`
 const SectionContainer = styled.section`
 	margin-top: 0rem;
 	margin-bottom: 10rem;
+	padding: 0 2rem;
 	/* overflow-x: hidden; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -278,19 +279,15 @@ const Row = styled.div`
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: 1fr;
-	padding: 0 2rem;
 	max-width: 125rem;
 	margin: 0 auto 0;
 	/* border: 1px solid blue; */
 	/* justify-items: center; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		padding: 0 2rem;
-
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: minmax(44.5rem, 1fr) 1fr;
 			justify-items: unset;
-			padding: 0 0;
 		}
 	}
 `

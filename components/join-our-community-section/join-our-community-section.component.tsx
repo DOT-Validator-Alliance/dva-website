@@ -94,6 +94,7 @@ const JoinOurCommunitySectionContainer = styled(motion.section)`
 	grid-template-columns: 1fr;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		margin: 20rem auto 0;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: 1fr 1fr;
 		}
