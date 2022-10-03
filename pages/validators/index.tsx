@@ -1,26 +1,24 @@
 // Utils
+import styled from "styled-components"
 
 // Layout
-import PageLayout from "../layouts/page/page.layout"
+import PageLayout from "../../layouts/page/page.layout"
 
 // Sections
-import HeroSection from "../components/hero-section/hero-section.component"
-import ValidatorSection from "../components/validator-section/validator-section.component"
-import JoinOurCommunitySection from "../components/join-our-community-section/join-our-community-section.component"
-import AboutSection from "../components/about-section/about-section.component"
+import ValidatorSection from "../../components/validator-section/validator-section.component"
 
 // Components
 import Head from "next/head"
 
 // Types
 import { ReactElement } from "react"
-import { IValidator } from "../types/validator.types"
+import { IValidator } from "../../types/validator.types"
 import { GetStaticProps } from "next"
 
 export const getStaticProps: GetStaticProps = async () => {
 	const requireAll = (r: any) => r.keys().map(r)
 	const validators: IValidator[] = requireAll(
-		require.context("../validators", false, /\.json$/)
+		require.context("../../validators", false, /\.json$/)
 	)
 
 	const uniqueValidators = validators.filter(
@@ -41,7 +39,7 @@ interface IProps {
 	validators: IValidator[]
 }
 
-const Home = ({ validators }: IProps) => {
+const ValidatorsPage = ({ validators }: IProps) => {
 	return (
 		<>
 			<Head>
@@ -52,22 +50,25 @@ const Home = ({ validators }: IProps) => {
 				/>
 			</Head>
 
-			<HeroSection />
-
-			<section id="validators" style={{ scrollMarginTop: "10rem" }}>
+			<Container>
 				{validators.map((validator, idx) => (
 					<ValidatorSection key={idx} data={validator} enableAnimation={true} />
 				))}
-			</section>
-
-			<JoinOurCommunitySection />
-			<AboutSection />
+			</Container>
 		</>
 	)
 }
 
-export default Home
+export default ValidatorsPage
 
-Home.getLayout = function getLayout(page: ReactElement) {
+ValidatorsPage.getLayout = function getLayout(page: ReactElement) {
 	return <PageLayout>{page}</PageLayout>
 }
+
+const Container = styled.div`
+	section {
+		&:nth-child(1) {
+			margin-top: 2rem;
+		}
+	}
+`

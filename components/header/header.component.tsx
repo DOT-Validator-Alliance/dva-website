@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 	const navItems = [
 		{
 			label: "Validators",
-			slug: "/",
+			slug: "/#validators",
 		},
 		{
 			label: "Manifesto",
@@ -60,19 +60,22 @@ const Header: React.FC = () => {
 						justifyContent="space-between"
 						height="100%"
 					>
-						<LogoFigure>
-							<Image
-								src="/assets/aliancelogo.png"
-								alt="Validator Alliance Logo"
-								width={"100%"}
-							/>
-						</LogoFigure>
-
+						<Link href="/">
+							<a>
+								<LogoFigure>
+									<Image
+										src="/assets/aliancelogo.png"
+										alt="Validator Alliance Logo"
+										width={"100%"}
+									/>
+								</LogoFigure>
+							</a>
+						</Link>
 						<Nav>
 							<NavList>
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
-										<Link href={item.slug}>
+										<Link href={item.slug} passHref>
 											<LabelA>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>

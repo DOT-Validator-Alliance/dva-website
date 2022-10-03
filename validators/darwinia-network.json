@@ -1,5 +1,14 @@
 {
 	"id": 5,
+	"meta": {
+		"title": "Darwinia Network",
+		"description": "Darwinia Network is a decentralized cross-chain bridge network building on Substrate, which is the “Golden Gate Bridge” of the cross-chain ecology.",
+		"slug": "darwinia-network",
+		"image": {
+			"src": "/assets/validators/darwinia-gray-v2.png",
+			"alt": "drawinia logo"
+		}
+	},
 	"title": "Darwinia Network",
 	"description": "Darwinia Network is a decentralized cross-chain bridge network building on Substrate, which is the “Golden Gate Bridge” of the cross-chain ecology.",
 	"image": {
@@ -13,12 +22,13 @@
 	"listLabel": "Our Darwinia validators:",
 	"link": {
 		"label": "View all",
-		"slug": "/polkadot"
+		"slug": "/validators/darwinia-network"
 	},
 	"cta": {
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
+	"backButtonLabel": "Back to projects",
 	"validators": [
 		{
 			"name": "Polkadotters (Darwinia)",

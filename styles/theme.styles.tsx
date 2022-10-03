@@ -5,6 +5,10 @@ export const light = {
 		primary: "#9A268D",
 		secondary: "#E71F7A",
 		borderColor: `linear-gradient(90deg, rgba(231, 31, 122, 1) 0%, rgba(217, 217, 217, 0) 100%)`,
+		buttonColor: `#fff`,
+		buttonOutlineColor: `#CACACA`,
+		buttonOutline: "1px solid #898989",
+		buttonBackground: `linear-gradient(90deg, rgba(154, 38, 141, 1) 0%, rgba(231, 31, 122, 1) 51%, rgba(154, 38, 141, 1) 100%)`,
 	},
 	background: {
 		bodyBackgroundColor: "#000",
@@ -29,6 +33,8 @@ export const light = {
 		listItemTitleColor: "#CACACA",
 		listItemAddressColor: "#898989",
 		linkColor: `linear-gradient(90deg, #E71F7A 0%, #9A268D 108.06%)`,
+		backButtonColor:
+			"linear-gradient(270.07deg, #E71F7A 4.69%, #9A268D 95.19%)",
 	},
 	joinOurCommunitySection: {
 		backgroundColor:

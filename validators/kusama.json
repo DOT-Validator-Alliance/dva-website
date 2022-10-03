@@ -1,5 +1,14 @@
 {
 	"id": 1,
+	"meta": {
+		"title": "Kusama",
+		"description": "Kusama is a scalable multi-chain network for radical innovation and early stage Polkadot deployments. Expect Chaos. No promises.",
+		"slug": "kusama",
+		"image": {
+			"src": "/assets/validators/kusama.png",
+			"alt": "kusama logo"
+		}
+	},
 	"title": "Kusama",
 	"description": "Kusama is a scalable multi-chain network for radical innovation and early stage Polkadot deployments. Expect Chaos. No promises.",
 	"image": {
@@ -13,12 +22,13 @@
 	"listLabel": "Our KSM validators:",
 	"link": {
 		"label": "View all",
-		"slug": "/kusama"
+		"slug": "/validators/kusama"
 	},
 	"cta": {
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
+	"backButtonLabel": "Back to projects",
 	"validators": [
 		{
 			"name": "REPE -",

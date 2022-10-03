@@ -1,5 +1,14 @@
 {
 	"id": 2,
+	"meta": {
+		"title": "Polkadot",
+		"description": "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
+		"slug": "polkadot",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "polkadot logo"
+		}
+	},
 	"title": "Polkadot",
 	"description": "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
 	"image": {
@@ -13,12 +22,13 @@
 	"listLabel": "Our Polkadot validators:",
 	"link": {
 		"label": "View all",
-		"slug": "/polkadot"
+		"slug": "/validators/polkadot"
 	},
 	"cta": {
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
+	"backButtonLabel": "Back to projects",
 	"validators": [
 		{
 			"name": "Polkadotters -",

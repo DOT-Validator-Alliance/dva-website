@@ -65,22 +65,16 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 	display: flex;
 	justify-content: center;
 
-	color: rgb(231, 31, 122);
-
 	align-items: center;
 	background-color: ${({ outline }) => (outline ? "transparent" : "unset")};
-	border: ${({ outline }) => (outline ? "1px solid #898989" : "unset")};
-	color: ${({ outline }) => (outline ? "#CACACA" : "#fff")};
-	background: ${({ outline }) =>
+	border: ${({ outline, theme }) =>
+		outline ? theme.colors.buttonOutline : "unset"};
+	color: ${({ outline, theme }) =>
+		outline ? theme.colors.buttonOutlineColor : theme.colors.buttonColor};
+	background: ${({ outline, theme }) =>
 		outline
 			? "transparent"
-			: `
-	linear-gradient(
-		90deg,
-		rgba(154, 38, 141, 1),
-		rgba(231, 31, 122) 51%,
-		rgba(154, 38, 141, 1)
-	)
+			: `${theme.colors.buttonBackground}
 		var(--x, 0) / 200%`};
 	width: ${({ width }) => (width ? width : "unset")};
 	font-weight: 700;

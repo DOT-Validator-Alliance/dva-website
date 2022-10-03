@@ -1,5 +1,14 @@
 {
 	"id": 8,
+	"meta": {
+		"title": "Centrifuge",
+		"description": "Centrifuge bridges assets like invoices, real estate, and royalties to DeFi.",
+		"slug": "centrifuge",
+		"image": {
+			"src": "/assets/validators/centrifuge.png",
+			"alt": "centrifuge logo"
+		}
+	},
 	"title": "Centrifuge",
 	"description": "Centrifuge bridges assets like invoices, real estate, and royalties to DeFi.",
 	"image": {
@@ -13,12 +22,13 @@
 	"listLabel": "Our Centrifuge validators:",
 	"link": {
 		"label": "View all",
-		"slug": "/polkadot"
+		"slug": "/validators/centrifuge"
 	},
 	"cta": {
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
+	"backButtonLabel": "Back to projects",
 	"validators": [
 		{
 			"name": "Crifferent -",

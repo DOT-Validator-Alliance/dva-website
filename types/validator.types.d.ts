@@ -10,6 +10,12 @@ export interface IValidatorItem {
 
 export interface IValidator {
 	id: number
+	meta: {
+		title: string
+		description: string
+		slug: string
+		image: IImage
+	}
 	title: string
 	description: string
 	image: IImage
@@ -23,5 +29,6 @@ export interface IValidator {
 		label: string
 		slug: string
 	}
+	backButtonLabel: string
 	validators: IValidatorItem[]
 }

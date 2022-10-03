@@ -5,7 +5,7 @@ import { motion, Variants } from "framer-motion"
 // Components
 import Image from "../image/image.component"
 // import Button from "../button/button.component"
-import Link from "next/link"
+import Link from "../link/link.component"
 import Border from "../border/border.component"
 
 // Hooks
@@ -65,25 +65,6 @@ const DescriptionVariants: Variants = {
 		},
 	},
 }
-
-// const ListVariants: Variants = {
-// 	hidden: {
-// 		opacity: 0,
-// 		x: 100,
-// 	},
-// 	visible: {
-// 		opacity: 1,
-// 		x: 0,
-// 		transition: {
-// 			duration: 0.7,
-// 			ease: [0.5, 0, 0.56, 0.99],
-// 			transition: {
-// 				staggerChildren: 1,
-// 				ease: [0.5, 0, 0.56, 0.99],
-// 			},
-// 		},
-// 	},
-// }
 
 const ListItemVariants: Variants = {
 	hidden: {
@@ -210,24 +191,8 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				</ValidatorsContainer>
 
 				{/* <Button>{data.cta.label}</Button> */}
-				<Link href={data.link.slug}>
-					<CtaLink
-						whileHover={{
-							scale: 1.02,
-						}}
-						whileTap={{
-							scale: 0.98,
-						}}
-						variants={DescriptionVariants}
-					>
-						{data.link.label}
-						<IconSpan>
-							<Image
-								src="/assets/icons/right-arrow-pink.svg"
-								alt="Right Arrow"
-							/>
-						</IconSpan>
-					</CtaLink>
+				<Link href={data.link.slug} variants={DescriptionVariants}>
+					{data.link.label}
 				</Link>
 			</Col>
 		</ValidatorSectionContainer>
