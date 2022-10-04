@@ -19,6 +19,8 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #000;
     color: #fff;
     height: auto;
+    overflow-x: hidden;
+    overflow-x: clip !important;
   }
 
 
