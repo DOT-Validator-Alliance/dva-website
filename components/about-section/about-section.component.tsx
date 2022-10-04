@@ -6,6 +6,11 @@ import { motion, Variants } from "framer-motion"
 import Image from "../image/image.component"
 import Border from "../border/border.component"
 
+// Types
+export interface IProps {
+	enableAnimation: boolean
+}
+
 const variants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -52,25 +57,6 @@ const DescriptionVariants: Variants = {
 		},
 	},
 }
-
-// const ListVariants: Variants = {
-// 	hidden: {
-// 		opacity: 0,
-// 		x: 100,
-// 	},
-// 	visible: {
-// 		opacity: 1,
-// 		x: 0,
-// 		transition: {
-// 			duration: 0.7,
-// 			ease: [0.5, 0, 0.56, 0.99],
-// 			transition: {
-// 				staggerChildren: 1,
-// 				ease: [0.5, 0, 0.56, 0.99],
-// 			},
-// 		},
-// 	},
-// }
 
 const ListItemVariants: Variants = {
 	hidden: {
@@ -121,7 +107,7 @@ const BorderVariants: Variants = {
 	},
 }
 
-const AboutSection: React.FC = () => {
+const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 	const items = [
 		{
 			image: {
@@ -206,13 +192,13 @@ const AboutSection: React.FC = () => {
 
 	return (
 		<AboutSectionContainer
-			variants={variants}
+			variants={enableAnimation ? variants : {}}
 			initial="hidden"
 			whileInView="visible"
 			exit="hidden"
 			viewport={{ once: true }}
 		>
-			<LeftTopBlurFigure variants={BlopVariants}>
+			<LeftTopBlurFigure variants={enableAnimation ? BlopVariants : {}}>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -222,7 +208,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftTopBlurFigure>
-			<LeftBottomBlurFigure variants={BlopVariants}>
+			<LeftBottomBlurFigure variants={enableAnimation ? BlopVariants : {}}>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -232,7 +218,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftBottomBlurFigure>
-			<RightBlurFigure variants={BlopVariants}>
+			<RightBlurFigure variants={enableAnimation ? BlopVariants : {}}>
 				<Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -242,7 +228,7 @@ const AboutSection: React.FC = () => {
 					style={{ objectFit: "contain" }}
 				/>
 			</RightBlurFigure>
-			<CenterBlurFigure variants={BlopVariants}>
+			<CenterBlurFigure variants={enableAnimation ? BlopVariants : {}}>
 				{/* <Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -255,9 +241,9 @@ const AboutSection: React.FC = () => {
 
 			<Container>
 				<HeadContainer>
-					<Title variants={ItemVariants}>About us</Title>
-					<Border variants={BorderVariants} />
-					<Description variants={DescriptionVariants}>
+					<Title variants={enableAnimation ? ItemVariants : {}}>About us</Title>
+					<Border variants={enableAnimation ? BorderVariants : {}} />
+					<Description variants={enableAnimation ? DescriptionVariants : {}}>
 						We aim to unite the biggest and most prominent Polkadot communities
 						in order to support their healthy growth and the decentralization of
 						the network.
@@ -268,7 +254,7 @@ const AboutSection: React.FC = () => {
 						<Item
 							key={index}
 							custom={index}
-							variants={ListItemVariants}
+							variants={enableAnimation ? ListItemVariants : {}}
 							empty={!!item.empty}
 						>
 							<ItemHead>

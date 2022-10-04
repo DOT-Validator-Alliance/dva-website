@@ -147,8 +147,8 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 			exit="hidden"
 			viewport={{ once: true }}
 		>
-			<Col variants={BlopVariants}>
-				<BlurFigure variants={BlopVariants}>
+			<Col variants={enableAnimation ? BlopVariants : {}}>
+				<BlurFigure variants={enableAnimation ? BlopVariants : {}}>
 					<Image
 						src={data.blop.src}
 						alt={data.blop.alt}
@@ -181,19 +181,27 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				</IluFigure>
 			</Col>
 			<Col>
-				<Title variants={ItemVariants}>{data.title}</Title>
-				<Border variants={BorderVariants} />
-				<Description variants={DescriptionVariants}>
+				<Title variants={enableAnimation ? ItemVariants : {}}>
+					{data.title}
+				</Title>
+				<Border variants={enableAnimation ? BorderVariants : {}} />
+				<Description variants={enableAnimation ? DescriptionVariants : {}}>
 					{data.description}
 				</Description>
 
 				<ValidatorsContainer>
-					<ValidatorsLabel variants={DescriptionVariants}>
+					<ValidatorsLabel
+						variants={enableAnimation ? DescriptionVariants : {}}
+					>
 						{data.listLabel}
 					</ValidatorsLabel>
 					<ValidatorsList>
 						{arr.map((validator, index) => (
-							<Validator custom={index} key={index} variants={ListItemVariants}>
+							<Validator
+								custom={index}
+								key={index}
+								variants={enableAnimation ? ListItemVariants : {}}
+							>
 								<h3>{validator.name}</h3>
 								<p>{validator.address}</p>
 							</Validator>
@@ -202,7 +210,10 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				</ValidatorsContainer>
 
 				{/* <Button>{data.cta.label}</Button> */}
-				<Link href={data.link.slug} variants={DescriptionVariants}>
+				<Link
+					href={data.link.slug}
+					variants={enableAnimation ? DescriptionVariants : {}}
+				>
 					{data.link.label}
 				</Link>
 			</Col>

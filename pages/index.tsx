@@ -12,6 +12,10 @@ import AboutSection from "../components/about-section/about-section.component"
 // Components
 import Head from "next/head"
 
+// Hooks
+import { useTheme } from "styled-components"
+import { useMediaQuery } from "usehooks-ts"
+
 // Types
 import { ReactElement } from "react"
 import { IValidator } from "../types/validator.types"
@@ -42,6 +46,9 @@ interface IProps {
 }
 
 const Home = ({ validators }: IProps) => {
+	const theme = useTheme()
+	const isMd = useMediaQuery(`(min-width: ${theme.breakpoints.md})`)
+
 	return (
 		<>
 			<Head>
@@ -56,12 +63,12 @@ const Home = ({ validators }: IProps) => {
 
 			<section id="validators" style={{ scrollMarginTop: "10rem" }}>
 				{validators.map((validator, idx) => (
-					<ValidatorSection key={idx} data={validator} enableAnimation={true} />
+					<ValidatorSection key={idx} data={validator} enableAnimation={isMd} />
 				))}
 			</section>
 
-			<JoinOurCommunitySection />
-			<AboutSection />
+			<JoinOurCommunitySection enableAnimation={isMd} />
+			<AboutSection enableAnimation={isMd} />
 		</>
 	)
 }
