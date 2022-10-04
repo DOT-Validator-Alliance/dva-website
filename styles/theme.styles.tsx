@@ -47,7 +47,7 @@ export const light = {
 	joinOurCommunitySection: {
 		backgroundColor:
 			"linear-gradient(90.38deg, #9A268D 13.66%, #E71F7A 90.84%)",
-		descriptionColor: "#CACACA",
+		descriptionColor: "#FF90EF",
 	},
 	aboutSection: {
 		itemBackgroundColor:

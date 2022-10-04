@@ -32,6 +32,7 @@ const LayoutContainer = styled.div`
 		margin: 10rem 0 0;
 		flex-grow: 1;
 		/* height: auto; */
+		overflow-x: hidden;
 		overflow-x: clip !important;
 	}
 `

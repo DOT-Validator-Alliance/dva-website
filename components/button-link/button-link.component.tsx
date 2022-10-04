@@ -8,6 +8,7 @@ import NextLink, { LinkProps } from "next/link"
 
 export interface IProps extends LinkProps {
 	width?: string
+	top?: string
 	children: React.ReactNode | React.ReactNode[]
 	variants?: Variants
 }
@@ -16,6 +17,7 @@ const ButtonLink: React.FC<IProps> = ({
 	children,
 	variants,
 	width,
+	top,
 	...props
 }) => {
 	return (
@@ -28,6 +30,7 @@ const ButtonLink: React.FC<IProps> = ({
 				// 	scale: props.disabled || !props.outline ? 1 : 0.98,
 				// }}
 				// {...props}
+				top={top}
 				width={width}
 				variants={variants}
 			>
@@ -68,6 +71,7 @@ const IconSpan = styled.span`
 
 interface IButtonProps {
 	width?: string
+	top?: string
 }
 
 const ButtonContainer = styled(motion.a)<IButtonProps>`
@@ -81,7 +85,8 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 		`${theme.colors.buttonBackground} var(--x, 0) / 200%`};
 	font-weight: 700;
 	width: ${({ width }) => (width ? width : "unset")};
-	margin-top: 4rem;
+	margin-top: ${({ top }) => (top ? top : "initial")};
+	/* margin-top: 4rem; */
 	transition: 0.5s;
 	cursor: pointer;
 	padding: 1.7rem 3.2rem;

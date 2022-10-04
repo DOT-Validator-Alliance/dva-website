@@ -6,6 +6,7 @@ import { motion, Variants } from "framer-motion"
 import Image from "../image/image.component"
 import FlexContainer from "../flex-container/flex-container.component"
 import Button from "../button/button.component"
+import ButtonLink from "../button-link/button-link.component"
 import Border from "../border/border.component"
 
 // Hooks
@@ -152,7 +153,7 @@ const HeroSection: React.FC = () => {
 					</Description>
 
 					<ButtonsContainer variants={ItemVariants2}>
-						<Button>Support us</Button>
+						<ButtonLink href={"/#validators"}>Support us</ButtonLink>
 						<Button outline>Read our Manifesto</Button>
 					</ButtonsContainer>
 
@@ -366,7 +367,7 @@ const FoundersContainer = styled(motion.div)`
 
 	p {
 		font-size: 1.2rem;
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 		color: #cacaca;
 	}
 `

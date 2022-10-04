@@ -268,8 +268,8 @@ export default function ValidatorPage({
 						</ValidatorsList>
 					</ValidatorsContainer>
 
-					<ButtonLink variants={ButtonVariants} href={v.link.slug}>
-						{v.link.label}
+					<ButtonLink top="4rem" variants={ButtonVariants} href={v.cta.slug}>
+						{v.cta.label}
 					</ButtonLink>
 				</Col>
 			</ValidatorSectionContainer>
@@ -315,7 +315,7 @@ const Col = styled.div`
 
 	&:nth-child(1) {
 		position: sticky;
-		top: 8rem;
+		top: 12rem;
 		align-self: start;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
