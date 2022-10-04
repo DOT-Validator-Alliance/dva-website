@@ -75,7 +75,7 @@ const variants: Variants = {
 		transition: {
 			// duration: 1,
 			// delay: 0.5,
-			staggerChildren: 0.4,
+			staggerChildren: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
@@ -153,6 +153,21 @@ const BorderVariants: Variants = {
 	visible: {
 		opacity: 1,
 		x: 0,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const ButtonVariants: Variants = {
+	hidden: {
+		opacity: 0,
+		y: 50,
+	},
+	visible: {
+		opacity: 1,
+		y: 0,
 		transition: {
 			duration: 1,
 			ease: [0.5, 0, 0.56, 0.99],
@@ -253,7 +268,9 @@ export default function ValidatorPage({
 						</ValidatorsList>
 					</ValidatorsContainer>
 
-					<ButtonLink href={v.link.slug}>{v.link.label}</ButtonLink>
+					<ButtonLink variants={ButtonVariants} href={v.link.slug}>
+						{v.link.label}
+					</ButtonLink>
 				</Col>
 			</ValidatorSectionContainer>
 		</>

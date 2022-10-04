@@ -21,9 +21,9 @@ const variants: Variants = {
 		opacity: 1,
 		// y: 0,
 		transition: {
-			duration: 1,
+			// duration: 1,
 			// delay: 0.5,
-			staggerChildren: 0.7,
+			staggerChildren: 0.4,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
@@ -32,14 +32,14 @@ const variants: Variants = {
 const ItemVariants: Variants = {
 	hidden: {
 		opacity: 0,
-		y: 100,
+		y: 50,
 	},
 	visible: {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 1,
-			ease: [0.5, 0, 0.56, 0.99],
+			duration: 1.5,
+			// ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
 }
@@ -53,7 +53,7 @@ const ItemVariants2: Variants = {
 		opacity: 1,
 		y: 0,
 		transition: {
-			duration: 0.7,
+			duration: 1,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},

@@ -12,7 +12,7 @@ import Link from "next/link"
 import { useBoolean } from "usehooks-ts"
 
 // Icons
-import { AiOutlineRight } from "react-icons/ai"
+// import { AiOutlineRight } from "react-icons/ai"
 
 const Header: React.FC = () => {
 	const { value: isMenuOpen, toggle: toggleMenu } = useBoolean(false)
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
 							<NavList>
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
-										<Link href={item.slug} passHref>
+										<Link href={item.slug}>
 											<LabelA>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>

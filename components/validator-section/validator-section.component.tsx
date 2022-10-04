@@ -30,7 +30,7 @@ const variants: Variants = {
 		transition: {
 			// duration: 1,
 			// delay: 0.5,
-			staggerChildren: 0.4,
+			staggerChildren: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
