@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.5;
     background-color: #000;
     color: #fff;
-    height: auto;
+    height: -webkit-fill-available;
     overflow-x: hidden;
     overflow-x: clip !important;
   }

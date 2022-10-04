@@ -27,14 +27,16 @@ export default PageLayout
 const LayoutContainer = styled.div`
 	display: flex;
 	flex-direction: column;
-	height: auto;
+	/* height: auto; */
 	overflow-x: hidden;
 	overflow-x: clip !important;
+	height: -webkit-fill-available;
 
 	main {
 		margin: 10rem 0 0;
 		flex-grow: 1;
-		height: auto;
+		/* height: auto; */
+		height: -webkit-fill-available;
 		overflow-x: hidden;
 		overflow-x: clip !important;
 	}
