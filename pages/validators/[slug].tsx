@@ -289,8 +289,6 @@ const ValidatorSectionContainer = styled(motion.section)`
 	padding: 0 2rem;
 	max-width: 125rem;
 	margin: 2rem auto 0;
-	/* border: 1px solid blue; */
-	/* justify-items: center; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		padding: 0 2rem;
@@ -316,8 +314,8 @@ const Col = styled.div`
 	}
 
 	&:nth-child(1) {
-		/* border: 1px solid green; */
-		position: relative;
+		position: sticky;
+		top: 8rem;
 		align-self: start;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {

@@ -64,9 +64,11 @@ const Header: React.FC = () => {
 							<a>
 								<LogoFigure>
 									<Image
-										src="/assets/aliancelogo.png"
+										src="/assets/aliancelogo-v2.svg"
 										alt="Validator Alliance Logo"
 										width={"100%"}
+										height={"100%"}
+										style={{ objectFit: "contain" }}
 									/>
 								</LogoFigure>
 							</a>
@@ -187,7 +189,7 @@ const LogoFigure = styled.figure`
 		width: 12rem;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-			width: initial;
+			width: 15rem;
 		}
 	}
 `
