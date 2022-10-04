@@ -12,6 +12,8 @@ import ButtonLink from "../../components/button-link/button-link.component"
 
 // Hooks
 import { useRouter } from "next/router"
+import { useTheme } from "styled-components"
+import { useMediaQuery } from "usehooks-ts"
 
 // Types
 import { ReactElement } from "react"
@@ -179,6 +181,8 @@ export default function ValidatorPage({
 	validator,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
 	const { asPath } = useRouter()
+	const theme = useTheme()
+	const isMd = useMediaQuery(`(min-width: ${theme.breakpoints.md})`)
 
 	const v = validator as IValidator
 
@@ -212,17 +216,17 @@ export default function ValidatorPage({
 				<meta property="twitter:image" content={v.meta.image.src} />
 			</Head>
 			<ValidatorSectionContainer
-				variants={variants}
+				variants={isMd ? variants : {}}
 				initial="hidden"
 				whileInView="visible"
 				exit="hidden"
 				viewport={{ once: true }}
 			>
-				<Col>
-					<BackButton variants={DescriptionVariants}>
+				<Col variants={isMd ? DescriptionVariants : {}}>
+					<BackButton variants={isMd ? DescriptionVariants : {}}>
 						{v.backButtonLabel}
 					</BackButton>
-					<BlurFigure variants={BlopVariants}>
+					<BlurFigure variants={isMd ? BlopVariants : {}}>
 						<Image
 							src={v.blop.src}
 							alt={v.blop.alt}
@@ -232,7 +236,16 @@ export default function ValidatorPage({
 							style={{ objectFit: "contain" }}
 						/>
 					</BlurFigure>
-					<IluFigure variants={BlopVariants}>
+					<IluFigure
+						whileInView={
+							isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined
+						}
+						transition={{
+							duration: 4,
+							repeat: Infinity,
+							// ease: [0.64, 0.33, 0.64, 0.86],
+						}}
+					>
 						<Image
 							src={v.image.src}
 							alt={v.image.alt}
@@ -244,14 +257,14 @@ export default function ValidatorPage({
 					</IluFigure>
 				</Col>
 				<Col>
-					<Title variants={ItemVariants}>{v.title}</Title>
-					<Border variants={BorderVariants} />
-					<Description variants={DescriptionVariants}>
+					<Title variants={isMd ? ItemVariants : {}}>{v.title}</Title>
+					<Border variants={isMd ? BorderVariants : {}} />
+					<Description variants={isMd ? DescriptionVariants : {}}>
 						{v.description}
 					</Description>
 
 					<ValidatorsContainer>
-						<ValidatorsLabel variants={DescriptionVariants}>
+						<ValidatorsLabel variants={isMd ? DescriptionVariants : {}}>
 							{v.listLabel}
 						</ValidatorsLabel>
 						<ValidatorsList>
@@ -259,7 +272,7 @@ export default function ValidatorPage({
 								<Validator
 									custom={index}
 									key={index}
-									variants={ListItemVariants}
+									variants={isMd ? ListItemVariants : {}}
 								>
 									<h3>{validator.name}</h3>
 									<p>{validator.address}</p>
@@ -268,7 +281,11 @@ export default function ValidatorPage({
 						</ValidatorsList>
 					</ValidatorsContainer>
 
-					<ButtonLink top="4rem" variants={ButtonVariants} href={v.cta.slug}>
+					<ButtonLink
+						top="4rem"
+						variants={isMd ? ButtonVariants : {}}
+						href={v.cta.slug}
+					>
 						{v.cta.label}
 					</ButtonLink>
 				</Col>
@@ -301,12 +318,13 @@ const ValidatorSectionContainer = styled(motion.section)`
 	}
 `
 
-const Col = styled.div`
+const Col = styled(motion.div)`
 	&:nth-child(2) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			margin-left: 4rem;
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 				@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+					margin-top: 5rem;
 					margin-left: unset;
 				}
 			}
@@ -314,13 +332,15 @@ const Col = styled.div`
 	}
 
 	&:nth-child(1) {
-		position: sticky;
-		top: 12rem;
-		align-self: start;
-
+		position: relative;
+		/* border: 1px solid red; */
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 				@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+					max-height: calc(100vh - 14rem);
+					position: sticky;
+					top: 12rem;
+					/* align-self: start; */
 				}
 			}
 		}

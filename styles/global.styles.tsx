@@ -9,7 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
   }
   body {
     line-height: 1.5;

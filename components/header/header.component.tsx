@@ -51,6 +51,10 @@ const Header: React.FC = () => {
 		},
 	]
 
+	const handleMobileItemClick = () => {
+		toggleMenu()
+	}
+
 	return (
 		<>
 			<HeaderContainer>
@@ -142,7 +146,7 @@ const Header: React.FC = () => {
 						</RightBlurFigure>
 						<MobileList>
 							{navItems.map((item, index) => (
-								<MobileItem key={index}>
+								<MobileItem onClick={() => handleMobileItemClick()} key={index}>
 									<Link href={item.slug}>
 										<a>{item.label}</a>
 									</Link>

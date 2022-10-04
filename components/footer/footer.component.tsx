@@ -6,82 +6,6 @@ import { motion, Variants } from "framer-motion"
 import Image from "../image/image.component"
 import Link from "next/link"
 
-const variants: Variants = {
-	hidden: {
-		opacity: 0,
-		// y: 100,
-	},
-	visible: {
-		opacity: 1,
-		// y: 0,
-		transition: {
-			// duration: 1,
-			// delay: 0.5,
-			staggerChildren: 0.4,
-			ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
-const ItemVariants: Variants = {
-	hidden: {
-		opacity: 0,
-		y: 50,
-	},
-	visible: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 1.5,
-			// ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
-const ItemVariants2: Variants = {
-	hidden: {
-		opacity: 0,
-		y: 100,
-	},
-	visible: {
-		opacity: 1,
-		y: 0,
-		transition: {
-			duration: 1,
-			ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
-const BlopVariants: Variants = {
-	hidden: {
-		opacity: 0,
-	},
-	visible: {
-		opacity: 1,
-		transition: {
-			duration: 1,
-			delay: 0.5,
-			ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
-const BorderVariants: Variants = {
-	hidden: {
-		opacity: 0,
-		x: 100,
-	},
-	visible: {
-		opacity: 1,
-		x: 0,
-		transition: {
-			duration: 1,
-			ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
 const Footer: React.FC = () => {
 	const navItems = [
 		{
@@ -116,31 +40,23 @@ const Footer: React.FC = () => {
 
 	return (
 		<FooterContainer>
-			<Row variants={variants} initial="hidden" animate="visible" exit="hidden">
+			<Row>
 				<Col>
-					<HeroFigure
-						// initial={{ y: 0 }}
-						whileInView={
-							// isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined
-							{ y: [0, -15, 0], scale: [1, 0.97, 1] }
-						}
-						transition={{
-							duration: 4,
-							repeat: Infinity,
-							// ease: [0.64, 0.33, 0.64, 0.86],
-						}}
-					>
-						<Image
-							src="/assets/hero-section/hero-ilu-v2.png"
-							alt="hero ilu"
-							width={"100%"}
-							height={"100%"}
-							effect="blur"
-							style={{ objectFit: "contain", objectPosition: "center" }}
-						/>
-					</HeroFigure>
+					<Link href="/">
+						<a>
+							<LogoFigure>
+								<Image
+									src="/assets/aliancelogo-v2.svg"
+									alt="Validator Alliance Logo"
+									width={"100%"}
+									height={"100%"}
+									style={{ objectFit: "contain" }}
+								/>
+							</LogoFigure>
+						</a>
+					</Link>
 				</Col>
-				<Col variants={BlopVariants}>
+				<Col>
 					<ColItem>
 						<Title>Navigation</Title>
 						<NavList>
@@ -199,12 +115,13 @@ const Row = styled(motion.div)`
 	display: grid;
 	grid-gap: 2rem;
 	grid-template-columns: 1fr;
-	max-width: 125rem;
-	margin: -4rem auto 0;
+	max-width: 130rem;
+	margin: 0 auto;
 	/* border: 1px solid blue; */
 	/* justify-items: center; */
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		grid-template-columns: 1fr 1fr;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: 2fr 1fr;
 			justify-items: unset;
@@ -238,6 +155,15 @@ const Col = styled(motion.div)`
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}
 		}
+	}
+`
+
+const LogoFigure = styled.figure`
+	margin-top: 4rem;
+	width: 15rem;
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+		width: 20rem;
 	}
 `
 

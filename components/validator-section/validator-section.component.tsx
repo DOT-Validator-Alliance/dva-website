@@ -147,7 +147,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 			exit="hidden"
 			viewport={{ once: true }}
 		>
-			<Col>
+			<Col variants={BlopVariants}>
 				<BlurFigure variants={BlopVariants}>
 					<Image
 						src={data.blop.src}
@@ -158,7 +158,18 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 						style={{ objectFit: "contain" }}
 					/>
 				</BlurFigure>
-				<IluFigure variants={BlopVariants}>
+				<IluFigure
+					whileInView={
+						enableAnimation
+							? { y: [0, -15, 0], scale: [1, 0.97, 1] }
+							: undefined
+					}
+					transition={{
+						duration: 4,
+						repeat: Infinity,
+						// ease: [0.64, 0.33, 0.64, 0.86],
+					}}
+				>
 					<Image
 						src={data.image.src}
 						alt={data.image.alt}
@@ -218,13 +229,14 @@ const ValidatorSectionContainer = styled(motion.section)`
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: minmax(44.5rem, 1fr) 1fr;
+			grid-gap: 10rem;
 			justify-items: unset;
 			padding: 0 0;
 		}
 	}
 `
 
-const Col = styled.div`
+const Col = styled(motion.div)`
 	/* border: 1px solid green; */
 
 	&:nth-child(2) {

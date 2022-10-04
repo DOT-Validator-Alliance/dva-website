@@ -434,6 +434,7 @@ const Item = styled(motion.div)<IItemProps>`
 	padding: 2rem;
 	color: ${({ theme }) => theme.aboutSection.itemColor};
 	overflow: hidden;
+	display: ${({ empty }) => (empty ? "none" : "block")};
 	visibility: ${({ empty }) => (empty ? "hidden" : "visible")};
 
 	:before {
@@ -445,6 +446,12 @@ const Item = styled(motion.div)<IItemProps>`
 		height: 100%;
 		background: ${({ theme }) => theme.aboutSection.itemBackgroundColor};
 		filter: blur(1rem);
+	}
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			display: block;
+		}
 	}
 `
 
