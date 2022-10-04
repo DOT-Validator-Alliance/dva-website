@@ -2,7 +2,7 @@
 import { Story, Meta } from "@storybook/react"
 
 // Components
-import AboutSection from "./about-section.component"
+import AboutSection, { IProps } from "./about-section.component"
 
 const meta: Meta = {
 	title: "Sections/AboutSection",
@@ -11,8 +11,10 @@ const meta: Meta = {
 
 export default meta
 
-const Template: Story = (args) => <AboutSection {...args} />
+const Template: Story<IProps> = (args) => <AboutSection {...args} />
 
 export const Default = Template.bind({})
 
-Default.args = {}
+Default.args = {
+	enableAnimation: true,
+}
