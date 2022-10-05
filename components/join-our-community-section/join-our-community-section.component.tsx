@@ -36,7 +36,7 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 	return (
 		<Container>
 			<JoinOurCommunitySectionContainer
-				variants={enableAnimation ? variants : {}}
+				variants={enableAnimation ? variants : undefined}
 				initial="hidden"
 				whileInView="visible"
 				exit="hidden"

@@ -192,13 +192,13 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 	return (
 		<AboutSectionContainer
-			variants={enableAnimation ? variants : {}}
+			variants={enableAnimation ? variants : undefined}
 			initial="hidden"
 			whileInView="visible"
 			exit="hidden"
 			viewport={{ once: true }}
 		>
-			<LeftTopBlurFigure variants={enableAnimation ? BlopVariants : {}}>
+			<LeftTopBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -208,7 +208,9 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftTopBlurFigure>
-			<LeftBottomBlurFigure variants={enableAnimation ? BlopVariants : {}}>
+			<LeftBottomBlurFigure
+				variants={enableAnimation ? BlopVariants : undefined}
+			>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -218,7 +220,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftBottomBlurFigure>
-			<RightBlurFigure variants={enableAnimation ? BlopVariants : {}}>
+			<RightBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
 				<Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -228,7 +230,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</RightBlurFigure>
-			<CenterBlurFigure variants={enableAnimation ? BlopVariants : {}}>
+			<CenterBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
 				{/* <Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -241,9 +243,13 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 			<Container>
 				<HeadContainer>
-					<Title variants={enableAnimation ? ItemVariants : {}}>About us</Title>
-					<Border variants={enableAnimation ? BorderVariants : {}} />
-					<Description variants={enableAnimation ? DescriptionVariants : {}}>
+					<Title variants={enableAnimation ? ItemVariants : undefined}>
+						About us
+					</Title>
+					<Border variants={enableAnimation ? BorderVariants : undefined} />
+					<Description
+						variants={enableAnimation ? DescriptionVariants : undefined}
+					>
 						We aim to unite the biggest and most prominent Polkadot communities
 						in order to support their healthy growth and the decentralization of
 						the network.
@@ -254,7 +260,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 						<Item
 							key={index}
 							custom={index}
-							variants={enableAnimation ? ListItemVariants : {}}
+							variants={enableAnimation ? ListItemVariants : undefined}
 							empty={!!item.empty}
 						>
 							<ItemHead>
