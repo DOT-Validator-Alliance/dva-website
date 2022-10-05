@@ -59,7 +59,7 @@ const Home = ({ validators }: IProps) => {
 				/>
 			</Head>
 
-			<HeroSection />
+			<HeroSection enableAnimation={isMd} />
 
 			<section id="validators" style={{ scrollMarginTop: "10rem" }}>
 				{validators.map((validator, idx) => (

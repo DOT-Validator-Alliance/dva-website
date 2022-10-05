@@ -2,7 +2,7 @@
 import { Story, Meta } from "@storybook/react"
 
 // Components
-import HeroSection from "./hero-section.component"
+import HeroSection, { IProps } from "./hero-section.component"
 
 const meta: Meta = {
 	title: "Sections/HeroSection",
@@ -11,7 +11,9 @@ const meta: Meta = {
 
 export default meta
 
-const Template: Story = (args) => <HeroSection {...args} />
+const Template: Story<IProps> = (args) => <HeroSection {...args} />
 
 export const Default = Template.bind({})
-Default.args = {}
+Default.args = {
+	enableAnimation: true,
+}
