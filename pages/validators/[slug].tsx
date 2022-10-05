@@ -216,20 +216,20 @@ export default function ValidatorPage({
 				<meta property="twitter:image" content={v.meta.image.src} />
 			</Head>
 			<ValidatorSectionContainer
-				variants={isMd ? variants : {}}
-				initial="hidden"
-				whileInView="visible"
-				exit="hidden"
+				variants={isMd ? variants : undefined}
+				initial={isMd ? "hidden" : undefined}
+				whileInView={isMd ? "visible" : undefined}
+				exit={isMd ? "hidden" : undefined}
 				viewport={{ once: true }}
 			>
-				<Col variants={isMd ? DescriptionVariants : {}}>
+				<Col variants={isMd ? DescriptionVariants : undefined}>
 					<BackButton
 						href={v.backButton.slug}
-						variants={isMd ? DescriptionVariants : {}}
+						variants={isMd ? DescriptionVariants : undefined}
 					>
 						{v.backButton.label}
 					</BackButton>
-					<BlurFigure variants={isMd ? BlopVariants : {}}>
+					<BlurFigure variants={isMd ? BlopVariants : undefined}>
 						<Image
 							src={v.blop.src}
 							alt={v.blop.alt}
@@ -243,11 +243,15 @@ export default function ValidatorPage({
 						whileInView={
 							isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined
 						}
-						transition={{
-							duration: 4,
-							repeat: Infinity,
-							// ease: [0.64, 0.33, 0.64, 0.86],
-						}}
+						transition={
+							isMd
+								? {
+										duration: 4,
+										repeat: Infinity,
+										// ease: [0.64, 0.33, 0.64, 0.86],
+								  }
+								: undefined
+						}
 					>
 						<Image
 							src={v.image.src}
@@ -260,14 +264,14 @@ export default function ValidatorPage({
 					</IluFigure>
 				</Col>
 				<Col>
-					<Title variants={isMd ? ItemVariants : {}}>{v.title}</Title>
-					<Border variants={isMd ? BorderVariants : {}} />
-					<Description variants={isMd ? DescriptionVariants : {}}>
+					<Title variants={isMd ? ItemVariants : undefined}>{v.title}</Title>
+					<Border variants={isMd ? BorderVariants : undefined} />
+					<Description variants={isMd ? DescriptionVariants : undefined}>
 						{v.description}
 					</Description>
 
 					<ValidatorsContainer>
-						<ValidatorsLabel variants={isMd ? DescriptionVariants : {}}>
+						<ValidatorsLabel variants={isMd ? DescriptionVariants : undefined}>
 							{v.listLabel}
 						</ValidatorsLabel>
 						<ValidatorsList>
@@ -275,7 +279,7 @@ export default function ValidatorPage({
 								<Validator
 									custom={index}
 									key={index}
-									variants={isMd ? ListItemVariants : {}}
+									variants={isMd ? ListItemVariants : undefined}
 								>
 									<h3>{validator.name}</h3>
 									<p>{validator.address}</p>
@@ -286,7 +290,7 @@ export default function ValidatorPage({
 
 					<ButtonLink
 						top="4rem"
-						variants={isMd ? ButtonVariants : {}}
+						variants={isMd ? ButtonVariants : undefined}
 						href={v.cta.slug}
 					>
 						{v.cta.label}

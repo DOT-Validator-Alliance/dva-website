@@ -10,6 +10,10 @@ import ValidatorSection from "../../components/validator-section/validator-secti
 // Components
 import Head from "next/head"
 
+// Hooks
+import { useTheme } from "styled-components"
+import { useMediaQuery } from "usehooks-ts"
+
 // Types
 import { ReactElement } from "react"
 import { IValidator } from "../../types/validator.types"
@@ -40,6 +44,9 @@ interface IProps {
 }
 
 const ValidatorsPage = ({ validators }: IProps) => {
+	const theme = useTheme()
+	const isMd = useMediaQuery(`(min-width: ${theme.breakpoints.md})`)
+
 	return (
 		<>
 			<Head>
@@ -52,7 +59,7 @@ const ValidatorsPage = ({ validators }: IProps) => {
 
 			<Container>
 				{validators.map((validator, idx) => (
-					<ValidatorSection key={idx} data={validator} enableAnimation={true} />
+					<ValidatorSection key={idx} data={validator} enableAnimation={isMd} />
 				))}
 			</Container>
 		</>

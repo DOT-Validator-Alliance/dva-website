@@ -193,9 +193,9 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 	return (
 		<AboutSectionContainer
 			variants={enableAnimation ? variants : undefined}
-			initial="hidden"
-			whileInView="visible"
-			exit="hidden"
+			initial={enableAnimation ? "hidden" : undefined}
+			whileInView={enableAnimation ? "visible" : undefined}
+			exit={enableAnimation ? "hidden" : undefined}
 			viewport={{ once: true }}
 		>
 			<LeftTopBlurFigure variants={enableAnimation ? BlopVariants : undefined}>

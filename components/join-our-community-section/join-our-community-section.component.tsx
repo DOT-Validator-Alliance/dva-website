@@ -37,9 +37,9 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 		<Container>
 			<JoinOurCommunitySectionContainer
 				variants={enableAnimation ? variants : undefined}
-				initial="hidden"
-				whileInView="visible"
-				exit="hidden"
+				initial={enableAnimation ? "hidden" : undefined}
+				whileInView={enableAnimation ? "visible" : undefined}
+				exit={enableAnimation ? "hidden" : undefined}
 				viewport={{ once: true }}
 			>
 				<Col>
