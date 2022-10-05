@@ -1,5 +1,6 @@
 {
 	"id": 4,
+	"containerID": "hydradx",
 	"meta": {
 		"title": "HydraDX",
 		"description": "HydraDX is a cross-chain liquidity protocol built on Substrate. It is a base layer for financial use cases, currently - immediate exchanging assets.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#hydradx"
+	},
 	"validators": [
 		{
 			"name": "POLKADOTTERS | VALIDATORALLIANCE -",

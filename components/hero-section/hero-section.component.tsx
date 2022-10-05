@@ -9,9 +9,10 @@ import Button from "../button/button.component"
 import ButtonLink from "../button-link/button-link.component"
 import Border from "../border/border.component"
 
-// Hooks
-import { useMediaQuery } from "usehooks-ts"
-import { useTheme } from "styled-components"
+// Types
+export interface IProps {
+	enableAnimation: boolean
+}
 
 const variants: Variants = {
 	hidden: {
@@ -89,10 +90,7 @@ const BorderVariants: Variants = {
 	},
 }
 
-const HeroSection: React.FC = () => {
-	const theme = useTheme()
-	const isMd = useMediaQuery(`(min-width: ${theme.breakpoints.md})`)
-
+const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 	const founders = [
 		{
 			image: {
@@ -140,24 +138,33 @@ const HeroSection: React.FC = () => {
 
 	return (
 		<SectionContainer>
-			<Row variants={variants} initial="hidden" animate="visible" exit="hidden">
+			<Row
+				variants={enableAnimation ? variants : undefined}
+				initial="hidden"
+				animate="visible"
+				exit="hidden"
+			>
 				<Col>
-					<Title variants={ItemVariants}>
+					<Title variants={enableAnimation ? ItemVariants : undefined}>
 						<span>DOT Validator</span>
 						<span>Alliance</span>
 					</Title>
-					<Border variants={BorderVariants} />
-					<Description variants={ItemVariants}>
+					<Border variants={enableAnimation ? BorderVariants : undefined} />
+					<Description variants={enableAnimation ? ItemVariants : undefined}>
 						We are a group of community leaders who decided to dedicate their
 						professional lives to the Polkadot and its diverse ecosystem.
 					</Description>
 
-					<ButtonsContainer variants={ItemVariants2}>
+					<ButtonsContainer
+						variants={enableAnimation ? ItemVariants2 : undefined}
+					>
 						<ButtonLink href={"/#validators"}>Support us</ButtonLink>
 						<Button outline>Read our Manifesto</Button>
 					</ButtonsContainer>
 
-					<FoundersContainer variants={ItemVariants2}>
+					<FoundersContainer
+						variants={enableAnimation ? ItemVariants2 : undefined}
+					>
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
 							{founders.map((founder, index) => (
@@ -172,11 +179,13 @@ const HeroSection: React.FC = () => {
 						</FlexContainer>
 					</FoundersContainer>
 				</Col>
-				<Col variants={BlopVariants}>
+				<Col variants={enableAnimation ? BlopVariants : undefined}>
 					<HeroFigure
 						// initial={{ y: 0 }}
 						whileInView={
-							isMd ? { y: [0, -15, 0], scale: [1, 0.97, 1] } : undefined
+							enableAnimation
+								? { y: [0, -15, 0], scale: [1, 0.97, 1] }
+								: undefined
 						}
 						transition={{
 							duration: 4,
@@ -196,7 +205,7 @@ const HeroSection: React.FC = () => {
 					</HeroFigure>
 				</Col>
 
-				<LeftBlurFigure variants={BlopVariants}>
+				<LeftBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
 					<Image
 						src="/assets/blops/home_pink.png"
 						alt="bottom blur"
@@ -206,7 +215,7 @@ const HeroSection: React.FC = () => {
 						style={{ objectFit: "contain" }}
 					/>
 				</LeftBlurFigure>
-				<RightBlurFigure variants={BlopVariants}>
+				<RightBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
 					<Image
 						src="/assets/blops/home_purple.png"
 						alt="right blur"

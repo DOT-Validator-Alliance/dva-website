@@ -4,25 +4,23 @@ import { motion, Variants } from "framer-motion"
 
 // Components
 import Image from "../image/image.component"
+import NextLink, { LinkProps } from "next/link"
 
-// Hooks
-import { useRouter } from "next/router"
-
-export interface IProps {
+export interface IProps extends LinkProps {
 	children: React.ReactNode | React.ReactNode[]
 	variants?: Variants
 }
 
 const BackButton: React.FC<IProps> = ({ children, variants, ...props }) => {
-	const router = useRouter()
-
 	return (
-		<BackButtonStyles variants={variants} onClick={() => router.back()}>
-			<IconSpan>
-				<Image src="/assets/icons/right-arrow-pink.svg" alt="Right Arrow" />
-			</IconSpan>
-			<LabelSpan>{children}</LabelSpan>
-		</BackButtonStyles>
+		<NextLink {...props}>
+			<BackButtonStyles variants={variants}>
+				<IconSpan>
+					<Image src="/assets/icons/right-arrow-pink.svg" alt="Right Arrow" />
+				</IconSpan>
+				<LabelSpan>{children}</LabelSpan>
+			</BackButtonStyles>
+		</NextLink>
 	)
 }
 

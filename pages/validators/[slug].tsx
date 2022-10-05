@@ -223,8 +223,11 @@ export default function ValidatorPage({
 				viewport={{ once: true }}
 			>
 				<Col variants={isMd ? DescriptionVariants : {}}>
-					<BackButton variants={isMd ? DescriptionVariants : {}}>
-						{v.backButtonLabel}
+					<BackButton
+						href={v.backButton.slug}
+						variants={isMd ? DescriptionVariants : {}}
+					>
+						{v.backButton.label}
 					</BackButton>
 					<BlurFigure variants={isMd ? BlopVariants : {}}>
 						<Image

@@ -1,5 +1,6 @@
 {
 	"id": 3,
+	"containerID": "stafi",
 	"meta": {
 		"title": "Stafi",
 		"description": "Stafi (short for Staking Finance) is a DeFi protocol that aims to unlock liquidity of staked assets.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#stafi"
+	},
 	"validators": [
 		{
 			"name": "PromoTeam",

@@ -1,5 +1,6 @@
 {
 	"id": 2,
+	"containerID": "polkadot",
 	"meta": {
 		"title": "Polkadot",
 		"description": "Polkadot is a heterogeneous multi-chain interchange and translation architecture which enables customised side-chains to connect with public blockchains.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#polkadot"
+	},
 	"validators": [
 		{
 			"name": "Polkadotters -",

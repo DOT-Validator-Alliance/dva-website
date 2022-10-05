@@ -1,5 +1,6 @@
 {
 	"id": 1,
+	"containerID": "kusama",
 	"meta": {
 		"title": "Kusama",
 		"description": "Kusama is a scalable multi-chain network for radical innovation and early stage Polkadot deployments. Expect Chaos. No promises.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#kusama"
+	},
 	"validators": [
 		{
 			"name": "REPE -",

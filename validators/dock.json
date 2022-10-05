@@ -1,5 +1,6 @@
 {
 	"id": 6,
+	"containerID": "dock",
 	"meta": {
 		"title": "Dock",
 		"description": "Dock.io is a new professional social media network. But it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork, Glassdoor and others who control the recruiting industry. And give back the power to users and companies.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#dock"
+	},
 	"validators": [
 		{
 			"name": "Polkadotters -",

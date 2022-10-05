@@ -141,7 +141,8 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 
 	return (
 		<ValidatorSectionContainer
-			variants={variants}
+			id={data.containerID}
+			variants={enableAnimation ? variants : {}}
 			initial="hidden"
 			whileInView="visible"
 			exit="hidden"

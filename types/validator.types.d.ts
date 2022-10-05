@@ -8,8 +8,14 @@ export interface IValidatorItem {
 	address: string
 }
 
+export interface IButton {
+	label: string
+	slug: string
+}
+
 export interface IValidator {
 	id: number
+	containerID: string
 	meta: {
 		title: string
 		description: string
@@ -21,14 +27,8 @@ export interface IValidator {
 	image: IImage
 	blop: IImage
 	listLabel: string
-	cta: {
-		label: string
-		slug: string
-	}
-	link: {
-		label: string
-		slug: string
-	}
-	backButtonLabel: string
+	cta: IButton
+	link: IButton
+	backButton: IButton
 	validators: IValidatorItem[]
 }

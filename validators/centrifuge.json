@@ -1,5 +1,6 @@
 {
 	"id": 8,
+	"containerID": "centrifuge",
 	"meta": {
 		"title": "Centrifuge",
 		"description": "Centrifuge bridges assets like invoices, real estate, and royalties to DeFi.",
@@ -28,7 +29,10 @@
 		"label": "Nominate",
 		"slug": "https://kusama.network/"
 	},
-	"backButtonLabel": "Back to projects",
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#centrifuge"
+	},
 	"validators": [
 		{
 			"name": "Crifferent -",

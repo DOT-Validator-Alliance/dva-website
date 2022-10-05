@@ -7,6 +7,9 @@ import ValidatorSection, { IProps } from "./validator-section.component"
 // Data
 import kusamaData from "../../validators/kusama.json"
 
+// Types
+import { IValidator } from "../../types/validator.types"
+
 const meta: Meta = {
 	title: "Sections/ValidatorSection",
 	component: ValidatorSection,
@@ -19,6 +22,6 @@ const Template: Story<IProps> = (args) => <ValidatorSection {...args} />
 export const Default = Template.bind({})
 
 Default.args = {
-	data: kusamaData,
+	data: kusamaData as unknown as IValidator,
 	enableAnimation: true,
 }
