@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
 						<a>
 							<LogoFigure>
 								<Image
-									src="/assets/aliancelogo-v2.svg"
+									src="/assets/aliancelogo-v3.svg"
 									alt="Validator Alliance Logo"
 									width={"100%"}
 									height={"100%"}
