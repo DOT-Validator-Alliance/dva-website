@@ -68,7 +68,7 @@ const Header: React.FC = () => {
 							<a>
 								<LogoFigure>
 									<Image
-										src="/assets/aliancelogo-v3.svg"
+										src="/assets/aliancelogo-v4.svg"
 										alt="Validator Alliance Logo"
 										width={"100%"}
 										height={"100%"}
