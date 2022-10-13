@@ -36,6 +36,24 @@ const variants: Variants = {
 	},
 }
 
+const Listvariants: Variants = {
+	hidden: {
+		opacity: 0,
+		// y: 100,
+	},
+	visible: {
+		opacity: 1,
+		// y: 0,
+		transition: {
+			// duration: 1,
+			// delay: 1,
+			delayChildren: 1,
+			staggerChildren: 0.2,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const mobileVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -93,7 +111,6 @@ const ListItemVariants: Variants = {
 			ease: [0.5, 0, 0.56, 0.99],
 			transition: (i: number) => ({
 				delay: 1 + i * 0.2,
-				duration: 0.7,
 				ease: [0.5, 0, 0.56, 0.99],
 			}),
 		},
@@ -217,13 +234,15 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					>
 						{data.listLabel}
 					</ValidatorsLabel>
-					<ValidatorsList>
+					<ValidatorsList
+						variants={Listvariants}
+						initial={"hidden"}
+						whileInView={"visible"}
+						exit={"hidden"}
+						viewport={{ once: true }}
+					>
 						{arr.map((validator, index) => (
-							<Validator
-								custom={index}
-								key={index}
-								variants={enableAnimation ? ListItemVariants : mobileVariants}
-							>
+							<Validator custom={index} key={index} variants={ListItemVariants}>
 								<h3>{validator.name}</h3>
 								<p>{validator.address}</p>
 							</Validator>
