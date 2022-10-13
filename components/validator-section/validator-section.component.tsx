@@ -36,6 +36,19 @@ const variants: Variants = {
 	},
 }
 
+const mobileVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const ItemVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -142,14 +155,14 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 	return (
 		<ValidatorContainer
 			id={data.containerID}
-			variants={enableAnimation ? variants : undefined}
-			initial={enableAnimation ? "hidden" : undefined}
-			whileInView={enableAnimation ? "visible" : undefined}
-			exit={enableAnimation ? "hidden" : undefined}
+			variants={variants}
+			initial={"hidden"}
+			whileInView={"visible"}
+			exit={"hidden"}
 			viewport={{ once: true }}
 		>
-			<Col variants={enableAnimation ? BlopVariants : undefined}>
-				<BlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+			<Col variants={enableAnimation ? BlopVariants : mobileVariants}>
+				<BlurFigure variants={enableAnimation ? BlopVariants : mobileVariants}>
 					<Image
 						src={data.blop.src}
 						alt={data.blop.alt}
@@ -186,19 +199,19 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				</IluFigure>
 			</Col>
 			<Col>
-				<Title variants={enableAnimation ? ItemVariants : undefined}>
+				<Title variants={enableAnimation ? ItemVariants : mobileVariants}>
 					{data.title}
 				</Title>
-				<Border variants={enableAnimation ? BorderVariants : undefined} />
+				<Border variants={enableAnimation ? BorderVariants : mobileVariants} />
 				<Description
-					variants={enableAnimation ? DescriptionVariants : undefined}
+					variants={enableAnimation ? DescriptionVariants : mobileVariants}
 				>
 					{data.description}
 				</Description>
 
 				<ValidatorsContainer>
 					<ValidatorsLabel
-						variants={enableAnimation ? DescriptionVariants : undefined}
+						variants={enableAnimation ? DescriptionVariants : mobileVariants}
 					>
 						{data.listLabel}
 					</ValidatorsLabel>
@@ -207,7 +220,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 							<Validator
 								custom={index}
 								key={index}
-								variants={enableAnimation ? ListItemVariants : undefined}
+								variants={enableAnimation ? ListItemVariants : mobileVariants}
 							>
 								<h3>{validator.name}</h3>
 								<p>{validator.address}</p>
@@ -219,7 +232,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 				{/* <Button>{data.cta.label}</Button> */}
 				<Link
 					href={data.link.slug}
-					variants={enableAnimation ? DescriptionVariants : undefined}
+					variants={enableAnimation ? DescriptionVariants : mobileVariants}
 				>
 					{data.link.label}
 				</Link>

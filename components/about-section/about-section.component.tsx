@@ -28,6 +28,19 @@ const variants: Variants = {
 	},
 }
 
+const mobileVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const ItemVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -192,13 +205,15 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 	return (
 		<AboutSectionContainer
-			variants={enableAnimation ? variants : undefined}
-			initial={enableAnimation ? "hidden" : undefined}
-			whileInView={enableAnimation ? "visible" : undefined}
-			exit={enableAnimation ? "hidden" : undefined}
+			variants={variants}
+			initial={"hidden"}
+			whileInView={"visible"}
+			exit={"hidden"}
 			viewport={{ once: true }}
 		>
-			<LeftTopBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+			<LeftTopBlurFigure
+				variants={enableAnimation ? BlopVariants : mobileVariants}
+			>
 				<Image
 					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
@@ -209,7 +224,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				/>
 			</LeftTopBlurFigure>
 			<LeftBottomBlurFigure
-				variants={enableAnimation ? BlopVariants : undefined}
+				variants={enableAnimation ? BlopVariants : mobileVariants}
 			>
 				<Image
 					src="/assets/blops/home_pink.png"
@@ -220,7 +235,9 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</LeftBottomBlurFigure>
-			<RightBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+			<RightBlurFigure
+				variants={enableAnimation ? BlopVariants : mobileVariants}
+			>
 				<Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -230,7 +247,9 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</RightBlurFigure>
-			<CenterBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+			<CenterBlurFigure
+				variants={enableAnimation ? BlopVariants : mobileVariants}
+			>
 				{/* <Image
 					src="/assets/blops/home_purple.png"
 					alt="right blur"
@@ -243,12 +262,14 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 			<Container>
 				<HeadContainer>
-					<Title variants={enableAnimation ? ItemVariants : undefined}>
+					<Title variants={enableAnimation ? ItemVariants : mobileVariants}>
 						About us
 					</Title>
-					<Border variants={enableAnimation ? BorderVariants : undefined} />
+					<Border
+						variants={enableAnimation ? BorderVariants : mobileVariants}
+					/>
 					<Description
-						variants={enableAnimation ? DescriptionVariants : undefined}
+						variants={enableAnimation ? DescriptionVariants : mobileVariants}
 					>
 						We aim to unite the biggest and most prominent Polkadot communities
 						in order to support their healthy growth and the decentralization of
@@ -260,7 +281,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 						<Item
 							key={index}
 							custom={index}
-							variants={enableAnimation ? ListItemVariants : undefined}
+							variants={enableAnimation ? ListItemVariants : mobileVariants}
 							empty={!!item.empty}
 						>
 							<ItemHead>

@@ -31,6 +31,19 @@ const variants: Variants = {
 	},
 }
 
+const mobileVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const ItemVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -138,32 +151,36 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 	return (
 		<SectionContainer>
-			<Row
-				variants={enableAnimation ? variants : undefined}
-				initial="hidden"
-				animate="visible"
-				exit="hidden"
-			>
-				<Col>
-					<Title variants={enableAnimation ? ItemVariants : undefined}>
+			<Row>
+				<Col
+					variants={variants}
+					initial="hidden"
+					animate="visible"
+					exit="hidden"
+				>
+					<Title variants={enableAnimation ? ItemVariants : mobileVariants}>
 						<span>DOT Validator</span>
 						<span>Alliance</span>
 					</Title>
-					<Border variants={enableAnimation ? BorderVariants : undefined} />
-					<Description variants={enableAnimation ? ItemVariants : undefined}>
+					<Border
+						variants={enableAnimation ? BorderVariants : mobileVariants}
+					/>
+					<Description
+						variants={enableAnimation ? ItemVariants : mobileVariants}
+					>
 						We are a group of community leaders who decided to dedicate their
 						professional lives to the Polkadot and its diverse ecosystem.
 					</Description>
 
 					<ButtonsContainer
-						variants={enableAnimation ? ItemVariants2 : undefined}
+						variants={enableAnimation ? ItemVariants2 : mobileVariants}
 					>
 						<ButtonLink href={"/#validators"}>Support us</ButtonLink>
 						<Button outline>Read our Manifesto</Button>
 					</ButtonsContainer>
 
 					<FoundersContainer
-						variants={enableAnimation ? ItemVariants2 : undefined}
+						variants={enableAnimation ? ItemVariants2 : mobileVariants}
 					>
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
@@ -179,20 +196,29 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 						</FlexContainer>
 					</FoundersContainer>
 				</Col>
-				<Col variants={enableAnimation ? BlopVariants : undefined}>
+				<Col
+					variants={enableAnimation ? BlopVariants : mobileVariants}
+					initial="hidden"
+					animate="visible"
+					exit="hidden"
+				>
 					<HeroFigure
 						// initial={{ y: 0 }}
 						whileInView={
 							enableAnimation
 								? { y: [0, -15, 0], scale: [1, 0.97, 1] }
-								: undefined
+								: mobileVariants
 						}
-						transition={{
-							duration: 4,
-							repeat: Infinity,
-							delay: 5,
-							// ease: [0.64, 0.33, 0.64, 0.86],
-						}}
+						transition={
+							enableAnimation
+								? {
+										duration: 4,
+										repeat: Infinity,
+										delay: 5,
+										// ease: [0.64, 0.33, 0.64, 0.86],
+								  }
+								: mobileVariants
+						}
 					>
 						<Image
 							src="/assets/hero-section/hero-ilu-v2.png"
@@ -205,7 +231,12 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 					</HeroFigure>
 				</Col>
 
-				<LeftBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+				<LeftBlurFigure
+					variants={enableAnimation ? BlopVariants : mobileVariants}
+					initial="hidden"
+					animate="visible"
+					exit="hidden"
+				>
 					<Image
 						src="/assets/blops/home_pink.png"
 						alt="bottom blur"
@@ -215,7 +246,12 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 						style={{ objectFit: "contain" }}
 					/>
 				</LeftBlurFigure>
-				<RightBlurFigure variants={enableAnimation ? BlopVariants : undefined}>
+				<RightBlurFigure
+					variants={enableAnimation ? BlopVariants : mobileVariants}
+					initial="hidden"
+					animate="visible"
+					exit="hidden"
+				>
 					<Image
 						src="/assets/blops/home_purple.png"
 						alt="right blur"

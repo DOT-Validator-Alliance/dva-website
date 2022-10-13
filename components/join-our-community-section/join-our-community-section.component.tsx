@@ -32,14 +32,29 @@ const variants: Variants = {
 	},
 }
 
+const mobileVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			delay: 0.2,
+			ease: [0.5, 0, 0.56, 0.99],
+			staggerChildren: 0.2,
+		},
+	},
+}
+
 const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 	return (
 		<Container>
 			<JoinOurCommunitySectionContainer
-				variants={enableAnimation ? variants : undefined}
-				initial={enableAnimation ? "hidden" : undefined}
-				whileInView={enableAnimation ? "visible" : undefined}
-				exit={enableAnimation ? "hidden" : undefined}
+				variants={enableAnimation ? variants : mobileVariants}
+				initial={"hidden"}
+				whileInView={"visible"}
+				exit={"hidden"}
 				viewport={{ once: true }}
 			>
 				<Col>
