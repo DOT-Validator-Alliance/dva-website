@@ -140,7 +140,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 	})
 
 	return (
-		<ValidatorSectionContainer
+		<ValidatorContainer
 			id={data.containerID}
 			variants={enableAnimation ? variants : undefined}
 			initial={enableAnimation ? "hidden" : undefined}
@@ -224,13 +224,13 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					{data.link.label}
 				</Link>
 			</Col>
-		</ValidatorSectionContainer>
+		</ValidatorContainer>
 	)
 }
 
 export default ValidatorSection
 
-const ValidatorSectionContainer = styled(motion.section)`
+const ValidatorContainer = styled(motion.div)`
 	position: relative;
 	display: grid;
 	grid-gap: 2rem;
