@@ -9,8 +9,8 @@ import Link from "../link/link.component"
 import Border from "../border/border.component"
 
 // Hooks
-import { useEffectOnce } from "usehooks-ts"
-import { useState } from "react"
+// import { useEffectOnce } from "usehooks-ts"
+import { useState, useEffect } from "react"
 
 // Types
 import { IValidator, IValidatorItem } from "../../types/validator.types"
@@ -44,7 +44,7 @@ const mobileVariants: Variants = {
 		opacity: 1,
 		transition: {
 			duration: 1,
-			delay: 0.2,
+			// delay: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
@@ -146,12 +146,13 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 
 	const [arr, setArr] = useState<IValidatorItem[]>([])
 
-	useEffectOnce(() => {
+	useEffect(() => {
+		console.count("useEffect")
 		const randomValidators =
 			data.validators.length < 3 ? data.validators : random(data.validators, 3)
 
 		setArr(randomValidators)
-	})
+	}, [data.validators])
 
 	return (
 		<ValidatorContainer

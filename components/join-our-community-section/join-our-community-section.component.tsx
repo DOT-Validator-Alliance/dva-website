@@ -25,7 +25,7 @@ const variants: Variants = {
 		y: 0,
 		transition: {
 			duration: 1,
-			delay: 0.2,
+			// delay: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
 			staggerChildren: 0.2,
 		},
