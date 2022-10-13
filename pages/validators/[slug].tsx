@@ -83,6 +83,20 @@ const variants: Variants = {
 	},
 }
 
+const mobileVariants: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			duration: 1,
+			// delay: 0.2,
+			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
 const ItemVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -216,20 +230,20 @@ export default function ValidatorPage({
 				<meta property="twitter:image" content={v.meta.image.src} />
 			</Head>
 			<ValidatorSectionContainer
-				variants={isMd ? variants : undefined}
-				initial={isMd ? "hidden" : undefined}
-				whileInView={isMd ? "visible" : undefined}
-				exit={isMd ? "hidden" : undefined}
+				variants={variants}
+				initial={"hidden"}
+				whileInView={"visible"}
+				exit={"hidden"}
 				viewport={{ once: true }}
 			>
-				<Col variants={isMd ? DescriptionVariants : undefined}>
+				<Col variants={isMd ? DescriptionVariants : mobileVariants}>
 					<BackButton
 						href={v.backButton.slug}
-						variants={isMd ? DescriptionVariants : undefined}
+						variants={isMd ? DescriptionVariants : mobileVariants}
 					>
 						{v.backButton.label}
 					</BackButton>
-					<BlurFigure variants={isMd ? BlopVariants : undefined}>
+					<BlurFigure variants={isMd ? BlopVariants : mobileVariants}>
 						<Image
 							src={v.blop.src}
 							alt={v.blop.alt}
@@ -264,14 +278,18 @@ export default function ValidatorPage({
 					</IluFigure>
 				</Col>
 				<Col>
-					<Title variants={isMd ? ItemVariants : undefined}>{v.title}</Title>
-					<Border variants={isMd ? BorderVariants : undefined} />
-					<Description variants={isMd ? DescriptionVariants : undefined}>
+					<Title variants={isMd ? ItemVariants : mobileVariants}>
+						{v.title}
+					</Title>
+					<Border variants={isMd ? BorderVariants : mobileVariants} />
+					<Description variants={isMd ? DescriptionVariants : mobileVariants}>
 						{v.description}
 					</Description>
 
 					<ValidatorsContainer>
-						<ValidatorsLabel variants={isMd ? DescriptionVariants : undefined}>
+						<ValidatorsLabel
+							variants={isMd ? DescriptionVariants : mobileVariants}
+						>
 							{v.listLabel}
 						</ValidatorsLabel>
 						<ValidatorsList>
@@ -279,7 +297,7 @@ export default function ValidatorPage({
 								<Validator
 									custom={index}
 									key={index}
-									variants={isMd ? ListItemVariants : undefined}
+									variants={isMd ? ListItemVariants : mobileVariants}
 								>
 									<h3>{validator.name}</h3>
 									<p>{validator.address}</p>
@@ -290,7 +308,7 @@ export default function ValidatorPage({
 
 					<ButtonLink
 						top="4rem"
-						variants={isMd ? ButtonVariants : undefined}
+						variants={isMd ? ButtonVariants : mobileVariants}
 						href={v.cta.slug}
 					>
 						{v.cta.label}

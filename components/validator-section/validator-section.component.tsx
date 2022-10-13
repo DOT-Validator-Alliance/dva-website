@@ -36,24 +36,6 @@ const variants: Variants = {
 	},
 }
 
-const Listvariants: Variants = {
-	hidden: {
-		opacity: 0,
-		// y: 100,
-	},
-	visible: {
-		opacity: 1,
-		// y: 0,
-		transition: {
-			// duration: 1,
-			// delay: 1,
-			delayChildren: 1,
-			staggerChildren: 0.2,
-			ease: [0.5, 0, 0.56, 0.99],
-		},
-	},
-}
-
 const mobileVariants: Variants = {
 	hidden: {
 		opacity: 0,
@@ -64,6 +46,24 @@ const mobileVariants: Variants = {
 			duration: 1,
 			// delay: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
+		},
+	},
+}
+
+const mobileListItemVariants: Variants = {
+	hidden: {
+		x: 100,
+	},
+	visible: {
+		x: 0,
+		transition: {
+			duration: 0.7,
+			ease: [0.5, 0, 0.56, 0.99],
+			transition: (i: number) => ({
+				delay: 1 + i * 0.2,
+				duration: 0.7,
+				ease: [0.5, 0, 0.56, 0.99],
+			}),
 		},
 	},
 }
@@ -111,6 +111,7 @@ const ListItemVariants: Variants = {
 			ease: [0.5, 0, 0.56, 0.99],
 			transition: (i: number) => ({
 				delay: 1 + i * 0.2,
+				duration: 0.7,
 				ease: [0.5, 0, 0.56, 0.99],
 			}),
 		},
@@ -164,7 +165,6 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 	const [arr, setArr] = useState<IValidatorItem[]>([])
 
 	useEffect(() => {
-		console.count("useEffect")
 		const randomValidators =
 			data.validators.length < 3 ? data.validators : random(data.validators, 3)
 
@@ -234,15 +234,15 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					>
 						{data.listLabel}
 					</ValidatorsLabel>
-					<ValidatorsList
-						variants={Listvariants}
-						initial={"hidden"}
-						whileInView={"visible"}
-						exit={"hidden"}
-						viewport={{ once: true }}
-					>
+					<ValidatorsList>
 						{arr.map((validator, index) => (
-							<Validator custom={index} key={index} variants={ListItemVariants}>
+							<Validator
+								custom={index}
+								key={index}
+								variants={
+									enableAnimation ? ListItemVariants : mobileListItemVariants
+								}
+							>
 								<h3>{validator.name}</h3>
 								<p>{validator.address}</p>
 							</Validator>
