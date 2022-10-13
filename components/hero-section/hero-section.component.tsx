@@ -39,6 +39,7 @@ const mobileVariants: Variants = {
 		opacity: 1,
 		transition: {
 			duration: 1,
+			delay: 0.2,
 			ease: [0.5, 0, 0.56, 0.99],
 		},
 	},
