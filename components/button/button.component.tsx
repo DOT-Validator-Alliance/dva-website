@@ -44,7 +44,7 @@ const LabelSpanContainer = styled.span`
 
 const LabelSpan = styled.span`
 	position: relative;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const IconSpan = styled.span`
@@ -57,7 +57,7 @@ const IconSpan = styled.span`
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 export const ButtonContainer = styled(motion.button)<IProps>`

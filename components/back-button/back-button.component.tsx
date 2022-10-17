@@ -28,7 +28,7 @@ export default BackButton
 
 const LabelSpan = styled.span`
 	position: relative;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 	background: ${({ theme }) => theme.validatorSection.backButtonColor};
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -44,7 +44,7 @@ const IconSpan = styled.span`
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const BackButtonStyles = styled(motion.button)`

@@ -1,5 +1,5 @@
 // Utils
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { motion, AnimatePresence } from "framer-motion"
 
 // Components
@@ -25,10 +25,12 @@ const Header: React.FC = () => {
 		{
 			label: "Manifesto",
 			slug: "/",
+			disabled: true,
 		},
 		{
 			label: "How to nominate",
 			slug: "/",
+			disabled: true,
 		},
 	]
 
@@ -64,7 +66,7 @@ const Header: React.FC = () => {
 						justifyContent="space-between"
 						height="100%"
 					>
-						<Link href="/">
+						<Link href="/" passHref>
 							<a>
 								<LogoFigure>
 									<Image
@@ -81,8 +83,8 @@ const Header: React.FC = () => {
 							<NavList>
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
-										<Link href={item.slug}>
-											<LabelA>
+										<Link href={item.slug} passHref>
+											<LabelA disabled={item.disabled}>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>
 													<Image
@@ -218,7 +220,7 @@ const NavList = styled.ul`
 
 const LabelSpan = styled.span`
 	position: relative;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const IconSpan = styled.span`
@@ -231,10 +233,14 @@ const IconSpan = styled.span`
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
-const LabelA = styled.a`
+interface IAProps {
+	disabled?: boolean
+}
+
+const LabelA = styled.a<IAProps>`
 	position: relative;
 
 	display: flex;
@@ -244,21 +250,27 @@ const LabelA = styled.a`
 
 	color: ${({ theme }) => theme.header.navItemColor};
 
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
+	cursor: default;
 
-	&:hover {
-		color: ${({ theme }) => theme.header.activeNavItemColor};
-		font-weight: 600;
+	${({ disabled }) =>
+		!disabled &&
+		css`
+			cursor: pointer;
+			&:hover {
+				color: ${({ theme }) => theme.header.activeNavItemColor};
+				font-weight: 600;
 
-		${IconSpan} {
-			opacity: 1;
-		}
+				${IconSpan} {
+					opacity: 1;
+				}
 
-		${LabelSpan} {
-			margin-left: -1rem;
-			margin-right: 1rem;
-		}
-	}
+				${LabelSpan} {
+					margin-left: -1rem;
+					margin-right: 1rem;
+				}
+			}
+		`}
 `
 
 const NavItem = styled.li``
@@ -331,7 +343,7 @@ const MobileItem = styled.li`
 		font-size: 3rem;
 		font-weight: 400;
 		color: ${({ theme }) => theme.header.navItemColor};
-		transition: all 0.3s ease-out;
+		transition: all 0.4s ease-out;
 
 		&:hover {
 			color: ${({ theme }) => theme.header.activeNavItemColor};

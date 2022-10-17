@@ -36,7 +36,7 @@ export default Link
 
 const LabelSpan = styled.span`
 	position: relative;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 	background: ${({ theme }) => theme.validatorSection.linkColor};
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@ const IconSpan = styled.span`
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const CtaLink = styled(motion.a)`
@@ -61,7 +61,7 @@ const CtaLink = styled(motion.a)`
 	align-items: center;
 	gap: 1rem;
 	font-size: 1.6rem;
-	padding: 1rem 1rem 1rem 0;
+	padding: 1rem 0;
 	font-weight: 600;
 	background: ${({ theme }) => theme.validatorSection.linkColor};
 	-webkit-background-clip: text;

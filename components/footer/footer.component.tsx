@@ -197,7 +197,7 @@ const NavList = styled.ul`
 
 const LabelSpan = styled.span`
 	position: relative;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const IconSpan = styled.span`
@@ -210,7 +210,7 @@ const IconSpan = styled.span`
 	align-items: center;
 	justify-content: center;
 	opacity: 0;
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 `
 
 const LabelA = styled.a`
@@ -221,7 +221,7 @@ const LabelA = styled.a`
 
 	color: ${({ theme }) => theme.footer.navItemColor};
 
-	transition: all 0.3s ease-out;
+	transition: all 0.4s ease-out;
 
 	&:hover {
 		color: ${({ theme }) => theme.footer.activeNavItemColor};
