@@ -315,6 +315,16 @@ export default function ValidatorPage({
 					>
 						{v.cta.label}
 					</ButtonLink> */}
+					{!isMd && (
+						<a href={v.backButton.slug}>
+							<BackButton
+								href={v.backButton.slug}
+								variants={isMd ? DescriptionVariants : mobileVariants}
+							>
+								{v.backButton.label}
+							</BackButton>
+						</a>
+					)}
 				</Col>
 			</ValidatorSectionContainer>
 		</>

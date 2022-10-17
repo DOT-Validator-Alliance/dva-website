@@ -65,8 +65,8 @@ const BackButtonStyles = styled(motion.button)`
 		}
 
 		${LabelSpan} {
-			margin-left: 1rem;
-			margin-right: -1rem;
+			margin-left: 1.5rem;
+			margin-right: -1.5rem;
 		}
 	}
 `
