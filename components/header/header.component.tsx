@@ -101,7 +101,11 @@ const Header: React.FC = () => {
 							<SocialsList>
 								{socialItems.map((item, index) => (
 									<SocialsItem key={index}>
-										<SocialsLink href={item.slug}>
+										<SocialsLink
+											href={item.slug}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
 											<Image
 												src={item.icon.src}
 												alt={item.icon.alt}

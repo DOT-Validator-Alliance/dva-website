@@ -53,17 +53,19 @@ const mobileVariants: Variants = {
 const mobileListItemVariants: Variants = {
 	hidden: {
 		x: 100,
+		opacity: 0,
 	},
 	visible: {
 		x: 0,
+		opacity: 1,
 		transition: {
 			duration: 0.7,
 			ease: [0.5, 0, 0.56, 0.99],
-			transition: (i: number) => ({
-				delay: 1 + i * 0.2,
-				duration: 0.7,
-				ease: [0.5, 0, 0.56, 0.99],
-			}),
+			// transition: (i: number) => ({
+			// 	delay: 1 + i * 0.2,
+			// 	duration: 0.7,
+			// 	ease: [0.5, 0, 0.56, 0.99],
+			// }),
 		},
 	},
 }
@@ -109,11 +111,11 @@ const ListItemVariants: Variants = {
 		transition: {
 			duration: 0.7,
 			ease: [0.5, 0, 0.56, 0.99],
-			transition: (i: number) => ({
-				delay: 1 + i * 0.2,
-				duration: 0.7,
-				ease: [0.5, 0, 0.56, 0.99],
-			}),
+			// transition: (i: number) => ({
+			// 	delay: 1 + i * 0.2,
+			// 	duration: 0.7,
+			// 	ease: [0.5, 0, 0.56, 0.99],
+			// }),
 		},
 	},
 }

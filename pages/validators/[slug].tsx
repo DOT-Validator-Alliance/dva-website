@@ -237,12 +237,14 @@ export default function ValidatorPage({
 				viewport={{ once: true }}
 			>
 				<Col variants={isMd ? DescriptionVariants : mobileVariants}>
-					<BackButton
-						href={v.backButton.slug}
-						variants={isMd ? DescriptionVariants : mobileVariants}
-					>
-						{v.backButton.label}
-					</BackButton>
+					<a href={v.backButton.slug}>
+						<BackButton
+							href={v.backButton.slug}
+							variants={isMd ? DescriptionVariants : mobileVariants}
+						>
+							{v.backButton.label}
+						</BackButton>
+					</a>
 					<BlurFigure variants={isMd ? BlopVariants : mobileVariants}>
 						<Image
 							src={v.blop.src}
@@ -306,13 +308,13 @@ export default function ValidatorPage({
 						</ValidatorsList>
 					</ValidatorsContainer>
 
-					<ButtonLink
+					{/* <ButtonLink
 						top="4rem"
 						variants={isMd ? ButtonVariants : mobileVariants}
 						href={v.cta.slug}
 					>
 						{v.cta.label}
-					</ButtonLink>
+					</ButtonLink> */}
 				</Col>
 			</ValidatorSectionContainer>
 		</>

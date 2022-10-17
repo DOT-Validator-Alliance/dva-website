@@ -61,6 +61,7 @@ const CtaLink = styled(motion.a)`
 	align-items: center;
 	gap: 1rem;
 	font-size: 1.6rem;
+	padding: 1rem 1rem 1rem 0;
 	font-weight: 600;
 	background: ${({ theme }) => theme.validatorSection.linkColor};
 	-webkit-background-clip: text;
@@ -72,8 +73,8 @@ const CtaLink = styled(motion.a)`
 		}
 
 		${LabelSpan} {
-			margin-left: -1rem;
-			margin-right: 1rem;
+			margin-left: -1.5rem;
+			margin-right: 1.5rem;
 		}
 	}
 `

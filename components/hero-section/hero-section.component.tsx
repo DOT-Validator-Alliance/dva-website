@@ -107,45 +107,52 @@ const BorderVariants: Variants = {
 const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 	const founders = [
 		{
+			url: "https://twitter.com/dev0_sik",
 			image: {
 				src: "/assets/hero-section/founders/founder-1.png",
-				alt: "Logo",
+				alt: "dev0_sik",
 			},
 		},
+		// {
+		// 	url: "",
+		// 	image: {
+		// 		src: "/assets/hero-section/founders/founder-2.png",
+		// 		alt: "Logo",
+		// 	},
+		// },
 		{
+			url: "https://twitter.com/pathrock2",
 			image: {
-				src: "/assets/hero-section/founders/founder-2.png",
-				alt: "Logo",
+				src: "/assets/hero-section/founders/pathrock.jpeg",
+				alt: "pathrock2",
 			},
 		},
 		{
+			url: "https://twitter.com/stakenode_dev",
 			image: {
-				src: "/assets/hero-section/founders/founder-3.png",
-				alt: "Logo",
+				src: "/assets/hero-section/founders/jimmy-tudeski.jpeg",
+				alt: "stakenode_dev",
 			},
 		},
 		{
-			image: {
-				src: "/assets/hero-section/founders/founder-4.png",
-				alt: "Logo",
-			},
-		},
-		{
+			url: "https://twitter.com/bldnodes",
 			image: {
 				src: "/assets/hero-section/founders/founder-5.png",
-				alt: "Logo",
+				alt: "bldnodes",
 			},
 		},
+		// {
+		// 	url: "",
+		// 	image: {
+		// 		src: "/assets/hero-section/founders/founder-6.png",
+		// 		alt: "Logo",
+		// 	},
+		// },
 		{
-			image: {
-				src: "/assets/hero-section/founders/founder-6.png",
-				alt: "Logo",
-			},
-		},
-		{
+			url: "https://twitter.com/polkadotters1",
 			image: {
 				src: "/assets/hero-section/founders/founder-7.png",
-				alt: "Logo",
+				alt: "polkadotters1",
 			},
 		},
 	]
@@ -177,7 +184,9 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 						variants={enableAnimation ? ItemVariants2 : mobileVariants}
 					>
 						<ButtonLink href={"/#validators"}>Support us</ButtonLink>
-						<Button outline>Read our Manifesto</Button>
+						<Button outline disabled>
+							Read our Manifesto
+						</Button>
 					</ButtonsContainer>
 
 					<FoundersContainer
@@ -186,13 +195,20 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
 							{founders.map((founder, index) => (
-								<Image
+								<a
 									key={index}
-									src={founder.image.src}
-									alt={founder.image.alt}
-									// width={100}
-									// height={100}
-								/>
+									href={founder.url}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Image
+										src={founder.image.src}
+										alt={founder.image.alt}
+										width={35}
+										height={35}
+										style={{ borderRadius: "50%" }}
+									/>
+								</a>
 							))}
 						</FlexContainer>
 					</FoundersContainer>

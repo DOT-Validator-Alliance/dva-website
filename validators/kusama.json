@@ -35,16 +35,8 @@
 	},
 	"validators": [
 		{
-			"name": "REPE -",
-			"address": "FaBN1AxtJu21x2cUqvdF5VcVUAfzfqyvJPvwgsdwo3pkdr9"
-		},
-		{
 			"name": "Polkadotters -",
 			"address": "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA"
-		},
-		{
-			"name": "PromoTeam Validator -",
-			"address": "Dm4uKxZJZHJbpZpfnYPiHnbgyHWKMU1s5h6X7kqjfYv1Xkk"
 		},
 		{
 			"name": "Stakenode_Powernode -",
@@ -57,10 +49,6 @@
 		{
 			"name": "STAKENODE POWERNODE -",
 			"address": "CuiwESD49ggEAQ9131Gt948xw11PiWQNXkuR2R2Jt7rYSck"
-		},
-		{
-			"name": "Iceberg Nodes -",
-			"address": "Eices1KaGTYqiazfjJpwyjnz5UzqTxULeYqnmeJNz49gs19"
 		},
 		{
 			"name": "Crifferent -",

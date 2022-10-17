@@ -108,6 +108,19 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 	}
 	&:disabled {
 		cursor: default;
-		opacity: 0.5;
+		/* opacity: 0.5; */
+
+		&:hover {
+			--x: 100%;
+
+			${IconSpan} {
+				opacity: 0;
+			}
+
+			${LabelSpan} {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
 	}
 `

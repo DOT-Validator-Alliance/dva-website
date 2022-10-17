@@ -75,36 +75,38 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						/>
 					</IluFigure>
 
-					<Link href="https://t.me/DotValidators">
-						<SocialLink
-							whileHover={{
-								scale: 1.02,
-							}}
-							whileTap={{
-								scale: 0.98,
-							}}
-						>
-							<IconSpan>
-								<FaTelegramPlane />
-							</IconSpan>
-							<span>Telegram</span>
-						</SocialLink>
-					</Link>
-					<Link href="https://discord.com/invite/Kwfbe6YRAd">
-						<SocialLink
-							whileHover={{
-								scale: 1.02,
-							}}
-							whileTap={{
-								scale: 0.98,
-							}}
-						>
-							<IconSpan>
-								<IoLogoDiscord />
-							</IconSpan>
-							<span>Discord</span>
-						</SocialLink>
-					</Link>
+					<SocialLink
+						whileHover={{
+							scale: 1.02,
+						}}
+						whileTap={{
+							scale: 0.98,
+						}}
+						href="https://t.me/DotValidators"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<IconSpan>
+							<FaTelegramPlane />
+						</IconSpan>
+						<span>Telegram</span>
+					</SocialLink>
+					<SocialLink
+						whileHover={{
+							scale: 1.02,
+						}}
+						whileTap={{
+							scale: 0.98,
+						}}
+						href="https://discord.com/invite/Kwfbe6YRAd"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<IconSpan>
+							<IoLogoDiscord />
+						</IconSpan>
+						<span>Discord</span>
+					</SocialLink>
 				</Col>
 			</JoinOurCommunitySectionContainer>
 		</Container>
@@ -212,6 +214,7 @@ const SocialLink = styled(motion.a)`
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	color: ${({ theme }) => theme.fonts.primary};
 `
 
 const IconSpan = styled.span`

@@ -132,23 +132,23 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			description:
 				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
 		},
-		{
-			image: {
-				src: "/assets/about-section/promoteam.png",
-				alt: "promoteam",
-			},
-			title: "PromoTeam",
-			description:
-				"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
-		},
-		{
-			image: {
-				src: "/assets/about-section/repe.png",
-				alt: "repe",
-			},
-			title: "Repe",
-			description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
-		},
+		// {
+		// 	image: {
+		// 		src: "/assets/about-section/promoteam.png",
+		// 		alt: "promoteam",
+		// 	},
+		// 	title: "PromoTeam",
+		// 	description:
+		// 		"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
+		// },
+		// {
+		// 	image: {
+		// 		src: "/assets/about-section/repe.png",
+		// 		alt: "repe",
+		// 	},
+		// 	title: "Repe",
+		// 	description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
+		// },
 		{
 			image: {
 				src: "/assets/about-section/pathrock.png",
@@ -184,24 +184,24 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			description:
 				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
 		},
-		{
-			image: {
-				src: "/assets/about-section/iceberg.png",
-				alt: "iceberg",
-			},
-			title: "Iceberg Nodes",
-			description:
-				"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
-		},
-		{
-			image: {
-				src: "",
-				alt: "",
-			},
-			title: "",
-			description: "",
-			empty: true,
-		},
+		// {
+		// 	image: {
+		// 		src: "/assets/about-section/iceberg.png",
+		// 		alt: "iceberg",
+		// 	},
+		// 	title: "Iceberg Nodes",
+		// 	description:
+		// 		"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
+		// },
+		// {
+		// 	image: {
+		// 		src: "",
+		// 		alt: "",
+		// 	},
+		// 	title: "",
+		// 	description: "",
+		// 	empty: true,
+		// },
 	]
 
 	return (
@@ -283,7 +283,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 							key={index}
 							custom={index}
 							variants={enableAnimation ? ListItemVariants : mobileVariants}
-							empty={!!item.empty}
+							// empty={!!item.empty}
 						>
 							<ItemHead>
 								<ImageFigure>
@@ -429,11 +429,16 @@ const Description = styled(motion.p)`
 `
 
 const ItemsDirectory = styled.div`
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr;
+
 	gap: 3rem;
-	/* border: 1px solid red; */
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		grid-template-columns: 1fr 1fr;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
 `
 
 interface IItemProps {
@@ -444,7 +449,7 @@ const Item = styled(motion.div)<IItemProps>`
 	/* border: 1px solid green; */
 	position: relative;
 	width: 100%;
-	max-width: 35rem;
+	/* max-width: 35rem; */
 	padding: 2rem;
 	color: ${({ theme }) => theme.aboutSection.itemColor};
 	overflow: hidden;

@@ -13,14 +13,14 @@ export interface IProps extends LinkProps {
 
 const BackButton: React.FC<IProps> = ({ children, variants, ...props }) => {
 	return (
-		<NextLink {...props}>
-			<BackButtonStyles variants={variants}>
-				<IconSpan>
-					<Image src="/assets/icons/right-arrow-pink.svg" alt="Right Arrow" />
-				</IconSpan>
-				<LabelSpan>{children}</LabelSpan>
-			</BackButtonStyles>
-		</NextLink>
+		// <NextLink {...props}>
+		<BackButtonStyles variants={variants}>
+			<IconSpan>
+				<Image src="/assets/icons/right-arrow-pink.svg" alt="Right Arrow" />
+			</IconSpan>
+			<LabelSpan>{children}</LabelSpan>
+		</BackButtonStyles>
+		// </NextLink>
 	)
 }
 
