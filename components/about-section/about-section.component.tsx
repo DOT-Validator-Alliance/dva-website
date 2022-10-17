@@ -311,14 +311,17 @@ export default AboutSection
 
 const LeftTopBlurFigure = styled(motion.figure)`
 	position: absolute;
-	border-radius: 50%;
-	width: 175rem;
-	height: 175rem;
 	z-index: -1;
-	top: -60rem;
-	left: -75rem;
+	width: 100rem;
+	height: 100rem;
+	top: -30rem;
+	left: -45rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		width: 175rem;
+		height: 175rem;
+		top: -60rem;
+		left: -75rem;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			bottom: unset;
 			top: -60rem;
@@ -328,21 +331,18 @@ const LeftTopBlurFigure = styled(motion.figure)`
 `
 
 const LeftBottomBlurFigure = styled(motion.figure)`
-	position: absolute;
-	border-radius: 50%;
-	width: 89.3rem;
-	height: 89.3rem;
-
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		rgba(230, 31, 122, 0.05) 0%,
-		rgba(0, 0, 0, 0) 100%
-	);
-	z-index: -1;
-	bottom: -50rem;
-	left: -48rem;
-
+	display: none;
+	visibility: hidden;
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		display: block;
+		visibility: visible;
+		position: absolute;
+		border-radius: 50%;
+		width: 89.3rem;
+		height: 89.3rem;
+		z-index: -1;
+		bottom: -50rem;
+		left: -48rem;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		}
 	}
@@ -351,19 +351,19 @@ const LeftBottomBlurFigure = styled(motion.figure)`
 const RightBlurFigure = styled(motion.figure)`
 	position: absolute;
 	border-radius: 50%;
-	width: 162.8rem;
-	height: 162.8rem;
+	width: 50.8rem;
+	height: 50.8rem;
 
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		rgba(154, 38, 141, 0.16) 0%,
-		rgba(0, 0, 0, 0) 100%
-	);
 	z-index: -1;
-	top: 40rem;
-	right: -100rem;
+	top: 100rem;
+	right: -20rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		width: 162.8rem;
+		height: 162.8rem;
+		top: 40rem;
+		right: -100rem;
+
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			top: -20rem;
 			right: -100rem;
