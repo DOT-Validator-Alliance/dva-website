@@ -18,10 +18,10 @@ import { useMediaQuery } from "usehooks-ts"
 
 // Types
 import { ReactElement } from "react"
-import { IValidator } from "../types/validator.types"
-import { GetStaticProps } from "next"
+import { IValidator, IValidatorItem } from "../types/validator.types"
+import { GetServerSideProps } from "next"
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
 	const requireAll = (r: any) => r.keys().map(r)
 	const validators: IValidator[] = requireAll(
 		require.context("../validators", false, /\.json$/)
@@ -34,9 +34,35 @@ export const getStaticProps: GetStaticProps = async () => {
 
 	const sortedValidators = uniqueValidators.sort((a, b) => a.id - b.id)
 
+	const random = (arr: IValidatorItem[], n: number) => {
+		let result = new Array(n),
+			len = arr.length,
+			taken = new Array(len)
+		if (n > len)
+			throw new RangeError("getRandom: more elements taken than available")
+		while (n--) {
+			let x = Math.floor(Math.random() * len)
+			result[n] = arr[x in taken ? taken[x] : x]
+			taken[x] = --len in taken ? taken[len] : len
+		}
+		return result
+	}
+
+	const validatorsWithRandomValidators = sortedValidators.map((validator) => {
+		const randomValidators =
+			validator.validators.length < 3
+				? validator.validators
+				: random(validator.validators, 3)
+
+		return {
+			...validator,
+			validators: randomValidators,
+		}
+	})
+
 	return {
 		props: {
-			validators: sortedValidators,
+			validators: validatorsWithRandomValidators,
 		},
 	}
 }

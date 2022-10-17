@@ -150,28 +150,28 @@ const BorderVariants: Variants = {
 }
 
 const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
-	const random = (arr: IValidatorItem[], n: number) => {
-		let result = new Array(n),
-			len = arr.length,
-			taken = new Array(len)
-		if (n > len)
-			throw new RangeError("getRandom: more elements taken than available")
-		while (n--) {
-			let x = Math.floor(Math.random() * len)
-			result[n] = arr[x in taken ? taken[x] : x]
-			taken[x] = --len in taken ? taken[len] : len
-		}
-		return result
-	}
+	// const random = (arr: IValidatorItem[], n: number) => {
+	// 	let result = new Array(n),
+	// 		len = arr.length,
+	// 		taken = new Array(len)
+	// 	if (n > len)
+	// 		throw new RangeError("getRandom: more elements taken than available")
+	// 	while (n--) {
+	// 		let x = Math.floor(Math.random() * len)
+	// 		result[n] = arr[x in taken ? taken[x] : x]
+	// 		taken[x] = --len in taken ? taken[len] : len
+	// 	}
+	// 	return result
+	// }
 
-	const [arr, setArr] = useState<IValidatorItem[]>([])
+	// const [arr, setArr] = useState<IValidatorItem[]>([])
 
-	useEffect(() => {
-		const randomValidators =
-			data.validators.length < 3 ? data.validators : random(data.validators, 3)
+	// useEffect(() => {
+	// 	const randomValidators =
+	// 		data.validators.length < 3 ? data.validators : random(data.validators, 3)
 
-		setArr(randomValidators)
-	}, [data.validators])
+	// 	setArr(randomValidators)
+	// }, [data.validators])
 
 	return (
 		<ValidatorContainer
@@ -237,7 +237,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 						{data.listLabel}
 					</ValidatorsLabel>
 					<ValidatorsList>
-						{arr.map((validator, index) => (
+						{data.validators.map((validator, index) => (
 							<Validator
 								custom={index}
 								key={index}
