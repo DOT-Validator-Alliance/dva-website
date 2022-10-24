@@ -10,10 +10,13 @@ import Border from "../border/border.component"
 
 // Hooks
 // import { useEffectOnce } from "usehooks-ts"
-import { useState, useEffect } from "react"
+// import { useState, useEffect } from "react"
 
 // Types
-import { IValidator, IValidatorItem } from "../../types/validator.types"
+import {
+	IValidator,
+	// IValidatorItem
+} from "../../types/validator.types"
 export interface IProps {
 	data: IValidator
 	enableAnimation: boolean

@@ -37,6 +37,7 @@ const LayoutContainer = styled.div`
 	}
 
 	main {
+		position: relative;
 		margin: 10rem 0 0;
 		flex-grow: 1;
 

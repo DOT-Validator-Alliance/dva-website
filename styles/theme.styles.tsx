@@ -54,6 +54,12 @@ export const light = {
 			"linear-gradient(89.37deg, rgba(116, 116, 116, 0.19) 13.81%, rgba(255, 255, 255, 0) 115.34%)",
 		itemColor: "#CACACA",
 	},
+	manifesto: {
+		itemBackgroundColor:
+			"linear-gradient(90.38deg, rgba(116, 116, 116, 0.19) 13.66%, rgba(255, 255, 255, 0) 90.84%)",
+		itemColor: "#898989",
+		borderColor: "#E71F7A",
+	},
 	breakpoints: {
 		sm: "640px",
 		md: "768px",

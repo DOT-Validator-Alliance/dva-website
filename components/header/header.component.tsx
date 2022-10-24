@@ -24,8 +24,7 @@ const Header: React.FC = () => {
 		},
 		{
 			label: "Manifesto",
-			slug: "/",
-			disabled: true,
+			slug: "/manifesto",
 		},
 		{
 			label: "How to nominate",
