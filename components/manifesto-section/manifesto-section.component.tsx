@@ -56,13 +56,31 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 			opacity: 1,
 			// y: 0,
 			transition: {
-				// duration: 1,
 				// delay: 0.5,
+				delayChildren: 0.4,
 				staggerChildren: 0.2,
 				ease: [0.5, 0, 0.56, 0.99],
 			},
 		},
 	}
+
+	// const directoryVariants: Variants = {
+	// 	hidden: {
+	// 		opacity: 0,
+	// 		// y: 100,
+	// 	},
+	// 	visible: {
+	// 		opacity: 1,
+	// 		// y: 0,
+	// 		transition: {
+	// 			// duration: 1,
+	// 			// delay: 1,
+	// 			// delayChildren: 1,
+	// 			// staggerChildren: 0.2,
+	// 			// ease: [0.5, 0, 0.56, 0.99],
+	// 		},
+	// 	},
+	// }
 
 	const mobileVariants: Variants = {
 		hidden: {
@@ -81,16 +99,17 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 	const ItemVariants: Variants = {
 		hidden: {
 			opacity: 0,
-			y: -100,
+			x: 100,
 		},
-		visible: {
+		visible: (i: number) => ({
 			opacity: 1,
-			y: 0,
+			x: 0,
 			transition: {
 				duration: 1,
+				// delay: i * 0.3,
 				ease: [0.5, 0, 0.56, 0.99],
 			},
-		},
+		}),
 	}
 
 	const DescriptionVariants: Variants = {
@@ -117,7 +136,7 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 			opacity: 1,
 			x: 0,
 			transition: {
-				duration: 1,
+				duration: 0.5,
 				ease: [0.5, 0, 0.56, 0.99],
 			},
 		},
@@ -139,29 +158,35 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 	return (
 		<>
-			<TopBlurFigure
+			<LeftTopBlurFigure
 				variants={enableAnimation ? BlopVariants : mobileVariants}
-				initial="hidden"
-				animate="visible"
-				exit="hidden"
 			>
 				<Image
-					src="/assets/manifesto/top-right-ilu.png"
+					src="/assets/blops/home_pink.png"
 					alt="bottom blur"
 					effect="blur"
 					width={"100%"}
 					height={"100%"}
 					style={{ objectFit: "contain" }}
 				/>
-			</TopBlurFigure>
-			<RightBlurFigure
+			</LeftTopBlurFigure>
+			<LeftBottomBlurFigure
 				variants={enableAnimation ? BlopVariants : mobileVariants}
-				initial="hidden"
-				animate="visible"
-				exit="hidden"
 			>
 				<Image
-					src="/assets/manifesto/bottom-right-ilu.png"
+					src="/assets/blops/home_pink.png"
+					alt="bottom blur"
+					effect="blur"
+					width={"100%"}
+					height={"100%"}
+					style={{ objectFit: "contain" }}
+				/>
+			</LeftBottomBlurFigure>
+			<RightBlurFigure
+				variants={enableAnimation ? BlopVariants : mobileVariants}
+			>
+				<Image
+					src="/assets/blops/home_purple.png"
 					alt="right blur"
 					effect="blur"
 					width={"100%"}
@@ -169,7 +194,24 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 					style={{ objectFit: "contain" }}
 				/>
 			</RightBlurFigure>
-			<Container>
+			{/* <CenterBlurFigure
+				variants={enableAnimation ? BlopVariants : mobileVariants}
+			>
+				<Image
+					src="/assets/blops/home_purple.png"
+					alt="right blur"
+					effect="blur"
+					width={"100%"}
+					height={"100%"}
+					style={{ objectFit: "contain" }}
+				/>
+			</CenterBlurFigure> */}
+			<Container
+				variants={variants}
+				initial="hidden"
+				animate="visible"
+				exit="hidden"
+			>
 				<Title variants={enableAnimation ? ItemVariants : mobileVariants}>
 					{TITLE}
 				</Title>
@@ -180,11 +222,20 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 					{DESCRIPTION}
 				</Description>
 
-				<Directory>
+				<Directory
+				// variants={directoryVariants}
+				// initial="hidden"
+				// animate="visible"
+				// exit="hidden"
+				>
 					{items.map((item, index) => (
 						<Item
 							key={index}
+							custom={index}
 							variants={enableAnimation ? ItemVariants : mobileVariants}
+							// initial="hidden"
+							// whileInView="visible"
+							// exit="hidden"
 						>
 							<ItemNumberContainer>
 								<p>0{index + 1}</p>
@@ -196,7 +247,7 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 					))}
 				</Directory>
 			</Container>
-			<LeftBlurFigure
+			{/* <LeftBlurFigure
 				variants={enableAnimation ? BlopVariants : mobileVariants}
 				initial="hidden"
 				animate="visible"
@@ -210,57 +261,85 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 					height={"100%"}
 					style={{ objectFit: "contain" }}
 				/>
-			</LeftBlurFigure>
+			</LeftBlurFigure> */}
 		</>
 	)
 }
 
 export default ManifestoSection
 
-const TopBlurFigure = styled(motion.figure)`
+const LeftTopBlurFigure = styled(motion.figure)`
 	position: absolute;
-	width: 70%;
 	z-index: -1;
-	top: -5rem;
-	left: -2rem;
+	width: 100rem;
+	height: 100rem;
+	top: -30rem;
+	left: -45rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		width: 45rem;
+		width: 175rem;
+		height: 175rem;
+		top: -60rem;
+		left: -75rem;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-			width: 75rem;
+			bottom: unset;
+			top: -90rem;
+			left: -75rem;
 		}
 	}
 `
 
-const LeftBlurFigure = styled(motion.figure)`
+const LeftBottomBlurFigure = styled(motion.figure)`
 	position: absolute;
-	width: 50%;
+	width: 89.3rem;
+	height: 89.3rem;
 	z-index: -1;
-	bottom: 0;
-	left: -3rem;
-
+	bottom: 0rem;
+	left: -48rem;
+	/* display: none; */
+	/* visibility: hidden; */
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		width: 45rem;
+		/* display: block; */
+		/* visibility: visible; */
+		/* position: absolute; */
+		/* border-radius: 50%; */
+		width: 89.3rem;
+		height: 89.3rem;
+		z-index: -1;
+		bottom: -15rem;
+		left: -48rem;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-			width: 75rem;
 		}
 	}
 `
 
 const RightBlurFigure = styled(motion.figure)`
 	position: absolute;
-	width: 50%;
+	border-radius: 50%;
+	width: 80.8rem;
+	height: 80.8rem;
+
 	z-index: -1;
-	right: 0rem;
+	top: 20rem;
+	right: -45rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		width: 50rem;
+		width: 162.8rem;
+		height: 162.8rem;
+		top: -10rem;
+		right: -100rem;
+
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			top: -20rem;
+			right: -100rem;
+
+			/* bottom: unset;
+			top: -60rem;
+			right: -140rem; */
 		}
 	}
 `
-
-const Container = styled.div`
+const Container = styled(motion.div)`
 	max-width: 68.3rem;
 	margin: 0 auto;
 	padding: 6rem 2rem;
@@ -281,7 +360,13 @@ const Description = styled(motion.p)`
 const Directory = styled(motion.div)`
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 1.3rem;
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		gap: 1rem;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+		}
+	}
 `
 
 const Item = styled(motion.div)`
