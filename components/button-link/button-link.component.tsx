@@ -11,6 +11,7 @@ export interface IProps extends LinkProps {
 	top?: string
 	children: React.ReactNode | React.ReactNode[]
 	variants?: Variants
+	outline?: boolean
 }
 
 const ButtonLink: React.FC<IProps> = ({
@@ -18,6 +19,7 @@ const ButtonLink: React.FC<IProps> = ({
 	variants,
 	width,
 	top,
+	outline,
 	...props
 }) => {
 	return (
@@ -32,6 +34,7 @@ const ButtonLink: React.FC<IProps> = ({
 				// {...props}
 				top={top}
 				width={width}
+				outline={outline}
 				variants={variants}
 			>
 				<LabelSpanContainer>
@@ -71,6 +74,7 @@ const IconSpan = styled.span`
 
 interface IButtonProps {
 	width?: string
+	outline?: boolean
 	top?: string
 }
 
@@ -80,9 +84,6 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 	justify-content: center;
 
 	align-items: center;
-	color: ${({ theme }) => theme.colors.buttonColor};
-	background: ${({ theme }) =>
-		`${theme.colors.buttonBackground} var(--x, 0) / 200%`};
 	font-weight: 700;
 	width: ${({ width }) => (width ? width : "unset")};
 	margin-top: ${({ top }) => (top ? top : "initial")};
@@ -94,6 +95,17 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 	font-size: 1.6rem;
 	outline: none;
 	min-width: 20rem;
+
+	background-color: ${({ outline }) => (outline ? "transparent" : "unset")};
+	border: ${({ outline, theme }) =>
+		outline ? theme.colors.buttonOutline : "unset"};
+	color: ${({ outline, theme }) =>
+		outline ? theme.colors.buttonOutlineColor : theme.colors.buttonColor};
+	background: ${({ outline, theme }) =>
+		outline
+			? "transparent"
+			: `${theme.colors.buttonBackground}
+		var(--x, 0) / 200%`};
 
 	&:focus {
 		outline: none;

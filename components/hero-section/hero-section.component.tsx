@@ -184,9 +184,9 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 						variants={enableAnimation ? ItemVariants2 : mobileVariants}
 					>
 						<ButtonLink href={"/#validators"}>Support us</ButtonLink>
-						<Button outline disabled>
+						<ButtonLink href={"/manifesto"} outline>
 							Read our Manifesto
-						</Button>
+						</ButtonLink>
 					</ButtonsContainer>
 
 					<FoundersContainer

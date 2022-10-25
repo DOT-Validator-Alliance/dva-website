@@ -83,7 +83,6 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 		`${top || "initial"} ${right || "initial"} ${bottom || "initial"} ${
 			left || "initial"
 		}`};
-	transition: ${({ outline }) => (outline ? "initial" : "0.5s")};
 	cursor: pointer;
 	padding: 1.7rem 3.2rem;
 	font-family: inherit;
