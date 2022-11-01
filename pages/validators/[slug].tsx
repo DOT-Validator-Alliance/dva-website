@@ -205,7 +205,7 @@ export default function ValidatorPage({
 			<Head>
 				<title>{v.meta.title}</title>
 				<meta name="description" content={v.meta.description} />
-				<link rel="canonical" href={`https://zeeprime.capital${asPath}`} />
+				<link rel="canonical" href={`https://dotvalidators.org${asPath}`} />
 
 				{/* <!-- Primary Meta Tags --> */}
 				<title>{v.meta.title}</title>
@@ -214,7 +214,10 @@ export default function ValidatorPage({
 
 				{/* <!-- Open Graph / Facebook --> */}
 				<meta property="og:type" content="website" />
-				<meta property="og:url" content={`https://zeeprime.capital${asPath}`} />
+				<meta
+					property="og:url"
+					content={`https://dotvalidators.orgl${asPath}`}
+				/>
 				<meta property="og:title" content={v.meta.title} />
 				<meta property="og:description" content={v.meta.description} />
 				<meta property="og:image" content={v.meta.image.src} />
@@ -223,7 +226,7 @@ export default function ValidatorPage({
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta
 					property="twitter:url"
-					content={`https://zeeprime.capital${asPath}`}
+					content={`https://dotvalidators.org${asPath}`}
 				/>
 				<meta property="twitter:title" content={v.meta.title} />
 				<meta property="twitter:description" content={v.meta.description} />
@@ -241,6 +244,7 @@ export default function ValidatorPage({
 						<BackButton
 							href={v.backButton.slug}
 							variants={isMd ? DescriptionVariants : mobileVariants}
+							scroll={false}
 						>
 							{v.backButton.label}
 						</BackButton>

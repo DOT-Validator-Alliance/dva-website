@@ -13,8 +13,14 @@ export interface IProps {
 
 const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 	const TITLE = "Manifesto"
-	const DESCRIPTION =
-		"We decided to formulate our basic goals and commitments in the form of a manifesto - a document that should resonate with every DAOist and which should feel natural to every validator who is here not (only) for a business but also for the sake of the success of the entire Dotsama ecosystem."
+	const DESCRIPTION = `
+		The Validator Alliance is managed as a DAO mostly on Discord. Anyone is welcome to join, validators can apply to become DAOists there. <br/><br/>
+
+		We decided to formulate our basic goals and commitments in the form of a manifesto 
+		- a document that should resonate with every DAOist and which should feel natural 
+		to every validator who is here not (only) for a business but also for the sake of the 
+		success of the entire Dotsama ecosystem.
+	`
 
 	const items = [
 		{
@@ -218,9 +224,8 @@ const ManifestoSection: React.FC<IProps> = ({ enableAnimation }) => {
 				<Border variants={enableAnimation ? BorderVariants : mobileVariants} />
 				<Description
 					variants={enableAnimation ? DescriptionVariants : mobileVariants}
-				>
-					{DESCRIPTION}
-				</Description>
+					dangerouslySetInnerHTML={{ __html: DESCRIPTION }}
+				></Description>
 
 				<Directory
 				// variants={directoryVariants}

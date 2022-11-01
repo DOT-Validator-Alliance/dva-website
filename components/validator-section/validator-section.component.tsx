@@ -153,29 +153,6 @@ const BorderVariants: Variants = {
 }
 
 const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
-	// const random = (arr: IValidatorItem[], n: number) => {
-	// 	let result = new Array(n),
-	// 		len = arr.length,
-	// 		taken = new Array(len)
-	// 	if (n > len)
-	// 		throw new RangeError("getRandom: more elements taken than available")
-	// 	while (n--) {
-	// 		let x = Math.floor(Math.random() * len)
-	// 		result[n] = arr[x in taken ? taken[x] : x]
-	// 		taken[x] = --len in taken ? taken[len] : len
-	// 	}
-	// 	return result
-	// }
-
-	// const [arr, setArr] = useState<IValidatorItem[]>([])
-
-	// useEffect(() => {
-	// 	const randomValidators =
-	// 		data.validators.length < 3 ? data.validators : random(data.validators, 3)
-
-	// 	setArr(randomValidators)
-	// }, [data.validators])
-
 	return (
 		<ValidatorContainer
 			id={data.containerID}
@@ -233,7 +210,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					{data.description}
 				</Description>
 
-				<ValidatorsContainer>
+				{/* <ValidatorsContainer>
 					<ValidatorsLabel
 						variants={enableAnimation ? DescriptionVariants : mobileVariants}
 					>
@@ -253,7 +230,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 							</Validator>
 						))}
 					</ValidatorsList>
-				</ValidatorsContainer>
+				</ValidatorsContainer> */}
 
 				{/* <Button>{data.cta.label}</Button> */}
 				<Link
@@ -279,10 +256,11 @@ const ValidatorContainer = styled(motion.div)`
 	margin: 20rem auto 0;
 	/* border: 1px solid blue; */
 	/* justify-items: center; */
+	align-items: center;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		padding: 0 2rem;
-		margin: 25rem auto 0;
+		margin: 15rem auto 0;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			grid-template-columns: minmax(44.5rem, 1fr) 1fr;

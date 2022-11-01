@@ -27,9 +27,9 @@ const Header: React.FC = () => {
 			slug: "/manifesto",
 		},
 		{
-			label: "How to nominate",
-			slug: "/",
-			disabled: true,
+			label: "Networks",
+			slug: "/#validators",
+			disabled: false,
 		},
 	]
 
@@ -82,8 +82,8 @@ const Header: React.FC = () => {
 							<NavList>
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
-										<Link href={item.slug} passHref>
-											<LabelA disabled={item.disabled}>
+										<Link href={item.slug} scroll={true} passHref>
+											<LabelA disabled={item?.disabled}>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>
 													<Image
