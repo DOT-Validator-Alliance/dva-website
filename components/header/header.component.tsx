@@ -287,7 +287,11 @@ const SocialsContainer = styled.div`
 	gap: 1.5rem;
 	align-items: center;
 
-	@media all and (min-width: 350px) {
+	/* @media all and (min-width: 350px) {
+		gap: 3rem;
+	} */
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		gap: 3rem;
 	}
 `
@@ -304,14 +308,20 @@ const SocialsLink = styled.a`
 	align-items: center;
 	justify-content: center;
 	border: 1px solid ${({ theme }) => theme.header.navItemColor};
-	padding: 1.3rem;
 	border-radius: 50%;
-	width: 4.7rem;
-	height: 4.7rem;
+	padding: 1rem;
+	width: 3.7rem;
+	height: 3.7rem;
 	transition: all 0.3s ease-out;
 
 	&:hover {
 		border: 1px solid ${({ theme }) => theme.header.activeNavItemColor};
+	}
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		padding: 1.3rem;
+		width: 4.7rem;
+		height: 4.7rem;
 	}
 `
 

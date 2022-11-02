@@ -87,7 +87,13 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						rel="noopener noreferrer"
 					>
 						<IconSpan>
-							<FaTelegramPlane />
+							{/* <FaTelegramPlane /> */}
+							<Image
+								src="/assets/join-our-community-section/telegram.svg"
+								alt="Subsocial icon"
+								width={"100%"}
+								height={"100%"}
+							/>
 						</IconSpan>
 						<span>Telegram</span>
 					</SocialLink>
@@ -103,7 +109,13 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						rel="noopener noreferrer"
 					>
 						<IconSpan>
-							<IoLogoDiscord />
+							{/* <IoLogoDiscord /> */}
+							<Image
+								src="/assets/join-our-community-section/discord.svg"
+								alt="Subsocial icon"
+								width={"100%"}
+								height={"100%"}
+							/>
 						</IconSpan>
 						<span>Discord</span>
 					</SocialLink>
@@ -114,12 +126,18 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						whileTap={{
 							scale: 0.98,
 						}}
-						href="/assets/join-our-community-section/subsocial-white.svg"
+						href="https://discord.com/invite/Kwfbe6YRAd"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						<IconSpan>
-							<IoLogoDiscord />
+							{/* <IoLogoDiscord /> */}
+							<Image
+								src="/assets/join-our-community-section/subsocial-white.svg"
+								alt="Subsocial icon"
+								width={"100%"}
+								height={"100%"}
+							/>
 						</IconSpan>
 						<span>Subsocial</span>
 					</SocialLink>
@@ -190,6 +208,8 @@ const Col = styled.div`
 		/* border: 1px solid blue; */
 		display: flex;
 		justify-content: space-evenly;
+		align-items: center;
+		gap: 1.5rem;
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
@@ -237,12 +257,12 @@ const IconSpan = styled.span`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 6rem;
+	margin-bottom: 1.5rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-			font-size: 10rem;
-
+			width: 8rem;
+			height: 8rem;
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}
 		}
