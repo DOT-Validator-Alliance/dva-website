@@ -126,7 +126,7 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						whileTap={{
 							scale: 0.98,
 						}}
-						href="https://discord.com/invite/Kwfbe6YRAd"
+						href="https://app.subsocial.network/10194"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
