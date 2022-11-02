@@ -50,6 +50,14 @@ const Header: React.FC = () => {
 				width: 15,
 			},
 		},
+		{
+			slug: "https://app.subsocial.network/10194",
+			icon: {
+				src: "/assets/icons/subsocial-gradient.svg",
+				alt: "Subsocial Logo",
+				width: 15,
+			},
+		},
 	]
 
 	const handleMobileItemClick = () => {

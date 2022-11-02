@@ -107,6 +107,22 @@ const JoinOurCommunitySection: React.FC<IProps> = ({ enableAnimation }) => {
 						</IconSpan>
 						<span>Discord</span>
 					</SocialLink>
+					<SocialLink
+						whileHover={{
+							scale: 1.02,
+						}}
+						whileTap={{
+							scale: 0.98,
+						}}
+						href="/assets/join-our-community-section/subsocial-white.svg"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<IconSpan>
+							<IoLogoDiscord />
+						</IconSpan>
+						<span>Subsocial</span>
+					</SocialLink>
 				</Col>
 			</JoinOurCommunitySectionContainer>
 		</Container>

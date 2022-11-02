@@ -151,10 +151,10 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 		// },
 		{
 			image: {
-				src: "/assets/about-section/pathrock.png",
+				src: "/assets/hero-section/founders/pathrock.jpeg",
 				alt: "pathrock",
 			},
-			title: "Pathrocknetwork - Millenniumclub",
+			title: "Pathrocknetwork",
 			description:
 				"Hey, I’m Patrick from Germany and I’m representing pathrocknetwork and MillenniumClub or MCLB. We are running several validators for different projects and protocols and I am so happy to be able to join the alliance of like-minded validators where we share similar goals and values.",
 		},
@@ -177,7 +177,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 		},
 		{
 			image: {
-				src: "/assets/about-section/crifferent.png",
+				src: "/assets/hero-section/founders/founder-1.png",
 				alt: "crifferent",
 			},
 			title: "Crifferent",
@@ -484,8 +484,12 @@ const ItemHead = styled.div`
 const ImageFigure = styled.figure`
 	width: 3.5rem;
 	height: 3.5rem;
+	border-radius: 50%;
+	overflow: hidden;
 `
 
 const ItemTitle = styled.h3``
 
-const ItemDescription = styled.p``
+const ItemDescription = styled.p`
+	font-family: "Nunito Sans", sans-serif;
+`

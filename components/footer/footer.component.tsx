@@ -32,10 +32,14 @@ const Footer: React.FC = () => {
 			label: "Discord",
 		},
 		{
-			slug: "https://discord.com/invite/Kwfbe6YRAd",
-			label: "Discord",
-			empty: true,
+			slug: "https://app.subsocial.network/10194",
+			label: "Subsocial",
 		},
+		// {
+		// 	slug: "https://discord.com/invite/Kwfbe6YRAd",
+		// 	label: "Discord",
+		// 	empty: true,
+		// },
 	]
 
 	return (
@@ -81,7 +85,7 @@ const Footer: React.FC = () => {
 						<Title>Community</Title>
 						<NavList>
 							{socialItems.map((item, index) => (
-								<NavItem key={index} empty={!!item.empty}>
+								<NavItem key={index}>
 									<LabelA href={item.slug}>
 										<LabelSpan>{item.label}</LabelSpan>
 										<IconSpan>

@@ -410,7 +410,7 @@ const ButtonsContainer = styled(motion.div)`
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 	gap: 1.5rem;
-	max-width: 45rem;
+	max-width: 48rem;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		grid-template-columns: 1fr 1fr;
