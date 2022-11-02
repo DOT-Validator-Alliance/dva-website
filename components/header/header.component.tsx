@@ -165,6 +165,24 @@ const Header: React.FC = () => {
 									</Link>
 								</MobileItem>
 							))}
+							<SocialsList>
+								{socialItems.map((item, index) => (
+									<SocialsItem key={index}>
+										<SocialsLink
+											href={item.slug}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											<Image
+												src={item.icon.src}
+												alt={item.icon.alt}
+												// width={item.icon.width}
+												width={"100%"}
+											/>
+										</SocialsLink>
+									</SocialsItem>
+								))}
+							</SocialsList>
 						</MobileList>
 					</MobileMenuContainer>
 				)}
@@ -200,10 +218,11 @@ const Container = styled.div`
 `
 
 const LogoFigure = styled.figure`
-	width: 10rem;
+	/* width: 10rem; */
+	width: 12rem;
 
 	@media all and (min-width: 350px) {
-		width: 12rem;
+		/* width: 12rem; */
 
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 			width: 15rem;
@@ -282,23 +301,30 @@ const LabelA = styled.a<IAProps>`
 
 const NavItem = styled.li``
 
+const SocialsList = styled.ul`
+	display: flex;
+	gap: 1rem;
+`
+
 const SocialsContainer = styled.div`
 	display: flex;
 	gap: 1.5rem;
 	align-items: center;
 
-	/* @media all and (min-width: 350px) {
-		gap: 3rem;
-	} */
-
-	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-		gap: 3rem;
+	${SocialsList} {
+		display: none;
+		visibility: hidden;
 	}
-`
 
-const SocialsList = styled.ul`
-	display: flex;
-	gap: 1rem;
+	@media all and (min-width: 366px) {
+		${SocialsList} {
+			display: flex;
+			visibility: visible;
+		}
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+			gap: 3rem;
+		}
+	}
 `
 
 const SocialsItem = styled.li``
@@ -353,6 +379,15 @@ const MobileList = styled.ul`
 	flex-direction: column;
 	gap: 4rem;
 	align-items: center;
+
+	@media all and (min-width: 366px) {
+		${SocialsList} {
+			display: none;
+			visibility: hidden;
+		}
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		}
+	}
 `
 
 const MobileItem = styled.li`
