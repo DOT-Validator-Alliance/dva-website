@@ -22,6 +22,6 @@ const Template: Story<IProps> = (args) => <ValidatorSection {...args} />
 export const Default = Template.bind({})
 
 Default.args = {
-	data: kusamaData as unknown as IValidator,
+	data: [kusamaData] as unknown as IValidator[],
 	enableAnimation: true,
 }
