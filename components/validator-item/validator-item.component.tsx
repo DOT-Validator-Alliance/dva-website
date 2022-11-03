@@ -47,7 +47,7 @@ const ValidatorItem: React.FC<IProps> = ({
 				</IluFigure>
 			</ImageContainer>
 			<Title>{data.title}</Title>
-			<Description>{data.description}</Description>
+			<Description dangerouslySetInnerHTML={{ __html: data.description }} />
 			<Link href={data.link.slug}>{data.link.label}</Link>
 		</Container>
 	)
@@ -80,6 +80,7 @@ const Title = styled.h2`
 	font-weight: 600;
 	font-size: 3rem;
 	line-height: 3.8rem;
+	margin-bottom: 1.5rem;
 `
 
 const Description = styled.p`
@@ -88,7 +89,8 @@ const Description = styled.p`
 	font-size: 1.3rem;
 	line-height: 1.6rem;
 	text-align: center;
-	max-width: 24.3rem;
+	max-width: 26rem;
+	margin-bottom: 2.1rem;
 
 	color: #898989;
 `
