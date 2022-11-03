@@ -55,6 +55,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 			variants={variants}
 			initial="hidden"
 			whileInView={"visible"}
+			viewport={{ once: true }}
 		>
 			{data.map((validator, idx) => (
 				<ValidatorItem
