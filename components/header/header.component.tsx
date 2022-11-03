@@ -19,17 +19,17 @@ const Header: React.FC = () => {
 
 	const navItems = [
 		{
-			label: "Validators",
+			label: "Networks",
 			slug: "/#validators",
+			disabled: false,
+		},
+		{
+			label: "About us",
+			slug: "/#about",
 		},
 		{
 			label: "Manifesto",
 			slug: "/manifesto",
-		},
-		{
-			label: "Networks",
-			slug: "/#validators",
-			disabled: false,
 		},
 	]
 

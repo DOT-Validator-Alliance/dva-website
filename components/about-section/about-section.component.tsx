@@ -206,6 +206,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 
 	return (
 		<AboutSectionContainer
+			id="about"
 			variants={variants}
 			initial={"hidden"}
 			whileInView={"visible"}
@@ -398,6 +399,7 @@ const CenterBlurFigure = styled(motion.figure)`
 `
 
 const AboutSectionContainer = styled(motion.section)`
+	scroll-margin-top: 10rem;
 	position: relative;
 	padding: 0 2rem;
 `

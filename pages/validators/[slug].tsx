@@ -240,9 +240,9 @@ export default function ValidatorPage({
 				viewport={{ once: true }}
 			>
 				<Col variants={isMd ? DescriptionVariants : mobileVariants}>
-					<a href={v.backButton.slug}>
+					<a href={"/#validators"}>
 						<BackButton
-							href={v.backButton.slug}
+							href={"/#validators"}
 							variants={isMd ? DescriptionVariants : mobileVariants}
 							scroll={false}
 						>

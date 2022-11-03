@@ -120,11 +120,7 @@ const Home = ({ validators }: IProps) => {
 
 			<HeroSection enableAnimation={isMd} />
 
-			<section id="validators" style={{ scrollMarginTop: "10rem" }}>
-				{validators.map((validator, idx) => (
-					<ValidatorSection key={idx} data={validator} enableAnimation={isMd} />
-				))}
-			</section>
+			<ValidatorSection data={validators} enableAnimation={isMd} />
 
 			<JoinOurCommunitySection enableAnimation={isMd} />
 			<AboutSection enableAnimation={isMd} />
