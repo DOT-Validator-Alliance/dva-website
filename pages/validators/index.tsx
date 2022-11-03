@@ -57,11 +57,7 @@ const ValidatorsPage = ({ validators }: IProps) => {
 				/>
 			</Head>
 
-			<Container>
-				{validators.map((validator, idx) => (
-					<ValidatorSection key={idx} data={validator} enableAnimation={isMd} />
-				))}
-			</Container>
+			<ValidatorSection data={validators} enableAnimation={isMd} />
 		</>
 	)
 }
