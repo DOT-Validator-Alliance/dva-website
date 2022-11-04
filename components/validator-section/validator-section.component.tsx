@@ -81,8 +81,8 @@ const ValidatorSectionContainer = styled(motion.section)`
 	display: grid;
 	gap: 5rem;
 	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-	align-items: center;
-	justify-content: center;
+	/* align-items: center; */
+	/* justify-content: center; */
 	justify-items: center;
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {

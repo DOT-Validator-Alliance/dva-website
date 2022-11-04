@@ -91,7 +91,7 @@ const Description = styled.p`
 	text-align: center;
 	max-width: 26rem;
 	margin-bottom: 2.1rem;
-
+	flex-grow: 1;
 	color: #898989;
 `
 
