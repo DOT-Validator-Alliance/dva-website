@@ -76,6 +76,8 @@ export default ValidatorSection
 const ValidatorSectionContainer = styled(motion.section)`
 	scroll-margin-top: 10rem;
 	padding: 10rem 0 0;
+	max-width: 125rem;
+	margin: 0 auto 0;
 	display: grid;
 	gap: 5rem;
 	grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));

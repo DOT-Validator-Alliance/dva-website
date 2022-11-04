@@ -3,7 +3,7 @@
 	"containerID": "dock",
 	"meta": {
 		"title": "Dock",
-		"description": "Dock.io is a new professional social media network. But it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork, Glassdoor and others who control the recruiting industry. And give back the power to users and companies.",
+		"description": "Dock.io is a new professional social media network, but it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork or Glassdoor. ",
 		"slug": "dock",
 		"image": {
 			"src": "/assets/validators/dock.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Dock",
-	"description": "Dock.io is a new professional social media network. But it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork, Glassdoor and others who control the recruiting industry. And give back the power to users and companies.",
+	"description": "Dock.io is a new professional social media network, but it’s built with blockchain technology. The team behind the project wants to bypass data monopolies like LinkedIn, Upwork or Glassdoor. ",
 	"image": {
 		"src": "/assets/validators/dock.png",
 		"alt": "dock logo"
