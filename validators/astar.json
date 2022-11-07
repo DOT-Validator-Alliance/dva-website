@@ -1,0 +1,62 @@
+{
+	"id": 9,
+	"containerID": "astar",
+	"meta": {
+		"title": "Astar",
+		"description": "",
+		"slug": "astar",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "astar logo"
+		}
+	},
+	"title": "Astar",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "astar logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Astar validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/astar"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#astar"
+	},
+	"validators": [
+		{
+			"name": "DOT Validator Alliance | Chaos DAO",
+			"address": "XDVAeA3ye6RF7ffyUZY6anT6jSi3xkb7e39tYR6PVWj3ARq"
+		},
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
+			"address": "bLd7595inXyXLsnCB75Er2Z2y6aqAfBqi8datgqthSGAF9X"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "XoPmK9TagQEAFusNy1DYAEgLuft4Ly5wGwM66bvAYLhC3km"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "ZUJewBJpQMCS8MeNbKoQk8ddTC5SyEzJN312XVx4zujjjHj"
+		},
+		{
+			"name": "Stakenode",
+			"address": "WGhiD4RD2JrhLcXideM1qrQuPRtZGPxwMRJG5LvhSuKPZUD"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "XSikFavQVVMY4AEXbpFPCd4cnv7XfMmcLvmPHZqmzHfpcEj"
+		}
+	]
+}

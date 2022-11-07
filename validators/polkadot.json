@@ -35,12 +35,20 @@
 	},
 	"validators": [
 		{
-			"name": "Polkadotters -",
+			"name": "Polkadotters",
 			"address": "16A4n4UQqgxw5ndeehPjUAobDNmuX2bBoPXVKj4xTe16ktRN"
 		},
 		{
-			"name": "Stakenode -",
-			"address": "15awHgV1np9jxyWC7pnMWAEgg8z2toLuCcJfWjtmA1cWHWQr"
+			"name": "Stakenode",
+			"address": "14MKRNHaJY2yC84SkW7oXhnzVdV3obogoH5s8H4AkzxaFmAS"
+		},
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
+			"address": "12bLdVAgWiKHgFHtAaQstasMUWVq35oG9iwHCwsKoFFNoNrk"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "15wepZh1jWNqxBjsgErm8HmYiE21n79c5krQJeTsYAjHddeM"
 		}
 	]
 }

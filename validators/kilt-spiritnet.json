@@ -1,0 +1,50 @@
+{
+	"id": 16,
+	"containerID": "kilt-spiritnet",
+	"meta": {
+		"title": "Kilt Spiritnet",
+		"description": "",
+		"slug": "kilt-spiritnet",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "kilt-spiritnet logo"
+		}
+	},
+	"title": "Kilt Spiritnet",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "kilt-spiritnet logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Kilt Spiritnet validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/kilt-spiritnet"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#kilt-spiritnet"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "4pnAJ41mGHGDKCGBGY2zzu1hfvPasPkGAKDgPeprSkxnUmGM"
+		},
+		{
+			"name": "Stakenode",
+			"address": "4opm8cLcUchSNVshzBzboNNjzHKv2dPXXkQuTAzSfJ6RYQEb"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "4o4you8yaa76ztWB1yMekSNUTUujWLBQcfaxszJebuDhbAYj"
+		}
+	]
+}

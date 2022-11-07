@@ -1,0 +1,50 @@
+{
+	"id": 26,
+	"containerID": "turing",
+	"meta": {
+		"title": "Turing",
+		"description": "Turing is a validator on the Polkadot network.",
+		"slug": "turing",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "turing logo"
+		}
+	},
+	"title": "Turing",
+	"description": "Turing is a validator on the Polkadot network.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "turing logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Turing validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/turing"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#turing"
+	},
+	"validators": [
+		{
+			"name": "Pathrock Network",
+			"address": "6BkqEuMXuNYzssdPQYpo4eVbcA2756RdfBHbSAvgj5FFZx71"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "6B6J1AJaLLyuvBNXsPiyPFLDfyK1aTG9hj76gWGE9n49z4t8"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "681jex41G4dfLxXD3TUJucUE5EFQamw2cYRPPYBmTsh88i7N"
+		}
+	]
+}

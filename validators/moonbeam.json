@@ -1,0 +1,50 @@
+{
+	"id": 19,
+	"containerID": "moonbeam",
+	"meta": {
+		"title": "Moonbeam",
+		"description": "",
+		"slug": "moonbeam",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "moonbeam logo"
+		}
+	},
+	"title": "Moonbeam",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "moonbeam logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Moonbeam validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/moonbeam"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#moonbeam"
+	},
+	"validators": [
+		{
+			"name": "Crifferent.de",
+			"address": "0x10023fA70Ed528E4F28915bf210f6e87b057c08E"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "0x3f0937bdef510fd1d39f76cf41a7a4cfbf8ab876"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "0x1d4dD1bd8D1F26B631b69396a9cbF7BF7c373073"
+		}
+	]
+}

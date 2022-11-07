@@ -1,0 +1,46 @@
+{
+	"id": 23,
+	"containerID": "sora",
+	"meta": {
+		"title": "Sora",
+		"description": "Sora is a cross-chain DeFi platform that allows users to trade assets and earn interest on their deposits. It is built on Substrate and is a member of the Web3 Foundation’s Incubator Program.",
+		"slug": "sora",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "sora logo"
+		}
+	},
+	"title": "Sora",
+	"description": "Sora is a cross-chain DeFi platform that allows users to trade assets and earn interest on their deposits. It is built on Substrate and is a member of the Web3 Foundation’s Incubator Program.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "sora logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Sora validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/sora"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#sora"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "cnTMNwuGYeoig1uXW4Qn8rJcE69NeNSpkWm7frXL1dvLZamBh"
+		},
+		{
+			"name": "⛩ Curu",
+			"address": "cnSpaRLYCEEM97Nj1YW9F7f2tuaKwSAZ2bWtbDF4pxasLinXD"
+		}
+	]
+}

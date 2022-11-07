@@ -1,0 +1,50 @@
+{
+	"id": 22,
+	"containerID": "robonomics",
+	"meta": {
+		"title": "Robonomics",
+		"description": "Robonomics is a decentralized network of autonomous agents that can interact with each other without the need for a central authority.",
+		"slug": "robonomics",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "robonomics logo"
+		}
+	},
+	"title": "Robonomics",
+	"description": "Robonomics is a decentralized network of autonomous agents that can interact with each other without the need for a central authority.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "robonomics logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Robonomics validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/robonomics"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#robonomics"
+	},
+	"validators": [
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
+			"address": "4CD8P6AHDF2L7pzE2qozDWT2R9u18yKZtR8Hg1PXEZm4SxyM"
+		},
+		{
+			"name": "⛩ Curu",
+			"address": "4DXQDY2zXxeKUK2uKS7xzqqpcSV7c1hR7Rfp4GhrzHvdvkj1"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "4GSikYa6478CV5M34JNsRJtRQBnZHMRumoYs6W9XmCwY7H59"
+		}
+	]
+}

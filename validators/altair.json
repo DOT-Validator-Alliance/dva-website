@@ -1,0 +1,46 @@
+{
+	"id": 8,
+	"containerID": "altair",
+	"meta": {
+		"title": "Altair",
+		"description": "",
+		"slug": "altair",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "altair logo"
+		}
+	},
+	"title": "Altair",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "polkadot logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Altair validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/altair"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#altair"
+	},
+	"validators": [
+		{
+			"name": "Pathrock Network",
+			"address": "kANBCxfPty3zQqKCr47qvpLbaoedBVM2k1Y5sVA8mdTVVSeDx"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "kAK1sKzwNeN1KjcEfqP1z2NzMQnZXiJpdMzcfyP354W3SNAWg"
+		}
+	]
+}

@@ -35,24 +35,36 @@
 	},
 	"validators": [
 		{
-			"name": "Polkadotters -",
+			"name": "Polkadotters",
 			"address": "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA"
 		},
 		{
-			"name": "Stakenode_Powernode -",
-			"address": "CuiwESD49ggEAQ9131Gt948xw11PiWQNXkuR2R2Jt7rYSck"
+			"name": "Polkadotters",
+			"address": "DAdbEMXfM1KWSxLDNhK6uhBLkaozDGsed3dknRN7Zn151SY"
 		},
 		{
-			"name": "bLd Nodes -",
+			"name": "Polkadotters",
+			"address": "Dz24DQV7LEFuyH4UHzdqYuzSKmeZAUygHkwZL2iMLc3PbXN"
+		},
+		{
+			"name": "Stakenode",
+			"address": "FvdwMNP57nRWEsNZZsrHWKqnbmduy4jBAC8MeLmgi9Yp8sA"
+		},
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
 			"address": "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL"
 		},
 		{
-			"name": "STAKENODE POWERNODE -",
-			"address": "CuiwESD49ggEAQ9131Gt948xw11PiWQNXkuR2R2Jt7rYSck"
+			"name": "Pathrock Network",
+			"address": "Hk7snkgFNhrDRfwveEdpwgwu6D9uUmXwcLy3dZgM2EhHVJq"
 		},
 		{
-			"name": "Crifferent -",
-			"address": "Hf8C626KBAjitMV7w8AhQWDCiPgUU47htEwbomq5mDMKeyL"
+			"name": "Crifferent.de",
+			"address": "HWyLYmpW68JGJYoVJcot6JQ1CJbtUQeTdxfY1kUTsvGCB1r"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "GLSikJaXTVWvWtUhzB3Bj6xb5TcnhTUp6EuAkxaCohT9UBv"
 		}
 	]
 }

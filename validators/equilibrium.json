@@ -1,0 +1,42 @@
+{
+	"id": 13,
+	"containerID": "equilibrium",
+	"meta": {
+		"title": "Equilibrium",
+		"description": "",
+		"slug": "equilibrium",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "equilibrium logo"
+		}
+	},
+	"title": "Equilibrium",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "equilibrium logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Equilibrium validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/equilibrium"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#equilibrium"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "cg4yAQQck4BkA29dp6LUcgdb2j6DpriXSSZfGUnAk1CHMa3dE"
+		}
+	]
+}

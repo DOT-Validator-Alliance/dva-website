@@ -1,0 +1,50 @@
+{
+	"id": 11,
+	"containerID": "bifrost",
+	"meta": {
+		"title": "Bifrost",
+		"description": "",
+		"slug": "bifrost",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "bifrost logo"
+		}
+	},
+	"title": "Bifrost",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "bifrost logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Bifrost validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/polkadot"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#bifrost"
+	},
+	"validators": [
+		{
+			"name": "Pathrock Network",
+			"address": "fp9MduBh3Qb6ejJfJpU2jZBeGbYynEYxX5EkCYBCe5Y2LHC"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "drSikxTf6ytFzm7wUJBB2YvR9DT7hVEyQT1Bxk4u8Bprw9H"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "db42JgrxyGxKKKLHVtEv4W6zPpB7Xbc8DVUhnFDdPwBUBQF"
+		}
+	]
+}

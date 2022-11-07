@@ -1,0 +1,46 @@
+{
+	"id": 12,
+	"containerID": "calamari",
+	"meta": {
+		"title": "Calamari",
+		"description": "Calamari is a parachain on Kusama that will be bridged to Polkadot. It will be a cross-chain DeFi hub, with a focus on stablecoins and derivatives.",
+		"slug": "calamari",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "calamari logo"
+		}
+	},
+	"title": "Calamari",
+	"description": "Calamari is a parachain on Kusama that will be bridged to Polkadot. It will be a cross-chain DeFi hub, with a focus on stablecoins and derivatives.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "calamari logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Calamari validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/calamari"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#calamari"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "0x1DED377bc421DAaE92A161A5bcE7DBA19133AB5d"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "dmyxfU1bJM5UR5RWsypKm9KQDkVofm3ifp5gVjzs8uQHUmBZb"
+		}
+	]
+}

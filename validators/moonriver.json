@@ -1,0 +1,50 @@
+{
+	"id": 20,
+	"containerID": "moonriver",
+	"meta": {
+		"title": "Moonriver",
+		"description": "",
+		"slug": "moonriver",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "moonriver logo"
+		}
+	},
+	"title": "Moonriver",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "moonriver logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Moonriver validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/moonriver"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#moonriver"
+	},
+	"validators": [
+		{
+			"name": "Crifferent.de",
+			"address": "0x693aB260de2a31c1B5D7DC9cb253B87eD9b1f385"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "0x1DED377bc421DAaE92A161A5bcE7DBA19133AB5d"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "0x37006DD9D226425C901c5d7F9434C2FB8aC3f533"
+		}
+	]
+}

@@ -35,20 +35,8 @@
 	},
 	"validators": [
 		{
-			"name": "pathrocknetwork",
+			"name": "Pathrock Network",
 			"address": "32yfaVgxp2bArkKotgiVrdqhbP17Lwc6KkmtgSZRazjuwpae"
-		},
-		{
-			"name": "oceanblock-ov",
-			"address": "35pwfNAzJKnnSxjbdoN8DdNPvXE2ChXiHL4Z4N5oDFdhMPoU"
-		},
-		{
-			"name": "STAKENODE -",
-			"address": "353SjE5jZNE3HsQxJr42QAazGzQ4KThwwR6U8sfzYjQpuSiv"
-		},
-		{
-			"name": "STAKENODE_POWERNODE -",
-			"address": "31tyuA9tSMdUasMS7zPycu8vnYkEmpNHdC37ELuhKtxkMXTK"
 		}
 	]
 }

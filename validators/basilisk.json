@@ -1,0 +1,54 @@
+{
+	"id": 10,
+	"containerID": "basilisk",
+	"meta": {
+		"title": "Basilisk",
+		"description": "",
+		"slug": "basilisk",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "basilisk logo"
+		}
+	},
+	"title": "Basilisk",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "basilisk logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Basilisk validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/basilisk"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#basilisk"
+	},
+	"validators": [
+		{
+			"name": "Crifferent.de",
+			"address": "bXmz9UhxHmEV9a9mGEjsgrmX4htqZnb4MmupXjFmEEJDRrsUr"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "bXiTWWfZdUi8pA7cKnHTpaNjSwR8HMqoK15FxMFVX6Zs6R8vd"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "bXipTKkXqFQCZPtfVMT9v1cFLKsbqYmRj3d9gPPpKiezi2Tnz"
+		},
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
+			"address": "bXibLdv56bYDG9M4ojcHR6LpHiKoD2pz8bEFFDD5VHBJfjcxn"
+		}
+	]
+}

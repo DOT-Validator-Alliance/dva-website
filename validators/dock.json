@@ -35,12 +35,12 @@
 	},
 	"validators": [
 		{
-			"name": "Polkadotters -",
-			"address": "FaBN1AxtJu21x2cUqvdF5VcVUAfzfqyvJPvwgsdwo3pkdr9"
+			"name": "Polkadotters",
+			"address": "3EBcABMK7dGapFnkn1xcxUkuLA6szTfw9GMaYiY335SyySLo"
 		},
 		{
-			"name": "athrocknetwork -",
-			"address": "FVAFUJhJy9tj1X4PaEXX3tDzjaBEVsVunABAdsDMD4ZYmWA"
+			"name": "Pathrock Network",
+			"address": "3Fx3GPCR6F3Wc8EyoJY7fxEJv2ch1bHXCy8AKUCEKfQRbifD"
 		}
 	]
 }

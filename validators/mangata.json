@@ -1,0 +1,50 @@
+{
+	"id": 18,
+	"containerID": "mangata",
+	"meta": {
+		"title": "Mangata",
+		"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+		"slug": "mangata",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "mangata logo"
+		}
+	},
+	"title": "Mangata",
+	"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "mangata logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Mangata validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/mangata"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#mangata"
+	},
+	"validators": [
+		{
+			"name": "Pathrock Network",
+			"address": "5DtMwN2UKjHA5kgYhH2TTRUfSx2xqU7NTb12xLebvdvJ7z3x"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "5CSikproDLMgCk9oV3SXx4Ga3R1W8FYwENzj9t87DHV1SL3u"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "5DvoL2BNoSm7wRt2tfZ6WW5QFrxm68GLv5SCrPQ4JBLjbvpL"
+		}
+	]
+}

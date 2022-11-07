@@ -1,0 +1,58 @@
+{
+	"id": 25,
+	"containerID": "tinkernet",
+	"meta": {
+		"title": "Tinkernet",
+		"description": "Tinkernet is a validator for Polkadot and Kusama. We are a team of 5 people with a strong background in software development and blockchain technology. We are passionate about the Polkadot ecosystem and we are committed to building a strong and reliable infrastructure for the future of the Web3.",
+		"slug": "polkadot",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "tinkernet logo"
+		}
+	},
+	"title": "Tinkernet",
+	"description": "Tinkernet is a validator for Polkadot and Kusama. We are a team of 5 people with a strong background in software development and blockchain technology. We are passionate about the Polkadot ecosystem and we are committed to building a strong and reliable infrastructure for the future of the Web3.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "tinkernet logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Tinkernet validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/tinkernet"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#tinkernet"
+	},
+	"validators": [
+		{
+			"name": "Stakenode",
+			"address": "i51DyxdQEwtVsdPUUNAnojeV4tuCbzd8unwtBxqfhwTapccER"
+		},
+		{
+			"name": "bLd Nodes | 🤵Chad 🥩 Stake 👑 KinG",
+			"address": "i53bLdks5pC9s96yCDTE852mZQv2wfL6nDetxLhqU8oqUyATy"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "i4wvKj1H1xVj8ZL6PzkdLCvoDJKBjogrAjm5W4etXEJJTMha1"
+		},
+		{
+			"name": "Polkadotters",
+			"address": "i4yjm1cZ7JaVVpEJaTyH6rbbdWkfxyT9hzEy1rEzx2izW9Lsi"
+		},
+		{
+			"name": "⛩ Curu",
+			"address": "i4yCxV3pkt17xuhW5x4eD7x2JLBdG3Asz4zjwCxjmMPXHHHdY"
+		}
+	]
+}

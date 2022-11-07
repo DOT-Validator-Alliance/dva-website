@@ -1,0 +1,54 @@
+{
+	"id": 27,
+	"containerID": "zeitgeist",
+	"meta": {
+		"title": "Zeitgeist",
+		"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+		"slug": "zeitgeist",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "mangata logo"
+		}
+	},
+	"title": "Zeitgeist",
+	"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "zeitgeist logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Zeitgeist validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/zeitgeist"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#zeitgeist"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "681jex41G4dfLxXD3TUJucUE5EFQamw2cYRPPYBmTsh88i7N"
+		},
+		{
+			"name": "⛩ Curu",
+			"address": "dDzMSbK9QciFD6QHmQoMKnM7gMnwDV5kGtJiCiDhuVV6AmZuw"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "dE3xoU68L7Zxza9wakeEszdZ1973XR3M7tjczeU3YrivRUdoa"
+		},
+		{
+			"name": "Stakenode",
+			"address": "dDykYaZr7V5krQ5kVk5Wsdt9nfGwo9DtuUN9HA8FVQ9wUQgm8"
+		}
+	]
+}

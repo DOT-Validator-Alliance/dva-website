@@ -1,0 +1,42 @@
+{
+	"id": 24,
+	"containerID": "statemine",
+	"meta": {
+		"title": "Statemine",
+		"description": "Statemine is a canary network for Polkadot. It is a parachain that is connected to the Rococo testnet. It is used to test upgrades to the Polkadot runtime and to test parachain functionality.",
+		"slug": "polkadot",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "statemine logo"
+		}
+	},
+	"title": "Statemine",
+	"description": "Statemine is a canary network for Polkadot. It is a parachain that is connected to the Rococo testnet. It is used to test upgrades to the Polkadot runtime and to test parachain functionality.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "statemine logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Statemine validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/statemine"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#statemine"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "ESQzLXFRon3h5hUfNN9QTSQQTEzto5XNTGxF3g1myZELwX6"
+		}
+	]
+}

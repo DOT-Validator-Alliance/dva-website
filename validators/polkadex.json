@@ -1,0 +1,50 @@
+{
+	"id": 21,
+	"containerID": "polkadex",
+	"meta": {
+		"title": "Polkadex",
+		"description": "",
+		"slug": "polkadex",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "polkadex logo"
+		}
+	},
+	"title": "Polkadex",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "polkadex logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Polkadex validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/polkadex"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#polkadex"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "esndVGHeozbEVwHTbRpX225zwzBGD7JVftWmKyfN8fhPVogLF"
+		},
+		{
+			"name": "Pathrock Network",
+			"address": "esmVfXj91c5jyvpbQCGhuUrmwgqctP4rD17Aqa2gfRq63MPJB"
+		},
+		{
+			"name": "Crifferent.de",
+			"address": "esmYmhtQkYcZ2JyEa4AWfkKWN4sUBKzBC8YELS1515nqCia7K"
+		}
+	]
+}

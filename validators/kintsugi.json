@@ -1,0 +1,42 @@
+{
+	"id": 17,
+	"containerID": "kintsugi",
+	"meta": {
+		"title": "Kintsugi",
+		"description": "Kintsugi is a validator for Polkadot and Kusama. We are a team of 5 people from different countries and backgrounds. We are passionate about blockchain technology and we are excited to be part of the Polkadot ecosystem.",
+		"slug": "kintsugi",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "kintsugi logo"
+		}
+	},
+	"title": "Kintsugi",
+	"description": "Kintsugi is a validator for Polkadot and Kusama. We are a team of 5 people from different countries and backgrounds. We are passionate about blockchain technology and we are excited to be part of the Polkadot ecosystem.",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "kintsugi logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Kintsugi validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/kintsugi"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#kintsugi"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "a3c5FSVJgodMZNTUz8pGKhhDjBfiWzgQ8DMAeQPUgWdiHYJtf"
+		}
+	]
+}

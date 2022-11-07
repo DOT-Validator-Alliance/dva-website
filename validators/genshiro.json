@@ -1,0 +1,42 @@
+{
+	"id": 14,
+	"containerID": "genshiro",
+	"meta": {
+		"title": "Genshiro",
+		"description": "",
+		"slug": "genshiro",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "genshiro logo"
+		}
+	},
+	"title": "Genshiro",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "genshiro logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Genshiro validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/genshiro"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#genshiro"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "cZgawruxwTZme2Pk88GB6WxZqN351LzE8NNCs731UNUE9ZGbr"
+		}
+	]
+}

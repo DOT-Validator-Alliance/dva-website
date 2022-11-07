@@ -1,0 +1,42 @@
+{
+	"id": 15,
+	"containerID": "gm",
+	"meta": {
+		"title": "GM",
+		"description": "",
+		"slug": "gm",
+		"image": {
+			"src": "/assets/validators/polkadot.png",
+			"alt": "gm logo"
+		}
+	},
+	"title": "GM",
+	"description": "",
+	"image": {
+		"src": "/assets/validators/polkadot.png",
+		"alt": "gm logo"
+	},
+	"blop": {
+		"src": "/assets/blops/polkadot-pink.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Polkadot validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/gm"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#gm"
+	},
+	"validators": [
+		{
+			"name": "bLd Nodes | 🤵 Chad 🥩 Stake 👑 KinG",
+			"address": "gMU22wV95PDXKqh7uefFYsBUqn8TyrQjCnDsWSFEEy9XZDWW2"
+		}
+	]
+}
