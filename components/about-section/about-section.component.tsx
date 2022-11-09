@@ -131,6 +131,32 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			title: "Polkadotters",
 			description:
 				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
+			person: {
+				image: {
+					src: "/assets/flags/czech.png",
+					alt: "czech",
+				},
+				name: "Petr",
+				description:
+					"Polkadot, Astar and Bifrost ambassador, Czech/Slovak Polkadot community founder",
+			},
+		},
+		{
+			image: {
+				src: "/assets/about-section/stakenode.png",
+				alt: "stakenode",
+			},
+			title: "Stakenode",
+			description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
+			person: {
+				image: {
+					src: "/assets/flags/poland.png",
+					alt: "poland",
+				},
+				name: "Jimmy",
+				description:
+					"Polkadot Ambasador, HydraDX Council Member, Pol(s)kadot - Polish Polkadot Community Founder",
+			},
 		},
 		// {
 		// 	image: {
@@ -151,12 +177,21 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 		// },
 		{
 			image: {
-				src: "/assets/hero-section/founders/pathrock.jpeg",
+				src: "/assets/about-section/pathrock.png",
 				alt: "pathrock",
 			},
 			title: "Pathrocknetwork",
 			description:
 				"Hey, I’m Patrick from Germany and I’m representing pathrocknetwork and MillenniumClub or MCLB. We are running several validators for different projects and protocols and I am so happy to be able to join the alliance of like-minded validators where we share similar goals and values.",
+			person: {
+				image: {
+					src: "/assets/flags/germany.png",
+					alt: "germany",
+				},
+				name: "Patrick",
+				description:
+					"Polkadot, Astar and Bifrost ambassador, Czech/Slovak Polkadot community founder",
+			},
 		},
 		{
 			image: {
@@ -166,23 +201,33 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			title: "bLd Nodes",
 			description:
 				"I’m bLd from France. Little last one, I started my journey with a few geek friends a few months ago, we created bLd Nodes for our first validator node on Kusama. With our experience in sysadmin and blockchain development, we aim to provide a secure and reliable service for our validator nodes.",
-		},
-		{
-			image: {
-				src: "/assets/about-section/stakenode.png",
-				alt: "stakenode",
+			person: {
+				image: {
+					src: "/assets/flags/france.png",
+					alt: "france",
+				},
+				name: "ChadStakeKinG",
+				description:
+					"Astar & Logion devops engineer, Polkadot Francophonie, ParisDotComm, Chaos DAO",
 			},
-			title: "Stakenode",
-			description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
 		},
 		{
 			image: {
-				src: "/assets/hero-section/founders/founder-1.png",
+				src: "/assets/about-section/crifferent.png",
 				alt: "crifferent",
 			},
-			title: "Crifferent",
+			title: "Crifferent.de",
 			description:
 				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
+			person: {
+				image: {
+					src: "/assets/flags/germany.png",
+					alt: "germany",
+				},
+				name: "Sik",
+				description:
+					"Staking Facilities and HydraDX/Basilisk core member / Moonbeam Treasury Council / HydraDX Registrar / HydraDX & Basilisk Councilor / Polkadot Ambassador / Moonbeam Moderator & Ambassador / Interlay Tech Team Lead Ambassador",
+			},
 		},
 		// {
 		// 	image: {
@@ -193,15 +238,24 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 		// 	description:
 		// 		"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
 		// },
-		// {
-		// 	image: {
-		// 		src: "",
-		// 		alt: "",
-		// 	},
-		// 	title: "",
-		// 	description: "",
-		// 	empty: true,
-		// },
+		{
+			image: {
+				src: "/assets/about-section/curu.png",
+				alt: "curu",
+			},
+			title: "Curu",
+			description:
+				"Hey, I'm a small indipendent validator/collator from Czechia with some 2 years of experience in the DotSama space. I like the idea of web3 and want to contribute to the vision of making world more fair and decentralized.",
+			person: {
+				image: {
+					src: "/assets/flags/czech.png",
+					alt: "czech",
+				},
+				name: "Curu",
+				description: "Sora Ambassador, Polkadot ecosystem content creator",
+			},
+			// empty: true,
+		},
 	]
 
 	return (
@@ -300,6 +354,20 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 								<ItemTitle>{item.title}</ItemTitle>
 							</ItemHead>
 							<ItemDescription>{item.description}</ItemDescription>
+							<PersonContainer>
+								<FlagFigure>
+									<Image
+										src={item.person.image.src}
+										alt={item.person.image.alt}
+										width={"100%"}
+										height={"100%"}
+										effect={"blur"}
+										style={{ objectFit: "contain" }}
+									/>
+								</FlagFigure>
+								<PersonName>{item.person.name}</PersonName>
+								<PersonDescription>{item.person.description}</PersonDescription>
+							</PersonContainer>
 						</Item>
 					))}
 				</ItemsDirectory>
@@ -438,7 +506,9 @@ const ItemsDirectory = styled.div`
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		grid-template-columns: 1fr 1fr;
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-			grid-template-columns: 1fr 1fr 1fr;
+			gap: 6rem;
+
+			/* grid-template-columns: 1fr 1fr 1fr; */
 		}
 	}
 `
@@ -494,4 +564,35 @@ const ItemTitle = styled.h3``
 
 const ItemDescription = styled.p`
 	font-family: "Nunito Sans", sans-serif;
+	margin-bottom: 3rem;
+`
+
+const PersonContainer = styled.div`
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	gap: 1rem;
+`
+
+const FlagFigure = styled.figure`
+	width: 1.5rem;
+	/* height: 1.5rem; */
+`
+
+const PersonName = styled.h3`
+	font-weight: 600;
+	font-size: 1.5rem;
+	line-height: 1;
+
+	color: #ffffff;
+`
+
+const PersonDescription = styled.p`
+	grid-column: 1 / 3;
+
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 98.6%;
+
+	color: #cacaca;
 `
