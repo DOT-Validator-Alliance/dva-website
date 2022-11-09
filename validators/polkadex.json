@@ -3,21 +3,21 @@
 	"containerID": "polkadex",
 	"meta": {
 		"title": "Polkadex",
-		"description": "",
+		"description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite. Thanks to Polkadex's unique tech architecture, users get the best of both CEX and DEX worlds while trading trust-lessly on Polkadex.",
 		"slug": "polkadex",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/polkadeck.png",
 			"alt": "polkadex logo"
 		}
 	},
 	"title": "Polkadex",
-	"description": "",
+	"description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite. Thanks to Polkadex's unique tech architecture, users get the best of both CEX and DEX worlds while trading trust-lessly on Polkadex.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/polkadeck.png",
 		"alt": "polkadex logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/polkadeck.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Polkadex validators:",

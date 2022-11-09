@@ -3,21 +3,21 @@
 	"containerID": "calamari",
 	"meta": {
 		"title": "Calamari",
-		"description": "Calamari is a parachain on Kusama that will be bridged to Polkadot. It will be a cross-chain DeFi hub, with a focus on stablecoins and derivatives.",
+		"description": "Calamari Network is the plug-and-play privacy-preservation protocol built to service the entire DeFi stack on Kusama (and Manta Network on Polkadot).",
 		"slug": "calamari",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/calamari.png",
 			"alt": "calamari logo"
 		}
 	},
 	"title": "Calamari",
-	"description": "Calamari is a parachain on Kusama that will be bridged to Polkadot. It will be a cross-chain DeFi hub, with a focus on stablecoins and derivatives.",
+	"description": "Calamari Network is the plug-and-play privacy-preservation protocol built to service the entire DeFi stack on Kusama (and Manta Network on Polkadot).",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/calamari.png",
 		"alt": "calamari logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/calamari.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Calamari validators:",

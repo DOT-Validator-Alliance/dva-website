@@ -3,21 +3,21 @@
 	"containerID": "gm",
 	"meta": {
 		"title": "GM",
-		"description": "",
+		"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama, improving QOL for all participants.",
 		"slug": "gm",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/gm.png",
 			"alt": "gm logo"
 		}
 	},
 	"title": "GM",
-	"description": "",
+	"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama, improving QOL for all participants.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/gm.png",
 		"alt": "gm logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/gm.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Polkadot validators:",

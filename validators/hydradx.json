@@ -3,21 +3,21 @@
 	"containerID": "hydradx",
 	"meta": {
 		"title": "HydraDX",
-		"description": "HydraDX is a cross-chain liquidity protocol built on Substrate. It is a base layer for financial use cases, currently - immediate exchanging assets.",
+		"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
 		"slug": "hydradx",
 		"image": {
-			"src": "/assets/validators/hydra.png",
+			"src": "/assets/networks/hydra-v2.png",
 			"alt": "hydra logo"
 		}
 	},
 	"title": "HydraDX",
-	"description": "HydraDX is a cross-chain liquidity protocol built on Substrate. It is a base layer for financial use cases, currently - immediate exchanging assets.",
+	"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
 	"image": {
-		"src": "/assets/validators/hydra.png",
+		"src": "/assets/networks/hydra-v2.png",
 		"alt": "hydra logo"
 	},
 	"blop": {
-		"src": "/assets/blops/hydra-purple.png",
+		"src": "/assets/networks/blops/hydra.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our HydraDX validators:",

@@ -3,21 +3,21 @@
 	"containerID": "zeitgeist",
 	"meta": {
 		"title": "Zeitgeist",
-		"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+		"description": "Zeitgeist is a decentralized network for creating, betting on, and resolving prediction markets. The platform's native currency, the ZTG, is used to sway the direction of the network, and as a means of last-call dispute resolution.",
 		"slug": "zeitgeist",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
-			"alt": "mangata logo"
+			"src": "/assets/networks/zeit.png",
+			"alt": "zeitgeist logo"
 		}
 	},
 	"title": "Zeitgeist",
-	"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+	"description": "Zeitgeist is a decentralized network for creating, betting on, and resolving prediction markets. The platform's native currency, the ZTG, is used to sway the direction of the network, and as a means of last-call dispute resolution.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/zeit.png",
 		"alt": "zeitgeist logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/zeit.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Zeitgeist validators:",

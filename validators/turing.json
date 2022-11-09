@@ -3,21 +3,21 @@
 	"containerID": "turing",
 	"meta": {
 		"title": "Turing",
-		"description": "Turing is a validator on the Polkadot network.",
+		"description": "Being a canary network of OAK, Turing Network aims to drive product usage of XCM by providing cross-chain automation for other parachains.",
 		"slug": "turing",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/turning.png",
 			"alt": "turing logo"
 		}
 	},
 	"title": "Turing",
-	"description": "Turing is a validator on the Polkadot network.",
+	"description": "Being a canary network of OAK, Turing Network aims to drive product usage of XCM by providing cross-chain automation for other parachains.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/turning.png",
 		"alt": "turing logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/turning.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Turing validators:",

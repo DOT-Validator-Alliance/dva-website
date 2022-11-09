@@ -3,21 +3,21 @@
 	"containerID": "robonomics",
 	"meta": {
 		"title": "Robonomics",
-		"description": "Robonomics is a decentralized network of autonomous agents that can interact with each other without the need for a central authority.",
+		"description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services, provide direct user access for ordering products from autonomous factories and services of urban sensor networks.",
 		"slug": "robonomics",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/robonomics.png",
 			"alt": "robonomics logo"
 		}
 	},
 	"title": "Robonomics",
-	"description": "Robonomics is a decentralized network of autonomous agents that can interact with each other without the need for a central authority.",
+	"description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services, provide direct user access for ordering products from autonomous factories and services of urban sensor networks.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/robonomics.png",
 		"alt": "robonomics logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/robonomics.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Robonomics validators:",

@@ -3,21 +3,21 @@
 	"containerID": "statemine",
 	"meta": {
 		"title": "Statemine",
-		"description": "Statemine is a canary network for Polkadot. It is a parachain that is connected to the Rococo testnet. It is used to test upgrades to the Polkadot runtime and to test parachain functionality.",
-		"slug": "polkadot",
+		"description": "Statemine is a generic assets parachain which provides functionality for deploying and transferring assets — both Fungible and Non-Fungible Tokens (NFTs). It is a common good parachain on Kusama (not to be confused with Statemint, which is a parachain on Polkadot).",
+		"slug": "statemine",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/statemine.png",
 			"alt": "statemine logo"
 		}
 	},
 	"title": "Statemine",
-	"description": "Statemine is a canary network for Polkadot. It is a parachain that is connected to the Rococo testnet. It is used to test upgrades to the Polkadot runtime and to test parachain functionality.",
+	"description": "Statemine is a generic assets parachain which provides functionality for deploying and transferring assets — both Fungible and Non-Fungible Tokens (NFTs). It is a common good parachain on Kusama (not to be confused with Statemint, which is a parachain on Polkadot).",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/statemine.png",
 		"alt": "statemine logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/statemine.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Statemine validators:",

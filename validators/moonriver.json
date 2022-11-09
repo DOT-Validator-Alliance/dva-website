@@ -3,21 +3,21 @@
 	"containerID": "moonriver",
 	"meta": {
 		"title": "Moonriver",
-		"description": "",
+		"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.",
 		"slug": "moonriver",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/moonriver-v2.png",
 			"alt": "moonriver logo"
 		}
 	},
 	"title": "Moonriver",
-	"description": "",
+	"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/moonriver-v2.png",
 		"alt": "moonriver logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/moonriver.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Moonriver validators:",

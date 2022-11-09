@@ -3,7 +3,7 @@
 	"containerID": "kintsugi",
 	"meta": {
 		"title": "Kintsugi",
-		"description": "Kintsugi is a validator for Polkadot and Kusama. We are a team of 5 people from different countries and backgrounds. We are passionate about blockchain technology and we are excited to be part of the Polkadot ecosystem.",
+		"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
 		"slug": "kintsugi",
 		"image": {
 			"src": "/assets/validators/polkadot.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Kintsugi",
-	"description": "Kintsugi is a validator for Polkadot and Kusama. We are a team of 5 people from different countries and backgrounds. We are passionate about blockchain technology and we are excited to be part of the Polkadot ecosystem.",
+	"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
 	"image": {
 		"src": "/assets/validators/polkadot.png",
 		"alt": "kintsugi logo"

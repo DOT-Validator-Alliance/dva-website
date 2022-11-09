@@ -3,21 +3,21 @@
 	"containerID": "kilt-spiritnet",
 	"meta": {
 		"title": "Kilt Spiritnet",
-		"description": "",
+		"description": "KILT is an open-source fat blockchain protocol for issuing claim-based verifiable, revocable, and anonymous credentials in the Web 3.0. It allows end users to claim arbitrary attributes about themselves, get them attested by trusted entities, and store the claims as self-sovereign credentials (certificates).",
 		"slug": "kilt-spiritnet",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/kilt-v2.png",
 			"alt": "kilt-spiritnet logo"
 		}
 	},
 	"title": "Kilt Spiritnet",
-	"description": "",
+	"description": "KILT is an open-source fat blockchain protocol for issuing claim-based verifiable, revocable, and anonymous credentials in the Web 3.0. It allows end users to claim arbitrary attributes about themselves, get them attested by trusted entities, and store the claims as self-sovereign credentials (certificates).",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/kilt-v2.png",
 		"alt": "kilt-spiritnet logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/kilt.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Kilt Spiritnet validators:",

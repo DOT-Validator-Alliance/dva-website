@@ -3,21 +3,21 @@
 	"containerID": "astar",
 	"meta": {
 		"title": "Astar",
-		"description": "",
+		"description": "Astar (previously Plasm) is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain. By adding a Astar (previously Plasm) Substrate Runtime Module Library, you can get scalable blockchains within a few minutes.",
 		"slug": "astar",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/astar.png",
 			"alt": "astar logo"
 		}
 	},
 	"title": "Astar",
-	"description": "",
+	"description": "Astar (previously Plasm) is a Substrate Runtime Module Library which allows developers to add Plasma functions to their Substrate chain. By adding a Astar (previously Plasm) Substrate Runtime Module Library, you can get scalable blockchains within a few minutes.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/astar.png",
 		"alt": "astar logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/astar.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Astar validators:",

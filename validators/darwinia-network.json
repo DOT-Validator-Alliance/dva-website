@@ -3,7 +3,7 @@
 	"containerID": "darwinia-network",
 	"meta": {
 		"title": "Darwinia Network",
-		"description": "Darwinia Network is a decentralized cross-chain bridge network building on Substrate, which is the “Golden Gate Bridge” of the cross-chain ecology.",
+		"description": "Darwinia Network is a programmable cross-chain messaging infrastructure for decentralized applications. Our light client-based cross-chain messaging protocol (LCMP) supports arbitrary message passing between Substrate and EVM chains, and SDK empowers developers with the tools necessary to build the next generation of Web3 applications, and create seamless user experiences, even when transacting across multiple chains.",
 		"slug": "darwinia-network",
 		"image": {
 			"src": "/assets/validators/darwinia-gray-v2.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Darwinia Network",
-	"description": "Darwinia Network is a decentralized cross-chain bridge network building on Substrate, which is the “Golden Gate Bridge” of the cross-chain ecology.",
+	"description": "Darwinia Network is a programmable cross-chain messaging infrastructure for decentralized applications. Our light client-based cross-chain messaging protocol (LCMP) supports arbitrary message passing between Substrate and EVM chains, and SDK empowers developers with the tools necessary to build the next generation of Web3 applications, and create seamless user experiences, even when transacting across multiple chains.",
 	"image": {
 		"src": "/assets/validators/darwinia-gray-v2.png",
 		"alt": "drawinia logo"

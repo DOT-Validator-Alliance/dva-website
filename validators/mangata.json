@@ -3,21 +3,21 @@
 	"containerID": "mangata",
 	"meta": {
 		"title": "Mangata",
-		"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+		"description": "A cross-chain AMM (automated market maker) DEX (decentralized exchange) with low fixed-fees, without additional network fees, resistant to front-running and MEV (miner extractable value).",
 		"slug": "mangata",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/mangata.png",
 			"alt": "mangata logo"
 		}
 	},
 	"title": "Mangata",
-	"description": "Mangata is a decentralized exchange protocol that allows users to trade any fungible token on any blockchain.",
+	"description": "A cross-chain AMM (automated market maker) DEX (decentralized exchange) with low fixed-fees, without additional network fees, resistant to front-running and MEV (miner extractable value).",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/mangata.png",
 		"alt": "mangata logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/mangata.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Mangata validators:",

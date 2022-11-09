@@ -3,21 +3,21 @@
 	"containerID": "tinkernet",
 	"meta": {
 		"title": "Tinkernet",
-		"description": "Tinkernet is a validator for Polkadot and Kusama. We are a team of 5 people with a strong background in software development and blockchain technology. We are passionate about the Polkadot ecosystem and we are committed to building a strong and reliable infrastructure for the future of the Web3.",
-		"slug": "polkadot",
+		"description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
+		"slug": "tinkernet",
 		"image": {
-			"src": "/assets/validators/polkadot.png",
+			"src": "/assets/networks/tinkernet.png",
 			"alt": "tinkernet logo"
 		}
 	},
 	"title": "Tinkernet",
-	"description": "Tinkernet is a validator for Polkadot and Kusama. We are a team of 5 people with a strong background in software development and blockchain technology. We are passionate about the Polkadot ecosystem and we are committed to building a strong and reliable infrastructure for the future of the Web3.",
+	"description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
 	"image": {
-		"src": "/assets/validators/polkadot.png",
+		"src": "/assets/networks/tinkernet.png",
 		"alt": "tinkernet logo"
 	},
 	"blop": {
-		"src": "/assets/blops/polkadot-pink.png",
+		"src": "/assets/networks/blops/tinkernet.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Tinkernet validators:",
