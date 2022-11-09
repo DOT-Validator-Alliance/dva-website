@@ -138,7 +138,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				},
 				name: "Petr",
 				description:
-					"Polkadot, Astar and Bifrost ambassador, Czech/Slovak Polkadot community founder",
+					"Polkadot, Astar and Bifrost ambassador, Czech/</br>Slovak Polkadot community founder",
 			},
 		},
 		{
@@ -155,7 +155,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				},
 				name: "Jimmy",
 				description:
-					"Polkadot Ambasador, HydraDX Council Member, Pol(s)kadot - Polish Polkadot Community Founder",
+					"Polkadot Ambasador, HydraDX Council Member,</br> Pol(s)kadot - Polish Polkadot Community Founder",
 			},
 		},
 		// {
@@ -190,7 +190,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				},
 				name: "Patrick",
 				description:
-					"Polkadot, Astar and Bifrost ambassador, Czech/Slovak Polkadot community founder",
+					"Polkadot, Astar and Bifrost ambassador, Czech/</br>Slovak Polkadot community founder",
 			},
 		},
 		{
@@ -208,7 +208,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				},
 				name: "ChadStakeKinG",
 				description:
-					"Astar & Logion devops engineer, Polkadot Francophonie, ParisDotComm, Chaos DAO",
+					"Astar & Logion devops engineer, Polkadot</br> Francophonie, ParisDotComm, Chaos DAO",
 			},
 		},
 		{
@@ -366,7 +366,9 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 									/>
 								</FlagFigure>
 								<PersonName>{item.person.name}</PersonName>
-								<PersonDescription>{item.person.description}</PersonDescription>
+								<PersonDescription
+									dangerouslySetInnerHTML={{ __html: item.person.description }}
+								/>
 							</PersonContainer>
 						</Item>
 					))}
