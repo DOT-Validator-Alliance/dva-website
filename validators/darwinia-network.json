@@ -35,12 +35,8 @@
 	},
 	"validators": [
 		{
-			"name": "Polkadotters (Darwinia)",
+			"name": "Polkadotters",
 			"address": "2q2y8DBhaTmgC2Au9tSXSshCkDXhmj9rPW945yxqBf52rGRK"
-		},
-		{
-			"name": "Polkadotters (Darwinia Crab)",
-			"address": "5DvoL2BNoSm7wRt2tfZ6WW5QFrxm68GLv5SCrPQ4JBLjbvpL"
 		}
 	]
 }

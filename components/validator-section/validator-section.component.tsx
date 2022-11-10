@@ -87,6 +87,7 @@ const ValidatorSectionContainer = styled(motion.section)`
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+			gap: 10rem;
 		}
 	}
 `
