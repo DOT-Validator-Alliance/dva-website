@@ -3,7 +3,7 @@
 	"containerID": "hydradx",
 	"meta": {
 		"title": "HydraDX",
-		"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
+		"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate.",
 		"slug": "hydradx",
 		"image": {
 			"src": "/assets/networks/hydra-v2.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "HydraDX",
-	"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate framework while remaining optimized for a single purpose: enabling fluid programmable value exchange.",
+	"description": "HydraDX is built as a parachain – specialized blockchain in the Polkadot network. It is benefiting from shared security, speed and flexibility of the Substrate.",
 	"image": {
 		"src": "/assets/networks/hydra-v2.png",
 		"alt": "hydra logo"

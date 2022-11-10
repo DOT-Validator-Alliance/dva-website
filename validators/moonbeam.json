@@ -3,7 +3,7 @@
 	"containerID": "moonbeam",
 	"meta": {
 		"title": "Moonbeam",
-		"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum. With Moonbeam smart contracts and compatibility with the Ethereum developer toolset, you can quickly build applications that work with users and assets on remote chains, either through native Polkadot compatibility or bridge-based integrations.",
+		"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
 		"slug": "moonbeam",
 		"image": {
 			"src": "/assets/networks/moonbeam.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Moonbeam",
-	"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum. With Moonbeam smart contracts and compatibility with the Ethereum developer toolset, you can quickly build applications that work with users and assets on remote chains, either through native Polkadot compatibility or bridge-based integrations.",
+	"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
 	"image": {
 		"src": "/assets/networks/moonbeam.png",
 		"alt": "moonbeam logo"

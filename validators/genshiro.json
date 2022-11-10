@@ -3,7 +3,7 @@
 	"containerID": "genshiro",
 	"meta": {
 		"title": "Genshiro",
-		"description": "Genshiro will be a testing site for our future products before we deploy them on Polkadot — this means Genshiro users get to play with exciting, experimental features before anyone else. They’ll have access to a broader range of crypto assets compared to Equilibrium, less strict margin rules, the Curve AMM, a DEX with derivative contracts on ETFs, stocks, gold, and commodities, and more.",
+		"description": "Genshiro will be a testing site for our future products before we deploy them on Polkadot — this means Genshiro users get to play with exciting, experimental features before anyone else.",
 		"slug": "genshiro",
 		"image": {
 			"src": "/assets/networks/genshire.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Genshiro",
-	"description": "Genshiro will be a testing site for our future products before we deploy them on Polkadot — this means Genshiro users get to play with exciting, experimental features before anyone else. They’ll have access to a broader range of crypto assets compared to Equilibrium, less strict margin rules, the Curve AMM, a DEX with derivative contracts on ETFs, stocks, gold, and commodities, and more.",
+	"description": "Genshiro will be a testing site for our future products before we deploy them on Polkadot — this means Genshiro users get to play with exciting, experimental features before anyone else.",
 	"image": {
 		"src": "/assets/networks/genshire.png",
 		"alt": "genshiro logo"

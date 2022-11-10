@@ -3,7 +3,7 @@
 	"containerID": "kintsugi",
 	"meta": {
 		"title": "Kintsugi",
-		"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
+		"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization.",
 		"slug": "kintsugi",
 		"image": {
 			"src": "/assets/validators/polkadot.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Kintsugi",
-	"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
+	"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization.",
 	"image": {
 		"src": "/assets/validators/polkadot.png",
 		"alt": "kintsugi logo"

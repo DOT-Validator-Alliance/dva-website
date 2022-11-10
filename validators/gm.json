@@ -3,7 +3,7 @@
 	"containerID": "gm",
 	"meta": {
 		"title": "GM",
-		"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama, improving QOL for all participants.",
+		"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama.",
 		"slug": "gm",
 		"image": {
 			"src": "/assets/networks/gm.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "GM",
-	"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama, improving QOL for all participants.",
+	"description": "GM solves the problem of the cold and isolated nature of crypto at large. Our crack team aims to meet this problem head-on by encouraging the exchange of GMs and GNs across Dotsama.",
 	"image": {
 		"src": "/assets/networks/gm.png",
 		"alt": "gm logo"

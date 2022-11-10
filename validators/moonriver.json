@@ -3,7 +3,7 @@
 	"containerID": "moonriver",
 	"meta": {
 		"title": "Moonriver",
-		"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.",
+		"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions.",
 		"slug": "moonriver",
 		"image": {
 			"src": "/assets/networks/moonriver-v2.png",
@@ -11,7 +11,7 @@
 		}
 	},
 	"title": "Moonriver",
-	"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions. Once proven, the same code ships to Moonbeam on Polkadot.",
+	"description": "Moonriver is a companion network to Moonbeam and provides a permanently incentivized canary network. New code ships to Moonriver first, where it can be tested and verified under real economic conditions.",
 	"image": {
 		"src": "/assets/networks/moonriver-v2.png",
 		"alt": "moonriver logo"
