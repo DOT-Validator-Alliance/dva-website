@@ -123,14 +123,14 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 		{
 			url: "https://twitter.com/pathrock2",
 			image: {
-				src: "/assets/hero-section/founders/pathrock.jpeg",
+				src: "/assets/hero-section/founders/founder-3.png",
 				alt: "pathrock2",
 			},
 		},
 		{
 			url: "https://twitter.com/stakenode_dev",
 			image: {
-				src: "/assets/hero-section/founders/jimmy-tudeski.jpeg",
+				src: "/assets/about-section/stakenode.png",
 				alt: "stakenode_dev",
 			},
 		},

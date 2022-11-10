@@ -1,0 +1,42 @@
+{
+	"id": 17,
+	"containerID": "darwina-crab",
+	"meta": {
+		"title": "Darwina crab",
+		"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
+		"slug": "darwina-crab",
+		"image": {
+			"src": "/assets/networks/darvina_crab.png",
+			"alt": "darwina-crab logo"
+		}
+	},
+	"title": "Darwina crab",
+	"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
+	"image": {
+		"src": "/assets/networks/darvina_crab.png",
+		"alt": "darwina-crab logo"
+	},
+	"blop": {
+		"src": "/assets/networks/blops/darvina-crab.png",
+		"alt": "blop"
+	},
+	"listLabel": "Our Darwina crab validators:",
+	"link": {
+		"label": "View all",
+		"slug": "/validators/darwina-crab"
+	},
+	"cta": {
+		"label": "Nominate",
+		"slug": "https://kusama.network/"
+	},
+	"backButton": {
+		"label": "Back to projects",
+		"slug": "/#darwina-crab"
+	},
+	"validators": [
+		{
+			"name": "Polkadotters",
+			"address": "5DvoL2BNoSm7wRt2tfZ6WW5QFrxm68GLv5SCrPQ4JBLjbvpL"
+		}
+	]
+}
