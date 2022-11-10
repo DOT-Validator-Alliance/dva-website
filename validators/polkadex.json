@@ -1,23 +1,23 @@
 {
-	"id": 21,
+	"id": 28,
 	"containerID": "polkadex",
 	"meta": {
 		"title": "Polkadex",
 		"description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite.",
 		"slug": "polkadex",
 		"image": {
-			"src": "/assets/networks/polkadeck.png",
+			"src": "/assets/networks/polkadeck-v3-min.png",
 			"alt": "polkadex logo"
 		}
 	},
 	"title": "Polkadex",
 	"description": "Polkadex Orderbook is a non-custodial, peer-to-peer trading platform that merges the benefits of both centralized and decentralized exchanges into a next-generation decentralized product suite.",
 	"image": {
-		"src": "/assets/networks/polkadeck.png",
+		"src": "/assets/networks/polkadeck-v3-min.png",
 		"alt": "polkadex logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/polkadeck.png",
+		"src": "/assets/networks/blops/polkadeck-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Polkadex validators:",

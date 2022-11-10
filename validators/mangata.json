@@ -1,23 +1,23 @@
 {
-	"id": 18,
+	"id": 19,
 	"containerID": "mangata",
 	"meta": {
 		"title": "Mangata",
 		"description": "A cross-chain AMM (automated market maker) DEX (decentralized exchange) with low fixed-fees, without additional network fees, resistant to front-running and MEV (miner extractable value).",
 		"slug": "mangata",
 		"image": {
-			"src": "/assets/networks/mangata.png",
+			"src": "/assets/networks/mangata-v3-min.png",
 			"alt": "mangata logo"
 		}
 	},
 	"title": "Mangata",
 	"description": "A cross-chain AMM (automated market maker) DEX (decentralized exchange) with low fixed-fees, without additional network fees, resistant to front-running and MEV (miner extractable value).",
 	"image": {
-		"src": "/assets/networks/mangata.png",
+		"src": "/assets/networks/mangata-v3-min.png",
 		"alt": "mangata logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/mangata.png",
+		"src": "/assets/networks/blops/mangata-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Mangata validators:",

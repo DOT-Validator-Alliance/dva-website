@@ -1,23 +1,23 @@
 {
-	"id": 17,
+	"id": 25,
 	"containerID": "darwina-crab",
 	"meta": {
 		"title": "Darwina crab",
 		"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
 		"slug": "darwina-crab",
 		"image": {
-			"src": "/assets/networks/darvina_crab.png",
+			"src": "/assets/networks/darvina_crab-v3-min.png",
 			"alt": "darwina-crab logo"
 		}
 	},
 	"title": "Darwina crab",
 	"description": "Kintsugi is interBTC’s canary network, developed by Interlay under the supervision of Kintsugi Labs, a non-profit oriented organization responsible for Kintsugi’s launch and the support of the decentralized network and ecosystem.",
 	"image": {
-		"src": "/assets/networks/darvina_crab.png",
+		"src": "/assets/networks/darvina_crab-v3-min.png",
 		"alt": "darwina-crab logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/darvina-crab.png",
+		"src": "/assets/networks/blops/darvina-crab-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Darwina crab validators:",

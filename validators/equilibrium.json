@@ -1,23 +1,23 @@
 {
-	"id": 13,
+	"id": 8,
 	"containerID": "equilibrium",
 	"meta": {
 		"title": "Equilibrium",
 		"description": "The functionality of all key DeFi apps on one platform, with advanced bailout mechanism for system security. Users can: Lend, borrow, trade and EQ tokens Stake.",
 		"slug": "equilibrium",
 		"image": {
-			"src": "/assets/networks/equilibrium.png",
+			"src": "/assets/networks/equilibrium-v3-min.png",
 			"alt": "equilibrium logo"
 		}
 	},
 	"title": "Equilibrium",
 	"description": "The functionality of all key DeFi apps on one platform, with advanced bailout mechanism for system security. Users can: Lend, borrow, trade and EQ tokens Stake.",
 	"image": {
-		"src": "/assets/networks/equilibrium.png",
+		"src": "/assets/networks/equilibrium-v3-min.png",
 		"alt": "equilibrium logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/equilibrium.png",
+		"src": "/assets/networks/blops/equilibrium-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Equilibrium validators:",

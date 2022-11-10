@@ -1,23 +1,23 @@
 {
-	"id": 11,
+	"id": 20,
 	"containerID": "bifrost",
 	"meta": {
 		"title": "Bifrost",
 		"description": "Bifrost developed a Staking Liquidity Protocol called SLP that allows you to get vTokens for operations and delivering liquidity.",
 		"slug": "bifrost",
 		"image": {
-			"src": "/assets/networks/birfrost.png",
+			"src": "/assets/networks/birfrost-v3-min.png",
 			"alt": "bifrost logo"
 		}
 	},
 	"title": "Bifrost",
 	"description": "Bifrost developed a Staking Liquidity Protocol called SLP that allows you to get vTokens for operations and delivering liquidity.",
 	"image": {
-		"src": "/assets/networks/birfrost.png",
+		"src": "/assets/networks/birfrost-v3-min.png",
 		"alt": "bifrost logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/birfrost.png",
+		"src": "/assets/networks/blops/birfrost-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Bifrost validators:",

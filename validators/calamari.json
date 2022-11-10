@@ -1,23 +1,23 @@
 {
-	"id": 12,
+	"id": 18,
 	"containerID": "calamari",
 	"meta": {
 		"title": "Calamari",
 		"description": "Calamari Network is the plug-and-play privacy-preservation protocol built to service the entire DeFi stack on Kusama (and Manta Network on Polkadot).",
 		"slug": "calamari",
 		"image": {
-			"src": "/assets/networks/calamari.png",
+			"src": "/assets/networks/calamari-v3-min.png",
 			"alt": "calamari logo"
 		}
 	},
 	"title": "Calamari",
 	"description": "Calamari Network is the plug-and-play privacy-preservation protocol built to service the entire DeFi stack on Kusama (and Manta Network on Polkadot).",
 	"image": {
-		"src": "/assets/networks/calamari.png",
+		"src": "/assets/networks/calamari-v3-min.png",
 		"alt": "calamari logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/calamari.png",
+		"src": "/assets/networks/blops/calamari-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Calamari validators:",

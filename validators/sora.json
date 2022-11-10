@@ -1,23 +1,23 @@
 {
-	"id": 23,
+	"id": 22,
 	"containerID": "sora",
 	"meta": {
 		"title": "Sora",
 		"description": "SORA is both a new economic system that decentralizes the concept of a central bank as well as a network in the Polkadot ecosystem that will connect to the Polkadot relay chain and the parachains with built-in tools focused on DeFi.",
 		"slug": "sora",
 		"image": {
-			"src": "/assets/networks/sora.png",
+			"src": "/assets/networks/sora-v3-min.png",
 			"alt": "sora logo"
 		}
 	},
 	"title": "Sora",
 	"description": "SORA is both a new economic system that decentralizes the concept of a central bank as well as a network in the Polkadot ecosystem that will connect to the Polkadot relay chain and the parachains with built-in tools focused on DeFi.",
 	"image": {
-		"src": "/assets/networks/sora.png",
+		"src": "/assets/networks/sora-v3-min.png",
 		"alt": "sora logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/sora.png",
+		"src": "/assets/networks/blops/sora-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Sora validators:",

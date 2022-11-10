@@ -1,23 +1,23 @@
 {
-	"id": 8,
+	"id": 21,
 	"containerID": "altair",
 	"meta": {
 		"title": "Altair",
 		"description": "Altair combines the industry-leading infrastructure built by Centrifuge to finance real-world assets (RWA) on Centrifuge Chain, with the newest experimental features — before they go live on Centrifuge Chain.",
 		"slug": "altair",
 		"image": {
-			"src": "/assets/networks/altair.png",
+			"src": "/assets/networks/altair-v3-min.png",
 			"alt": "altair logo"
 		}
 	},
 	"title": "Altair",
 	"description": "Altair combines the industry-leading infrastructure built by Centrifuge to finance real-world assets (RWA) on Centrifuge Chain, with the newest experimental features — before they go live on Centrifuge Chain.",
 	"image": {
-		"src": "/assets/networks/altair.png",
+		"src": "/assets/networks/altair-v3-min.png",
 		"alt": "altair logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/altair.png",
+		"src": "/assets/networks/blops/altair-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Altair validators:",

@@ -1,23 +1,23 @@
 {
-	"id": 16,
+	"id": 7,
 	"containerID": "kilt-spiritnet",
 	"meta": {
 		"title": "Kilt Spiritnet",
 		"description": "KILT is an open-source fat blockchain protocol for issuing claim-based verifiable, revocable, and anonymous credentials in the Web 3.0.",
 		"slug": "kilt-spiritnet",
 		"image": {
-			"src": "/assets/networks/kilt-v2.png",
+			"src": "/assets/networks/kilt-v3-min.png",
 			"alt": "kilt-spiritnet logo"
 		}
 	},
 	"title": "Kilt Spiritnet",
 	"description": "KILT is an open-source fat blockchain protocol for issuing claim-based verifiable, revocable, and anonymous credentials in the Web 3.0.",
 	"image": {
-		"src": "/assets/networks/kilt-v2.png",
+		"src": "/assets/networks/kilt-v3-min.png",
 		"alt": "kilt-spiritnet logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/kilt.png",
+		"src": "/assets/networks/blops/kilt-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Kilt Spiritnet validators:",

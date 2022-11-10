@@ -1,23 +1,23 @@
 {
-	"id": 19,
+	"id": 5,
 	"containerID": "moonbeam",
 	"meta": {
 		"title": "Moonbeam",
 		"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
 		"slug": "moonbeam",
 		"image": {
-			"src": "/assets/networks/moonbeam.png",
+			"src": "/assets/networks/moonbeam-v3-min.png",
 			"alt": "moonbeam logo"
 		}
 	},
 	"title": "Moonbeam",
 	"description": "Moonbeam makes it easy to build decentralized applications on Polkadot — which means your DApps can integrate with other blockchains, including Bitcoin and Ethereum.",
 	"image": {
-		"src": "/assets/networks/moonbeam.png",
+		"src": "/assets/networks/moonbeam-v3-min.png",
 		"alt": "moonbeam logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/moonbeam.png",
+		"src": "/assets/networks/blops/moonbeam-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Moonbeam validators:",

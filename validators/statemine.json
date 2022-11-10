@@ -1,23 +1,23 @@
 {
-	"id": 24,
+	"id": 3,
 	"containerID": "statemine",
 	"meta": {
 		"title": "Statemine",
 		"description": "Statemine is a generic assets parachain which provides functionality for deploying and transferring assets — both Fungible and Non-Fungible Tokens (NFTs). It is a common good parachain on Kusama (not to be confused with Statemint, which is a parachain on Polkadot).",
 		"slug": "statemine",
 		"image": {
-			"src": "/assets/networks/statemine.png",
+			"src": "/assets/networks/statemine-v3-min.png",
 			"alt": "statemine logo"
 		}
 	},
 	"title": "Statemine",
 	"description": "Statemine is a generic assets parachain which provides functionality for deploying and transferring assets — both Fungible and Non-Fungible Tokens (NFTs). It is a common good parachain on Kusama (not to be confused with Statemint, which is a parachain on Polkadot).",
 	"image": {
-		"src": "/assets/networks/statemine.png",
+		"src": "/assets/networks/statemine-v3-min.png",
 		"alt": "statemine logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/statemine.png",
+		"src": "/assets/networks/blops/statemine-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Statemine validators:",

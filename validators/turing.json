@@ -1,23 +1,23 @@
 {
-	"id": 26,
+	"id": 17,
 	"containerID": "turing",
 	"meta": {
 		"title": "Turing",
 		"description": "Being a canary network of OAK, Turing Network aims to drive product usage of XCM by providing cross-chain automation for other parachains.",
 		"slug": "turing",
 		"image": {
-			"src": "/assets/networks/turning.png",
+			"src": "/assets/networks/turning-v3-min.png",
 			"alt": "turing logo"
 		}
 	},
 	"title": "Turing",
 	"description": "Being a canary network of OAK, Turing Network aims to drive product usage of XCM by providing cross-chain automation for other parachains.",
 	"image": {
-		"src": "/assets/networks/turning.png",
+		"src": "/assets/networks/turning-v3-min.png",
 		"alt": "turing logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/turning.png",
+		"src": "/assets/networks/blops/turning-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Turing validators:",

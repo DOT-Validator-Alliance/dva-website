@@ -1,23 +1,23 @@
 {
-	"id": 22,
+	"id": 14,
 	"containerID": "robonomics",
 	"meta": {
 		"title": "Robonomics",
 		"description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services.",
 		"slug": "robonomics",
 		"image": {
-			"src": "/assets/networks/robonomics.png",
+			"src": "/assets/networks/robonomics-v3-min.png",
 			"alt": "robonomics logo"
 		}
 	},
 	"title": "Robonomics",
 	"description": "The creation and development of a platform that provides tools for working with the robot economy network (briefly - the Robonomics platform) will allow designers of new cities and industrial zones to build trust among the autonomous robots services.",
 	"image": {
-		"src": "/assets/networks/robonomics.png",
+		"src": "/assets/networks/robonomics-v3-min.png",
 		"alt": "robonomics logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/robonomics.png",
+		"src": "/assets/networks/blops/robonomics-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Robonomics validators:",

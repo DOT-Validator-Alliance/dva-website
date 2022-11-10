@@ -1,23 +1,23 @@
 {
-	"id": 25,
+	"id": 15,
 	"containerID": "tinkernet",
 	"meta": {
 		"title": "Tinkernet",
 		"description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
 		"slug": "tinkernet",
 		"image": {
-			"src": "/assets/networks/tinkernet.png",
+			"src": "/assets/networks/tinkernet-v3-min.png",
 			"alt": "tinkernet logo"
 		}
 	},
 	"title": "Tinkernet",
 	"description": "The Tinkernet Parachain is the canary network of the InvArch Network, designed as the IP Asset & accelerated development staging grounds for the Kusama ecosystem.",
 	"image": {
-		"src": "/assets/networks/tinkernet.png",
+		"src": "/assets/networks/tinkernet-v3-min.png",
 		"alt": "tinkernet logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/tinkernet.png",
+		"src": "/assets/networks/blops/tinkernet-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Tinkernet validators:",

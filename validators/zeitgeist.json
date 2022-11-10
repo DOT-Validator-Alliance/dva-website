@@ -1,23 +1,23 @@
 {
-	"id": 27,
+	"id": 13,
 	"containerID": "zeitgeist",
 	"meta": {
 		"title": "Zeitgeist",
 		"description": "Zeitgeist is a decentralized network for creating, betting on, and resolving prediction markets. The platform's native currency, the ZTG, is used to sway the direction of the network, and as a means of last-call dispute resolution.",
 		"slug": "zeitgeist",
 		"image": {
-			"src": "/assets/networks/zeit.png",
+			"src": "/assets/networks/zeit-v3-min.png",
 			"alt": "zeitgeist logo"
 		}
 	},
 	"title": "Zeitgeist",
 	"description": "Zeitgeist is a decentralized network for creating, betting on, and resolving prediction markets. The platform's native currency, the ZTG, is used to sway the direction of the network, and as a means of last-call dispute resolution.",
 	"image": {
-		"src": "/assets/networks/zeit.png",
+		"src": "/assets/networks/zeit-v3-min.png",
 		"alt": "zeitgeist logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/zeit.png",
+		"src": "/assets/networks/blops/zeit-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Zeitgeist validators:",

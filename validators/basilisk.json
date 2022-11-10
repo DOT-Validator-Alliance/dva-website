@@ -1,23 +1,23 @@
 {
-	"id": 10,
+	"id": 12,
 	"containerID": "basilisk",
 	"meta": {
 		"title": "Basilisk",
 		"description": "Basilisk is not a mere canary network of HydraDX - it is an independent chain which has the mission to enable frictionless liquidity bootstrapping for new cryptoassets.",
 		"slug": "basilisk",
 		"image": {
-			"src": "/assets/networks/basilisk-v2.png",
+			"src": "/assets/networks/basilisk-v3-min.png",
 			"alt": "basilisk logo"
 		}
 	},
 	"title": "Basilisk",
 	"description": "Basilisk is not a mere canary network of HydraDX - it is an independent chain which has the mission to enable frictionless liquidity bootstrapping for new cryptoassets.",
 	"image": {
-		"src": "/assets/networks/basilisk-v2.png",
+		"src": "/assets/networks/basilisk-v3-min.png",
 		"alt": "basilisk logo"
 	},
 	"blop": {
-		"src": "/assets/networks/blops/basilisk.png",
+		"src": "/assets/networks/blops/basilisk-min.png",
 		"alt": "blop"
 	},
 	"listLabel": "Our Basilisk validators:",
