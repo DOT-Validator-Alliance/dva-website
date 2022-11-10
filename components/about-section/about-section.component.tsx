@@ -130,7 +130,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "Polkadotters",
 			description:
-				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
+				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are bloggers, community builders, crypto event organizers and also one of the biggest collators in Dotsama ecosystem! We are really pleased to be a part of this initiative because we believe that community should participate in every aspect of blockchain development, including running the validators.",
 			person: {
 				image: {
 					src: "/assets/flags/czech.png",
@@ -147,7 +147,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				alt: "stakenode",
 			},
 			title: "Stakenode",
-			description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
+			description: `Stakenode is a gateway to the Polkadot economy. We deliver all possible options for Proof-of-Stake tokens in the Polkadot ecosystem. We provide Validator Services to all POS Polkadot projects bringing you the possibility to stake Your tokens like $DOT $KSM $FIS $PCX with other network`,
 			person: {
 				image: {
 					src: "/assets/flags/poland.png",
@@ -182,7 +182,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "Pathrocknetwork",
 			description:
-				"Hey, I’m Patrick from Germany and I’m representing pathrocknetwork and MillenniumClub or MCLB. We are running several validators for different projects and protocols and I am so happy to be able to join the alliance of like-minded validators where we share similar goals and values.",
+				"Hey, I am Patrick from Germany the founder of pathrocknetwork, a community oriented staking as a service provider for a variety of different blockchain projects. I am so happy to be able to join the alliance of like-minded validators where we share similar goals and values.",
 			person: {
 				image: {
 					src: "/assets/flags/germany.png",
@@ -200,7 +200,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "bLd Nodes",
 			description:
-				"I’m bLd from France. Little last one, I started my journey with a few geek friends a few months ago, we created bLd Nodes for our first validator node on Kusama. With our experience in sysadmin and blockchain development, we aim to provide a secure and reliable service for our validator nodes.",
+				"Recently rebranded to ChadStakeKing (beacuse why not), I am DevOps engineer for Astar and Logion network. I am passionate about decentralization, community and any kind of technical topics. Validation is my favorite hobby, I pick carefully only a few chains to operate on.",
 			person: {
 				image: {
 					src: "/assets/flags/france.png",
@@ -218,7 +218,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "Crifferent.de",
 			description:
-				"Hi, I am Petr and I started the Polkadotters community with my colleague Pavel. We are from Czechia, a small country in the heart of Europe. We are really pleased to be a part of this initiative because we believe that the community should be the one with power over the network!",
+				"Sik is a true Web3 native. Working for a blockchain company full-time, core member of HydraDX, councilor/registrar/moderator/ambassador in many DotSama projects and also running safe and reliable self-hosted validators and collators at crifferent.de.",
 			person: {
 				image: {
 					src: "/assets/flags/germany.png",
@@ -245,7 +245,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "Curu",
 			description:
-				"Hey, I'm a small indipendent validator/collator from Czechia with some 2 years of experience in the DotSama space. I like the idea of web3 and want to contribute to the vision of making world more fair and decentralized.",
+				"Hey, I'm a small indipendent validator/collator from Czechia with some 2 years of experience in the DotSama space. I like the idea of web3 and want to contribute to the vision of making the world more fair and decentralized.",
 			person: {
 				image: {
 					src: "/assets/flags/czech.png",
