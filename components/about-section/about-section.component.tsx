@@ -527,8 +527,8 @@ const Item = styled(motion.div)<IItemProps>`
 	padding: 2rem;
 	color: ${({ theme }) => theme.aboutSection.itemColor};
 	overflow: hidden;
-	display: ${({ empty }) => (empty ? "none" : "block")};
-	visibility: ${({ empty }) => (empty ? "hidden" : "visible")};
+	display: flex;
+	flex-direction: column;
 
 	:before {
 		content: "";
@@ -543,7 +543,6 @@ const Item = styled(motion.div)<IItemProps>`
 
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
-			display: block;
 		}
 	}
 `
@@ -567,6 +566,7 @@ const ItemTitle = styled.h3``
 const ItemDescription = styled.p`
 	font-family: "Nunito Sans", sans-serif;
 	margin-bottom: 3rem;
+	flex-grow: 1;
 `
 
 const PersonContainer = styled.div`
