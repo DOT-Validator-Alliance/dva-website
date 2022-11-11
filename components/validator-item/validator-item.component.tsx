@@ -25,7 +25,12 @@ const ValidatorItem: React.FC<IProps> = ({
 	return (
 		<Container key={data.id} {...props}>
 			<ImageContainer>
-				<BlurFigure>
+				<BlurFigure
+					initial={{ scale: 1 }}
+					whileInView={enableAnimation ? undefined : { scale: 1.3 }}
+					transition={{ duration: 1, ease: "easeIn", delay: 0.1 }}
+					viewport={{ amount: 0.5 }}
+				>
 					<Image
 						src={data.blop.src}
 						alt={data.blop.alt}
@@ -59,7 +64,7 @@ const ImageContainer = styled.div`
 	position: relative;
 `
 
-const BlurFigure = styled.figure`
+const BlurFigure = styled(motion.figure)`
 	position: absolute;
 	top: -15rem;
 	left: -12rem;

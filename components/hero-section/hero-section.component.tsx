@@ -421,7 +421,7 @@ const HeroFigure = styled(motion.figure)`
 	max-width: 60rem;
 	width: 100%;
 	max-height: 100rem;
-	/* height: 100%; */
+	height: 100%;
 `
 
 const FoundersContainer = styled(motion.div)`

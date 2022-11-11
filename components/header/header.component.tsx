@@ -22,14 +22,17 @@ const Header: React.FC = () => {
 			label: "Networks",
 			slug: "/#validators",
 			disabled: false,
+			scroll: false,
 		},
 		{
 			label: "About us",
 			slug: "/#about",
+			scroll: false,
 		},
 		{
 			label: "Manifesto",
 			slug: "/manifesto",
+			scroll: true,
 		},
 	]
 
@@ -90,7 +93,7 @@ const Header: React.FC = () => {
 							<NavList>
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
-										<Link href={item.slug} scroll={true} passHref>
+										<Link href={item.slug} scroll={item.scroll} passHref>
 											<LabelA disabled={item?.disabled}>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>
