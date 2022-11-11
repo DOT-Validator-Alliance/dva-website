@@ -63,6 +63,7 @@ const ValidatorSection: React.FC<IProps> = ({ data, enableAnimation }) => {
 					data={validator}
 					enableAnimation={enableAnimation}
 					variants={itemVariants}
+					whileHover="hover"
 					// initial="hidden"
 					// whileInView={"visible"}
 				/>

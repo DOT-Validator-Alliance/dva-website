@@ -26,10 +26,14 @@ const ValidatorItem: React.FC<IProps> = ({
 		<Container key={data.id} {...props}>
 			<ImageContainer>
 				<BlurFigure
-					initial={{ scale: 1 }}
+					initial={enableAnimation ? undefined : { scale: 1 }}
 					whileInView={enableAnimation ? undefined : { scale: 1.3 }}
-					transition={{ duration: 1, ease: "easeIn", delay: 0.1 }}
-					viewport={{ amount: 0.5 }}
+					transition={
+						enableAnimation
+							? undefined
+							: { duration: 1, ease: "easeIn", delay: 0.1 }
+					}
+					viewport={enableAnimation ? undefined : { amount: 0.5 }}
 				>
 					<Image
 						src={data.blop.src}
@@ -108,7 +112,7 @@ const Container = styled(motion.div)`
 	&:hover {
 		${BlurFigure} {
 			/* transform: translate(-50%, -50%) scale(1.2); */
-			transform: scale(1.3);
+			transform: scale(1.3) !important;
 		}
 	}
 `
