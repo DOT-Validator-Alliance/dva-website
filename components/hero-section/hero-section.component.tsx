@@ -155,6 +155,13 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 				alt: "polkadotters1",
 			},
 		},
+		{
+			url: "",
+			image: {
+				src: "/assets/about-section/curu.png",
+				alt: "Curu",
+			},
+		},
 	]
 
 	return (
@@ -194,13 +201,23 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 					>
 						<p>Founded by:</p>
 						<FlexContainer gap="1.5rem" justifyContent="start" wrap="wrap">
-							{founders.map((founder, index) => (
-								<a
-									key={index}
-									href={founder.url}
-									target="_blank"
-									rel="noopener noreferrer"
-								>
+							{founders.map((founder, index) =>
+								founder.url ? (
+									<a
+										key={index}
+										href={founder.url}
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Image
+											src={founder.image.src}
+											alt={founder.image.alt}
+											width={35}
+											height={35}
+											style={{ borderRadius: "50%" }}
+										/>
+									</a>
+								) : (
 									<Image
 										src={founder.image.src}
 										alt={founder.image.alt}
@@ -208,8 +225,8 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 										height={35}
 										style={{ borderRadius: "50%" }}
 									/>
-								</a>
-							))}
+								)
+							)}
 						</FlexContainer>
 					</FoundersContainer>
 				</Col>
