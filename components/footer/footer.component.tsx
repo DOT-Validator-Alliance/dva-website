@@ -1,7 +1,8 @@
 // Utils
 import styled, { css } from "styled-components"
 import { motion } from "framer-motion"
-import { isMobile } from "react-device-detect"
+
+// Hooks
 
 // Components
 import Image from "../image/image.component"
@@ -229,8 +230,7 @@ const LabelA = styled.a`
 
 	transition: all 0.4s ease-out;
 
-	${!isMobile &&
-	css`
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 		&:hover {
 			color: ${({ theme }) => theme.footer.activeNavItemColor};
 			font-weight: 600;
@@ -244,7 +244,9 @@ const LabelA = styled.a`
 				margin-right: 1rem;
 			}
 		}
-	`}
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+		}
+	}
 `
 
 interface INavItem {

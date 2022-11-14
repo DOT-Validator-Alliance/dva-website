@@ -1,7 +1,6 @@
 // Utils
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { motion, Variants } from "framer-motion"
-// import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -13,7 +12,6 @@ export interface IProps extends LinkProps {
 	children: React.ReactNode | React.ReactNode[]
 	variants?: Variants
 	outline?: boolean
-	enableHover?: boolean
 }
 
 const ButtonLink: React.FC<IProps> = ({
@@ -21,7 +19,6 @@ const ButtonLink: React.FC<IProps> = ({
 	variants,
 	width,
 	top,
-	enableHover,
 	outline,
 	...props
 }) => {
@@ -39,7 +36,6 @@ const ButtonLink: React.FC<IProps> = ({
 				width={width}
 				outline={outline}
 				variants={variants}
-				enableHover={enableHover}
 			>
 				<LabelSpanContainer>
 					<LabelSpan>{children}</LabelSpan>
@@ -80,7 +76,6 @@ interface IButtonProps {
 	width?: string
 	outline?: boolean
 	top?: string
-	enableHover?: boolean
 }
 
 const ButtonContainer = styled(motion.a)<IButtonProps>`
@@ -116,9 +111,15 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 		outline: none;
 	}
 
-	${({ enableHover }) =>
-		enableHover &&
-		css`
+	&:disabled {
+		cursor: default;
+		opacity: 0.5;
+	}
+
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+			display: inline-flex;
+
 			&:hover {
 				--x: 100%;
 
@@ -131,16 +132,6 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 					margin-right: 1rem;
 				}
 			}
-		`}
-
-	&:disabled {
-		cursor: default;
-		opacity: 0.5;
-	}
-
-	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
-		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
-			display: inline-flex;
 
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}

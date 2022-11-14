@@ -1,7 +1,6 @@
 // Utils
 import styled, { css } from "styled-components"
 import { motion, AnimatePresence } from "framer-motion"
-import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -95,7 +94,7 @@ const Header: React.FC = () => {
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
 										<Link href={item.slug} scroll={item.scroll} passHref>
-											<LabelA isMobile={isMobile} disabled={item?.disabled}>
+											<LabelA disabled={item?.disabled}>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>
 													<Image
@@ -268,7 +267,6 @@ const IconSpan = styled.span`
 
 interface IAProps {
 	disabled?: boolean
-	isMobile?: boolean
 }
 
 const LabelA = styled.a<IAProps>`
@@ -284,13 +282,12 @@ const LabelA = styled.a<IAProps>`
 	transition: all 0.4s ease-out;
 	cursor: default;
 
-	${({ disabled, isMobile }) =>
+	${({ disabled }) =>
 		!disabled &&
 		css`
 			cursor: pointer;
 
-			${!isMobile &&
-			css`
+			@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 				&:hover {
 					color: ${({ theme }) => theme.header.activeNavItemColor};
 					font-weight: 600;
@@ -304,7 +301,7 @@ const LabelA = styled.a<IAProps>`
 						margin-right: 1rem;
 					}
 				}
-			`}
+			}
 		`}
 `
 
