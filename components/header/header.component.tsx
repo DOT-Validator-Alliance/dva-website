@@ -95,7 +95,7 @@ const Header: React.FC = () => {
 								{navItems.map((item, index) => (
 									<NavItem key={index}>
 										<Link href={item.slug} scroll={item.scroll} passHref>
-											<LabelA disabled={item?.disabled}>
+											<LabelA isMobile={isMobile} disabled={item?.disabled}>
 												<LabelSpan>{item.label}</LabelSpan>
 												<IconSpan>
 													<Image
@@ -268,6 +268,7 @@ const IconSpan = styled.span`
 
 interface IAProps {
 	disabled?: boolean
+	isMobile?: boolean
 }
 
 const LabelA = styled.a<IAProps>`
@@ -283,7 +284,7 @@ const LabelA = styled.a<IAProps>`
 	transition: all 0.4s ease-out;
 	cursor: default;
 
-	${({ disabled }) =>
+	${({ disabled, isMobile }) =>
 		!disabled &&
 		css`
 			cursor: pointer;

@@ -130,6 +130,7 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 				}
 			}
 		`}
+
 	&:disabled {
 		cursor: default;
 		opacity: 0.5;
