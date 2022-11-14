@@ -1,7 +1,7 @@
 // Utils
 import styled, { css } from "styled-components"
 import { motion, Variants } from "framer-motion"
-import { isMobile } from "react-device-detect"
+// import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -13,6 +13,7 @@ export interface IProps extends LinkProps {
 	children: React.ReactNode | React.ReactNode[]
 	variants?: Variants
 	outline?: boolean
+	enableHover?: boolean
 }
 
 const ButtonLink: React.FC<IProps> = ({
@@ -20,6 +21,7 @@ const ButtonLink: React.FC<IProps> = ({
 	variants,
 	width,
 	top,
+	enableHover,
 	outline,
 	...props
 }) => {
@@ -37,7 +39,7 @@ const ButtonLink: React.FC<IProps> = ({
 				width={width}
 				outline={outline}
 				variants={variants}
-				isMobile={isMobile}
+				enableHover={enableHover}
 			>
 				<LabelSpanContainer>
 					<LabelSpan>{children}</LabelSpan>
@@ -78,7 +80,7 @@ interface IButtonProps {
 	width?: string
 	outline?: boolean
 	top?: string
-	isMobile?: boolean
+	enableHover?: boolean
 }
 
 const ButtonContainer = styled(motion.a)<IButtonProps>`
@@ -114,8 +116,8 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 		outline: none;
 	}
 
-	${({ isMobile }) =>
-		!isMobile &&
+	${({ enableHover }) =>
+		enableHover &&
 		css`
 			&:hover {
 				--x: 100%;
