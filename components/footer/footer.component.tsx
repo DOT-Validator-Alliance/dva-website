@@ -1,6 +1,8 @@
 // Utils
-import styled from "styled-components"
-import { motion, Variants } from "framer-motion"
+import styled, { css } from "styled-components"
+import { motion } from "framer-motion"
+
+// Hooks
 
 // Components
 import Image from "../image/image.component"
@@ -181,12 +183,12 @@ const Title = styled(motion.h3)`
 	color: ${({ theme }) => theme.footer.titleColor};
 `
 
-const HeroFigure = styled(motion.figure)`
-	max-width: 60rem;
-	width: 100%;
-	max-height: 100rem;
-	/* height: 100%; */
-`
+// const HeroFigure = styled(motion.figure)`
+// 	max-width: 60rem;
+// 	width: 100%;
+// 	max-height: 100rem;
+// 	/* height: 100%; */
+// `
 
 const NavList = styled.ul`
 	display: flex;
@@ -228,17 +230,21 @@ const LabelA = styled.a`
 
 	transition: all 0.4s ease-out;
 
-	&:hover {
-		color: ${({ theme }) => theme.footer.activeNavItemColor};
-		font-weight: 600;
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		&:hover {
+			color: ${({ theme }) => theme.footer.activeNavItemColor};
+			font-weight: 600;
 
-		${IconSpan} {
-			opacity: 1;
+			${IconSpan} {
+				opacity: 1;
+			}
+
+			${LabelSpan} {
+				margin-left: -1rem;
+				margin-right: 1rem;
+			}
 		}
-
-		${LabelSpan} {
-			margin-left: -1rem;
-			margin-right: 1rem;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		}
 	}
 `

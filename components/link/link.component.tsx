@@ -1,6 +1,7 @@
 // Utils
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { motion, Variants } from "framer-motion"
+// import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -14,15 +15,7 @@ export interface IProps extends LinkProps {
 const Link: React.FC<IProps> = ({ children, variants, ...props }) => {
 	return (
 		<NextLink {...props}>
-			<CtaLink
-				// whileHover={{
-				// 	scale: 1.02,
-				// }}
-				// whileTap={{
-				// 	scale: 0.98,
-				// }}
-				variants={variants}
-			>
+			<CtaLink variants={variants}>
 				<LabelSpan>{children}</LabelSpan>
 				<IconSpan>
 					<Image src="/assets/icons/right-arrow-pink.svg" alt="Right Arrow" />
@@ -67,14 +60,19 @@ const CtaLink = styled(motion.a)`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
-	&:hover {
-		${IconSpan} {
-			opacity: 1;
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		&:hover {
+			${IconSpan} {
+				opacity: 1;
+			}
+
+			${LabelSpan} {
+				margin-left: -1.5rem;
+				margin-right: 1.5rem;
+			}
 		}
 
-		${LabelSpan} {
-			margin-left: -1.5rem;
-			margin-right: 1.5rem;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		}
 	}
 `
