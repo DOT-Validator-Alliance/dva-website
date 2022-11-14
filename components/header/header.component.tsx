@@ -1,6 +1,7 @@
 // Utils
 import styled, { css } from "styled-components"
 import { motion, AnimatePresence } from "framer-motion"
+import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -286,19 +287,23 @@ const LabelA = styled.a<IAProps>`
 		!disabled &&
 		css`
 			cursor: pointer;
-			&:hover {
-				color: ${({ theme }) => theme.header.activeNavItemColor};
-				font-weight: 600;
 
-				${IconSpan} {
-					opacity: 1;
-				}
+			${!isMobile &&
+			css`
+				&:hover {
+					color: ${({ theme }) => theme.header.activeNavItemColor};
+					font-weight: 600;
 
-				${LabelSpan} {
-					margin-left: -1rem;
-					margin-right: 1rem;
+					${IconSpan} {
+						opacity: 1;
+					}
+
+					${LabelSpan} {
+						margin-left: -1rem;
+						margin-right: 1rem;
+					}
 				}
-			}
+			`}
 		`}
 `
 

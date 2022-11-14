@@ -1,6 +1,7 @@
 // Utils
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { motion, Variants } from "framer-motion"
+import { isMobile } from "react-device-detect"
 
 // Components
 import Image from "../image/image.component"
@@ -67,14 +68,17 @@ const CtaLink = styled(motion.a)`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
-	&:hover {
-		${IconSpan} {
-			opacity: 1;
-		}
+	${!isMobile &&
+	css`
+		&:hover {
+			${IconSpan} {
+				opacity: 1;
+			}
 
-		${LabelSpan} {
-			margin-left: -1.5rem;
-			margin-right: 1.5rem;
+			${LabelSpan} {
+				margin-left: -1.5rem;
+				margin-right: 1.5rem;
+			}
 		}
-	}
+	`}
 `

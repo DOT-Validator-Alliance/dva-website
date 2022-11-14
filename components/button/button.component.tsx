@@ -1,6 +1,7 @@
 // Utils
 import { motion, HTMLMotionProps } from "framer-motion"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import { isMobile } from "react-device-detect"
 
 // Compoennts
 import Image from "../image/image.component"
@@ -93,18 +94,23 @@ export const ButtonContainer = styled(motion.button)<IProps>`
 	&:focus {
 		outline: none;
 	}
-	&:hover {
-		--x: 100%;
 
-		${IconSpan} {
-			opacity: 1;
-		}
+	${!isMobile &&
+	css`
+		&:hover {
+			--x: 100%;
 
-		${LabelSpan} {
-			margin-left: -1rem;
-			margin-right: 1rem;
+			${IconSpan} {
+				opacity: 1;
+			}
+
+			${LabelSpan} {
+				margin-left: -1rem;
+				margin-right: 1rem;
+			}
 		}
-	}
+	`}
+
 	&:disabled {
 		cursor: default;
 		/* opacity: 0.5; */
