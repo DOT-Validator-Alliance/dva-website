@@ -59,14 +59,19 @@ const BackButtonStyles = styled(motion.button)`
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 
-	&:hover {
-		${IconSpan} {
-			opacity: 1;
+	@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+		&:hover {
+			${IconSpan} {
+				opacity: 1;
+			}
+
+			${LabelSpan} {
+				margin-left: 1.5rem;
+				margin-right: -1.5rem;
+			}
 		}
 
-		${LabelSpan} {
-			margin-left: 1.5rem;
-			margin-right: -1.5rem;
+		@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 		}
 	}
 `
