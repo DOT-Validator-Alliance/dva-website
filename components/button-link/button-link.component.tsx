@@ -37,6 +37,7 @@ const ButtonLink: React.FC<IProps> = ({
 				width={width}
 				outline={outline}
 				variants={variants}
+				isMobile={isMobile}
 			>
 				<LabelSpanContainer>
 					<LabelSpan>{children}</LabelSpan>
@@ -77,6 +78,7 @@ interface IButtonProps {
 	width?: string
 	outline?: boolean
 	top?: string
+	isMobile?: boolean
 }
 
 const ButtonContainer = styled(motion.a)<IButtonProps>`
@@ -112,21 +114,22 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 		outline: none;
 	}
 
-	${!isMobile &&
-	css`
-		&:hover {
-			--x: 100%;
+	${({ isMobile }) =>
+		!isMobile &&
+		css`
+			&:hover {
+				--x: 100%;
 
-			${IconSpan} {
-				opacity: 1;
-			}
+				${IconSpan} {
+					opacity: 1;
+				}
 
-			${LabelSpan} {
-				margin-left: -1rem;
-				margin-right: 1rem;
+				${LabelSpan} {
+					margin-left: -1rem;
+					margin-right: 1rem;
+				}
 			}
-		}
-	`}
+		`}
 	&:disabled {
 		cursor: default;
 		opacity: 0.5;
