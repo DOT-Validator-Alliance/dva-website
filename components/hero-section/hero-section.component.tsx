@@ -219,6 +219,7 @@ const HeroSection: React.FC<IProps> = ({ enableAnimation }) => {
 									</a>
 								) : (
 									<Image
+										key={index}
 										src={founder.image.src}
 										alt={founder.image.alt}
 										width={35}

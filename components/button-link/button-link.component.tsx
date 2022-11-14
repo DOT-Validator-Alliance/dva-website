@@ -1,6 +1,6 @@
 // Utils
 import styled from "styled-components"
-import { HTMLMotionProps, motion, Variants } from "framer-motion"
+import { motion, Variants } from "framer-motion"
 
 // Components
 import Image from "../image/image.component"
@@ -110,18 +110,7 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 	&:focus {
 		outline: none;
 	}
-	&:hover {
-		--x: 100%;
 
-		${IconSpan} {
-			opacity: 1;
-		}
-
-		${LabelSpan} {
-			margin-left: -1rem;
-			margin-right: 1rem;
-		}
-	}
 	&:disabled {
 		cursor: default;
 		opacity: 0.5;
@@ -130,6 +119,19 @@ const ButtonContainer = styled(motion.a)<IButtonProps>`
 	@media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
 		@media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
 			display: inline-flex;
+
+			&:hover {
+				--x: 100%;
+
+				${IconSpan} {
+					opacity: 1;
+				}
+
+				${LabelSpan} {
+					margin-left: -1rem;
+					margin-right: 1rem;
+				}
+			}
 
 			@media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
 			}
