@@ -14,14 +14,17 @@ const Footer: React.FC = () => {
 			label: "Networks",
 			slug: "/#validators",
 			disabled: false,
+			scroll: false,
 		},
 		{
 			label: "About us",
 			slug: "/#about",
+			scroll: false,
 		},
 		{
 			label: "Manifesto",
 			slug: "/manifesto",
+			scroll: true,
 		},
 	]
 
@@ -69,7 +72,7 @@ const Footer: React.FC = () => {
 						<NavList>
 							{navItems.map((item, index) => (
 								<NavItem key={index}>
-									<Link href={item.slug}>
+									<Link href={item.slug} scroll={item.scroll}>
 										<LabelA>
 											<LabelSpan>{item.label}</LabelSpan>
 											<IconSpan>
