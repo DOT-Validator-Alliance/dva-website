@@ -158,23 +158,6 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 					"Polkadot Ambasador, HydraDX Council Member,</br> Pol(s)kadot - Polish Polkadot Community Founder",
 			},
 		},
-		// {
-		// 	image: {
-		// 		src: "/assets/about-section/promoteam.png",
-		// 		alt: "promoteam",
-		// 	},
-		// 	title: "PromoTeam",
-		// 	description:
-		// 		"At PromoTeam we believe that validation is a philosophical contribution. Acting as your voice in the network and means of collaborating with the community. We believe that the validation role goes beyond just producing blocks and have constant uptime.",
-		// },
-		// {
-		// 	image: {
-		// 		src: "/assets/about-section/repe.png",
-		// 		alt: "repe",
-		// 	},
-		// 	title: "Repe",
-		// 	description: `As a developer, I often like to look "under the hood". Polkadot is said to be a bet against blockchain maximalism, that’s why we united independent community-led initiatives around the world under one Alliance, so let’s jump on this exciting journey together!`,
-		// },
 		{
 			image: {
 				src: "/assets/about-section/pathrock.png",
@@ -200,7 +183,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "bLd Nodes",
 			description:
-				"Recently rebranded to ChadStakeKing (beacuse why not), I am DevOps engineer for Astar and Logion network. I am passionate about decentralization, community and any kind of technical topics. Validation is my favorite hobby, I pick carefully only a few chains to operate on.",
+				"Recently rebranded to ChadStakeKing (because why not), I am DevOps engineer for Astar and Logion network. I am passionate about decentralization, community and any kind of technical topics. Validation is my favorite hobby, I pick carefully only a few chains to operate on.",
 			person: {
 				image: {
 					src: "/assets/flags/france.png",
