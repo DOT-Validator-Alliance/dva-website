@@ -57,7 +57,9 @@ const ValidatorItem: React.FC<IProps> = ({
 			</ImageContainer>
 			<Title>{data.title}</Title>
 			<Description dangerouslySetInnerHTML={{ __html: data.description }} />
-			<Link href={data.link.slug}>{data.link.label}</Link>
+			<Link href={data.link.slug} scroll={true}>
+				{data.link.label}
+			</Link>
 		</Container>
 	)
 }
