@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/darvina-crab-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Darwina crab validators:",
+	"listLabel": "Our Darwina crab collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/darwina-crab"

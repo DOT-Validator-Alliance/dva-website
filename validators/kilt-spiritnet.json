@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/kilt-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Kilt Spiritnet validators:",
+	"listLabel": "Our Kilt Spiritnet collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/kilt-spiritnet"

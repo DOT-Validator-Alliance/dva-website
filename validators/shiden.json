@@ -20,7 +20,7 @@
 		"src": "/assets/blops/shiden-purple.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Shiden validators:",
+	"listLabel": "Our Shiden collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/shiden"

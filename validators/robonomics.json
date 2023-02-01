@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/robonomics-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Robonomics validators:",
+	"listLabel": "Our Robonomics collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/robonomics"

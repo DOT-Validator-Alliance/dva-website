@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/polkadeck-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Polkadex validators:",
+	"listLabel": "Our Polkadex collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/polkadex"

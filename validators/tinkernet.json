@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/tinkernet-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Tinkernet validators:",
+	"listLabel": "Our Tinkernet collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/tinkernet"

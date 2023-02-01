@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/altair-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Altair validators:",
+	"listLabel": "Our Altair collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/altair"

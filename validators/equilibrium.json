@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/equilibrium-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Equilibrium validators:",
+	"listLabel": "Our Equilibrium collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/equilibrium"

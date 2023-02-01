@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/basilisk-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Basilisk validators:",
+	"listLabel": "Our Basilisk collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/basilisk"

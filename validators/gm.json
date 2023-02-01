@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/gm-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Polkadot validators:",
+	"listLabel": "Our GM collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/gm"
