@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/astar-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Astar validators:",
+	"listLabel": "Our Astar collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/astar"

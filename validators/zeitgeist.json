@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/zeit-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Zeitgeist validators:",
+	"listLabel": "Our Zeitgeist collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/zeitgeist"

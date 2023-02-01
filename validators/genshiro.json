@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/genshire-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Genshiro validators:",
+	"listLabel": "Our Genshiro collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/genshiro"

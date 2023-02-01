@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/hydra-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our HydraDX validators:",
+	"listLabel": "Our HydraDX collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/hydradx"

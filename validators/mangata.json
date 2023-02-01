@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/mangata-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Mangata validators:",
+	"listLabel": "Our Mangata collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/mangata"

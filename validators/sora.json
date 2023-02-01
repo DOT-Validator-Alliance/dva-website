@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/sora-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Sora validators:",
+	"listLabel": "Our Sora collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/sora"

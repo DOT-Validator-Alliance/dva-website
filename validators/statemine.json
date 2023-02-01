@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/statemine-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Statemine validators:",
+	"listLabel": "Our Statemine collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/statemine"

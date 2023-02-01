@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/moonriver-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Moonriver validators:",
+	"listLabel": "Our Moonriver collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/moonriver"

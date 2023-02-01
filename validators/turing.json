@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/turning-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Turing validators:",
+	"listLabel": "Our Turing collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/turing"

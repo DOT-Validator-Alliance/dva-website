@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/birfrost-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Bifrost validators:",
+	"listLabel": "Our Bifrost collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/polkadot"

@@ -20,7 +20,7 @@
 		"src": "/assets/networks/blops/calamari-min.png",
 		"alt": "blop"
 	},
-	"listLabel": "Our Calamari validators:",
+	"listLabel": "Our Calamari collators:",
 	"link": {
 		"label": "View all",
 		"slug": "/validators/calamari"
