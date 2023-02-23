@@ -228,7 +228,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			title: "Curu",
 			description:
-				"Hey, I'm a small indipendent validator/collator from Czechia with some 2 years of experience in the DotSama space. I like the idea of web3 and want to contribute to the vision of making the world more fair and decentralized.",
+				"Hey, I'm a small independent validator/collator from Czechia with some 2 years of experience in the DotSama space. I like the idea of web3 and want to contribute to the vision of making the world more fair and decentralized.",
 			person: {
 				image: {
 					src: "/assets/flags/czech.png",
@@ -236,6 +236,24 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 				},
 				name: "Curu",
 				description: "Sora Ambassador, Polkadot ecosystem content creator",
+			},
+			// empty: true,
+		},
+		{
+			image: {
+				src: "/assets/about-section/stakebaby.png",
+				alt: "stakebaby",
+			},
+			title: "StakeBaby",
+			description:
+				"I am Ioannis. I was the first baby born on the blockchain. StakeBaby is into blockchain indexing, staking smart contracts, user dashboards, and running collators. When we grow up, we want to stay nice.",
+			person: {
+				image: {
+					src: "/assets/flags/greece.png",
+					alt: "czech",
+				},
+				name: "Ioannis",
+				description: "StakeGlmr.com / StakeBnc.com / StakeZtg.com / StakeKma.com, etc.",
 			},
 			// empty: true,
 		},
