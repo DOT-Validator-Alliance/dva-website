@@ -239,6 +239,23 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			},
 			// empty: true,
 		},
+		{
+			image: {
+				src: "/assets/about-section/stakebaby.png",
+				alt: "stakebaby",
+			},
+			title: "StakeBaby",
+			description:
+				"I am Ioannis. I was the first baby born on the blockchain. StakeBaby is into blockchain indexing, staking smart contracts, user dashboards, and running collators. When we grow up, we want to stay nice.",
+			person: {
+				image: {
+					src: "/assets/flags/greece.png",
+					alt: "greek",
+				},
+				name: "Ioannis",
+				description: "StakeGlmr.com / StakeBnc.com / StakeZtg.com / StakeKma.com, etc.",
+			}
+		}	
 	]
 
 	return (
