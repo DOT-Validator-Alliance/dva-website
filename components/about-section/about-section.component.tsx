@@ -250,7 +250,7 @@ const AboutSection: React.FC<IProps> = ({ enableAnimation }) => {
 			person: {
 				image: {
 					src: "/assets/flags/greece.png",
-					alt: "czech",
+					alt: "greek",
 				},
 				name: "Ioannis",
 				description: "StakeGlmr.com / StakeBnc.com / StakeZtg.com / StakeKma.com, etc.",
