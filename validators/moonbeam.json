@@ -45,6 +45,10 @@
 		{
 			"name": "Pathrock Network",
 			"address": "0x1d4dD1bd8D1F26B631b69396a9cbF7BF7c373073"
+		},
+		{
+			"name": "StakeBaby",
+			"address": "0xAb4B115b2D23EF8DA7b0aa54FC074fB4C6886441"
 		}
 	]
 }

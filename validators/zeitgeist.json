@@ -49,6 +49,10 @@
 		{
 			"name": "Stakenode",
 			"address": "dDykYaZr7V5krQ5kVk5Wsdt9nfGwo9DtuUN9HA8FVQ9wUQgm8"
+		},
+		{
+			"name": "StakeBaby",
+			"address": "dE3RRf2t9X1D1Nj4uutboTefar4bTHi2tb5sBhqmFxjHA2uxr"
 		}
 	]
 }
